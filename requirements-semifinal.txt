@@ -1,6 +1,6 @@
 # Minimal dependencies for the solver-free semifinal evidence walkthrough.
 pydantic>=2.8.0,<3
-numpy>=1.26.0
+numpy>=2.4.6
 scipy>=1.14.0
 structlog>=24.4.0
 matplotlib>=3.9.0
