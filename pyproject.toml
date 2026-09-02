@@ -71,7 +71,7 @@ dev = [
     "matplotlib>=3.9.0",
 ]
 cad = ["pythonocc-core>=7.8.0"]
-solvers = ["pyaedt>=0.10.0"]
+solvers = ["pyaedt>=1.4.0"]
 gpu = ["cupy-cuda12x>=13.0.0"]
 
 [project.urls]
