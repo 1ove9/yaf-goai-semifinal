@@ -1,0 +1,9 @@
+# Archived evidence is byte-addressed by SHA-256; never rewrite line endings.
+artifacts/runs/** -text whitespace=cr-at-eol
+artifacts/analysis/** -text whitespace=cr-at-eol
+
+# Deterministic solver-free semifinal package; store bytes verbatim across clones.
+artifacts/analysis/semifinal-submission/** -text
+
+# Audited semifinal handoff documents; preserve the reviewed bytes across clones.
+docs/submission/** -text

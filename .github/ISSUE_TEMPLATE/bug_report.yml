@@ -1,0 +1,43 @@
+name: 🐛 Bug report
+description: Something broke (报告一个 bug)
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Commands / code to reproduce. Ideally starting from a clean checkout.
+      render: shell
+    validations:
+      required: true
+  - type: dropdown
+    id: solver-mode
+    attributes:
+      label: Solver mode
+      description: Run `yaf info` — were you using a real solver or the analytical fallback?
+      options:
+        - fallback_analytical (no nec2c/openEMS installed)
+        - subprocess (nec2c installed)
+        - native (openEMS Python bindings)
+        - not solver-related
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, Python version, YAF version/commit"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: shell

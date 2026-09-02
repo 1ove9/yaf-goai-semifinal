@@ -1,0 +1,70 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 1,
+    "explorable_problem_definition": "The agent may explore only freeform-wire-3d-v1-n5; invalid physical centerlines are rejected without consuming budget.",
+    "fixed_problem_definition": "The 40 mm cube, symmetric single-feed wire, 1.5--6.5 GHz/251-point sweep, lambda/160 real NEC2 oracle, accepted-power worst-band score, reference, budget, top-2 rule, and v2.1 discovery gates are fixed.",
+    "optimizer_window": null,
+    "proposal_space_version": "freeform-wire-3d-v1-n5",
+    "require_real_solver": true,
+    "seed": 6101,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": null,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        1500000000.0,
+        6500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {
+        "frequency_points": 251,
+        "score_version": "dual-band-accepted-power-min-v1",
+        "target_bands_hz": [
+          [
+            2400000000.0,
+            2500000000.0
+          ],
+          [
+            5725000000.0,
+            5875000000.0
+          ]
+        ]
+      },
+      "name": "day6_freeform_dual_band",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.02,
+        "x_min": -0.02,
+        "y_max": 0.02,
+        "y_min": -0.02,
+        "z_max": 0.02,
+        "z_min": -0.02
+      },
+      "target_gain_dbi": null,
+      "target_pattern": null,
+      "target_vswr": null
+    }
+  },
+  "config_hash": "972d82b7f05eea9e195306d2b74f582d5759feaf5519a41d79368d8e2dd0a9d3",
+  "evaluation_budget": 1,
+  "failure": "SolverUnavailableError: [nec2] Job f23eb637-a23e-49da-9043-beaf964a41a4: real solver unavailable ('nec2c' not found or failed) and YAF_NO_FALLBACK is set \u2014 refusing to return analytical-fallback results",
+  "finished_at": "2026-08-11T19:15:29.122318Z",
+  "rejected_proposals": 0,
+  "run_id": "day6-freeform-preflight-n5-s6101",
+  "schema_version": 1,
+  "seed": 6101,
+  "solver_mode_counts": {},
+  "started_at": "2026-08-11T19:15:27.216384Z",
+  "status": "failed",
+  "steps_completed": 0,
+  "top_designs": []
+}

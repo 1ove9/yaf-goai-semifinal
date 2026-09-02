@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/1ove9/yaf-goai-semifinal/discussions
+    about: Questions, ideas, show-and-tell — antenna designs welcome
+  - name: 🔒 Security issue
+    url: https://github.com/1ove9/yaf-goai-semifinal/blob/main/SECURITY.md
+    about: Please report security vulnerabilities privately

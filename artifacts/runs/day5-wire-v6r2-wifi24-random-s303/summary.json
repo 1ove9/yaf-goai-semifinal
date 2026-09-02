@@ -1,0 +1,197 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 400,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space meander-dipole-v2.1-5d.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, adaptive lambda/20 segmentation, wire-realized-gain-v2 score with zero lossless-efficiency weight, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v2.1-5d",
+    "require_real_solver": true,
+    "seed": 303,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 2.15,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+  "evaluation_budget": 400,
+  "failure": null,
+  "finished_at": "2026-08-09T16:48:44.094225Z",
+  "rejected_proposals": 22,
+  "run_id": "day5-wire-v6r2-wifi24-random-s303",
+  "schema_version": 1,
+  "seed": 303,
+  "solver_mode_counts": {
+    "subprocess": 400
+  },
+  "started_at": "2026-08-09T16:47:07.841244Z",
+  "status": "completed",
+  "steps_completed": 400,
+  "top_designs": [
+    {
+      "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+      "event_type": "evaluation",
+      "geometry_hash": "e39c3b2986d795a5abd523a1909ef3e8ab48965efa152e5023d5f9b174688387",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.028447114221217377,
+          0.005552013637165765,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 23,
+        "num_vertices": 24,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.6588241257647519,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.96,
+        "min_s11_db": -5.451006396938606,
+        "mismatch_efficiency": 0.7149642326575247,
+        "realized_gain_dbi": 0.5028431599966847,
+        "resonance_frequency_hz": 2500000000.0,
+        "resonance_index": 50.0,
+        "vswr": 3.290808800419607
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.05791942158996005,
+        "span_ratio": 0.9747104983543726,
+        "terminal_ratio": 0.8267433552654698,
+        "total_length_m": 0.07841523695570926,
+        "turns": 5.202533787351636
+      },
+      "proposer": "random",
+      "run_id": "day5-wire-v6r2-wifi24-random-s303",
+      "schema_version": 1,
+      "score": 0.6588241257647519,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 7,
+      "timestamp": "2026-08-09T16:47:09.815969Z",
+      "topology": null
+    },
+    {
+      "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+      "event_type": "evaluation",
+      "geometry_hash": "037194f5d4b41c92b5756a095adf010e7f5fde070d04935671cfb8ec736e0d0f",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.027621505850280084,
+          0.006125702435365595,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 23,
+        "num_vertices": 24,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.6232176120149456,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.99,
+        "min_s11_db": -4.964845266338916,
+        "mismatch_efficiency": 0.6812020842640152,
+        "realized_gain_dbi": 0.3227596809704585,
+        "resonance_frequency_hz": 2436000000.0,
+        "resonance_index": 18.0,
+        "vswr": 3.593708560115977
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.05841072827859363,
+        "span_ratio": 0.9790039303734956,
+        "terminal_ratio": 0.6201118893892236,
+        "total_length_m": 0.08275282776857043,
+        "turns": 5.306854550789846
+      },
+      "proposer": "random",
+      "run_id": "day5-wire-v6r2-wifi24-random-s303",
+      "schema_version": 1,
+      "score": 0.6232176120149456,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 234,
+      "timestamp": "2026-08-09T16:48:04.325244Z",
+      "topology": null
+    },
+    {
+      "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+      "event_type": "evaluation",
+      "geometry_hash": "9840fe5f8c23252ca24cb43f779f0459bc32d770e230e5c275bb3308bd5448e7",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.02698308601980532,
+          0.005218178980995857,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 27,
+        "num_vertices": 28,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.6190720573569247,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 2.14,
+        "min_s11_db": -4.736883151178585,
+        "mismatch_efficiency": 0.6640213467784318,
+        "realized_gain_dbi": 0.36182041173831303,
+        "resonance_frequency_hz": 2430000000.0,
+        "resonance_index": 15.0,
+        "vswr": 3.7577887785479516
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.03929314149432071,
+        "span_ratio": 0.9709165115441232,
+        "terminal_ratio": 0.46291367061683675,
+        "total_length_m": 0.08438305481075975,
+        "turns": 5.987632614624294
+      },
+      "proposer": "random",
+      "run_id": "day5-wire-v6r2-wifi24-random-s303",
+      "schema_version": 1,
+      "score": 0.6190720573569247,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 226,
+      "timestamp": "2026-08-09T16:48:02.357594Z",
+      "topology": null
+    }
+  ]
+}

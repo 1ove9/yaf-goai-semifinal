@@ -1,0 +1,37 @@
+{
+  "config": {
+    "agents": [
+      "gp",
+      "random"
+    ],
+    "batch_id": "day6-freeform",
+    "budget": 200,
+    "discovery_rule": "best>=1.10*ocfd and both bands valid <=-6dB with <=5pct gap and whole-sweep Pearson>=0.8",
+    "duration_limit_seconds": 10800.0,
+    "estimated_matrix_seconds": 9225.025199935772,
+    "frequency_points": 251,
+    "frequency_range_hz": [
+      1500000000.0,
+      6500000000.0
+    ],
+    "nec2_segments_per_wavelength": 20,
+    "node_count": 7,
+    "ocfd_run_id": "day6-freeform-ocfd-grid",
+    "ocfd_score": 0.6171374213680576,
+    "optimizer_window": null,
+    "proposal_space_version": "freeform-wire-3d-v1-n7",
+    "score_version": "dual-band-accepted-power-min-v1",
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "solver": "nec2",
+    "straight_run_id": "day6-freeform-straight-control",
+    "straight_score": 0.10034344996329037,
+    "top_selection_rule": "score_desc, run_id_asc, step_index_asc; geometry_hash_deduplicated; top_2"
+  },
+  "config_hash": "f01bcf4de5b136fe096b10b9f658e28e4ab402f473c80d3eca5125ee7e4a0a89"
+}

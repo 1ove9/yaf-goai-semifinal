@@ -1,0 +1,4346 @@
+[
+  {
+    "archived_at": "2026-08-09T08:38:46.010474Z",
+    "config_hash": "6996470edd01ad8c2a2141dc07172064fef74efcf8184a4651968a0b153851f7",
+    "note": "",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "20260808T215440Z-20bdb3e227",
+    "seed": 42,
+    "sha256": {
+      "log.jsonl": "aeeed5b2c8fb431ab78df94c0fc68f06259e6118aebf8a094b1e8830852c90c0",
+      "summary.json": "565e08b1c9ddaabf37c3a528dbc18c1cd2d800428ded952a50c5f1710ca0cb64"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T08:38:46.118811Z",
+    "config_hash": "6996470edd01ad8c2a2141dc07172064fef74efcf8184a4651968a0b153851f7",
+    "note": "",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "20260808T215215Z-c43f0fa149",
+    "seed": 42,
+    "sha256": {
+      "log.jsonl": "750def786fe6fa8f846cc4cffc2c7dc30be16e20ce6e185d4f00574ffb245a26",
+      "summary.json": "3147aa415d08168e745e35e1ef7c39c65d88d9577c8cd6200eb07c14bf9b5513"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-09T08:38:46.215044Z",
+    "config_hash": "6996470edd01ad8c2a2141dc07172064fef74efcf8184a4651968a0b153851f7",
+    "note": "",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "20260808T215324Z-f2ab77956c",
+    "seed": 42,
+    "sha256": {
+      "log.jsonl": "87f739e898467311af574befa5a7561746ce67c91d5800ddf7d9317b8624d6ff",
+      "summary.json": "853252d736c4c00c47633064b1d0287a8406cb3bacab1a99e9108ad44bc2b54b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-09T08:38:46.311162Z",
+    "config_hash": "8630bcc41ca0bc71a426f033061fb6e86bd9ae8dbe01e3aecc38e65b8b8c3a79",
+    "note": "Pre-flight smoke run (budget=1, different config_hash); excluded from agent-vs-baseline comparisons.",
+    "overwritten": false,
+    "role": "smoke",
+    "run_id": "20260808T215156Z-65c7d11050",
+    "seed": 42,
+    "sha256": {
+      "log.jsonl": "cca2e76a82010babccc5a71eca6cc7d27ca0590a466bce5407725bc356dcef7b",
+      "summary.json": "c8049f85f56eca27daf6f3abfa54fbf610ef7140ba75dba47e28498d50f3095d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T09:15:26.351323Z",
+    "config_hash": "09bf01a6f5b306d85002b2b13c407a972574bb6c3ff4330be667108ab9402037",
+    "note": "batch=day2 spec=wifi24 seed=0",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day2-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "52b50e116acbd6bbafa656966e888d6fcf70deeecc3ab236cebd65dd97294147",
+      "summary.json": "9149c7e6344ae1ec5e79281693af95cc5efdfe5632640f01588534440135dccb"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T09:15:31.997261Z",
+    "config_hash": "246a105f0affb5cc91e0b33aa603074329610e4c75ec5200b6973cc84f63c2a9",
+    "note": "batch=day2 spec=wifi58 seed=0",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day2-wifi58-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "2dc5eb06c2fa90a318583940e265375d4906e2c19979fcf3bd760c80343dd8d5",
+      "summary.json": "cb10e261b4daa64d31cb8930200dd1fcb57610521ae24e474c4493c3bb129f41"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T09:15:42.711093Z",
+    "config_hash": "593db7bbaf773e4edfb16d3ea1649c1a7e8a4057d64cb89421db91f5832fbb05",
+    "note": "batch=day2 spec=n78 seed=0",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day2-n78-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "0634c4a3fb2722d4d8b4cd8233f6aca43d893c37cd3d0915cbd57494071e8a9e",
+      "summary.json": "1c83c24b056ba2db6ededfaf61313be9727599081e37e595eadfd8088d50c7e3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T09:19:58.537960Z",
+    "config_hash": "8184012083505db9f4c23e991f5675da95ae920b137141e976c257221de0ba7c",
+    "note": "batch=day2 spec=wifi24 seed=101",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "9e0f4ab6102f9a87bef9484587c979b23a5dfcef80e06220617e164409723c2b",
+      "summary.json": "2f7c775dcf17d18f1b6f51b3b899897eb5079796e86b977e1c6ccbbe66636330"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:23:19.131993Z",
+    "config_hash": "ea7b4e7fa43c631b1a55ebd3bf298569c14c261d2d5800044cfa7c108a5a316f",
+    "note": "batch=day2 spec=wifi24 seed=202",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "b92a46aa6cdc012c233e03e095a4544d62c8c27532f22c56f8e751cf6d2eee56",
+      "summary.json": "1a91eaf52723f9428d0b17c3d03a4690477080a4d5ae97b5e8c97472336f5eba"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:27:07.910500Z",
+    "config_hash": "552e6d09e0c4a1950f4192c11b9dadf40e801b0ac9fcf5ae729624e46cd8cac0",
+    "note": "batch=day2 spec=wifi24 seed=303",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "888f2f5c546a8b97b95080390123282869c5b2fcb054514a8c24cb1ef5b0b857",
+      "summary.json": "9ba7301ddfa7d89c793710b2f42a47900b42c996ac6092d0153d28998d0509a4"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:30:34.496036Z",
+    "config_hash": "40cdde0beb6b458928394293d00f8cbe90171d99231a41f802baf710d33aba1f",
+    "note": "batch=day2 spec=wifi24 seed=404",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "15f039e87a4cf8e9be087874aec1e0bfe82321da1cfc3787530a474ce15bacb3",
+      "summary.json": "8c1aabb7dbf5aea4f3c06691112c4769c0e4aeea0f4b3e2cb4828c0f1ad819d6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:34:14.852757Z",
+    "config_hash": "159c9d7101d5d9c689718996ad3e99630e701ac680f375f588b0f5169b3f97d0",
+    "note": "batch=day2 spec=wifi24 seed=505",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4be06d7de6d91a7b1c0cfb3e791fc763c19aa92656a72cb97684189a2ca286a7",
+      "summary.json": "5c3ba80b451e68d4716f7a4214cef566927d3a0b9a75eaca9d5b8b840410db4d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:38:00.975625Z",
+    "config_hash": "8184012083505db9f4c23e991f5675da95ae920b137141e976c257221de0ba7c",
+    "note": "batch=day2 spec=wifi24 seed=101",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "c71bec4fc00975aa7b34eabc03c3235358a611d2e68e3a416b3ce0237c9ba4da",
+      "summary.json": "0277416a6804055ca9ca796ad31f992cf67c9f46b1385a267ac6e7306816be6f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:42:02.067149Z",
+    "config_hash": "ea7b4e7fa43c631b1a55ebd3bf298569c14c261d2d5800044cfa7c108a5a316f",
+    "note": "batch=day2 spec=wifi24 seed=202",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "a0e1c5b57a7e7ee233c23249743b753900d84b0bd7d0a24cd4d3628a4af340c5",
+      "summary.json": "80ef806de2bfd2db5c4d0f2fcfe1a3b97f37e46e4879707e31a07917b333a882"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:45:54.167093Z",
+    "config_hash": "552e6d09e0c4a1950f4192c11b9dadf40e801b0ac9fcf5ae729624e46cd8cac0",
+    "note": "batch=day2 spec=wifi24 seed=303",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "e59c15a70a7819da40e8fa2bca2c321d619106ba046377c61cc3b7c07eb1a488",
+      "summary.json": "3ee2eb78f1114901e38330caaa71f27e7e3a1e7ddbb6c2552a4e012c9f59a9d7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:49:46.323079Z",
+    "config_hash": "40cdde0beb6b458928394293d00f8cbe90171d99231a41f802baf710d33aba1f",
+    "note": "batch=day2 spec=wifi24 seed=404",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "c5273a0dbe9e9c152876a7c96dab4c80e105629983c79ca9d844f6f4a8669826",
+      "summary.json": "faa2b6bbeecef996d7543c2b7ec67ff6d0918f6e69fd50b1b8fc892ec0acca41"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:53:47.282256Z",
+    "config_hash": "159c9d7101d5d9c689718996ad3e99630e701ac680f375f588b0f5169b3f97d0",
+    "note": "batch=day2 spec=wifi24 seed=505",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "3d2854c60d5c3e46238926bdc0c49935945138e8ff40ceef7a994824f94daaff",
+      "summary.json": "75a6205e75a280104e991db7038115e5e939da419cf412ba1414c984f61b3138"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:55:44.262234Z",
+    "config_hash": "1808695b4a59f621cf4bd9c82bc4e5d6eef3ad985bb75f51806aeaea80930485",
+    "note": "batch=day2 spec=wifi58 seed=101",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi58-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "41cb8504ef2d2ceb982e78ae9aa27f11eeaf1b1451698e93e5354b37630c3e74",
+      "summary.json": "0e0708b1e9a5a108dd19d88184d375bb8d4a47ddce5750e93342e4cc17ef0c4e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:57:35.265827Z",
+    "config_hash": "dd0b1b98d84cf2a85c599f67a234d21999580775b20c4a8f62ba5f82cfad3229",
+    "note": "batch=day2 spec=wifi58 seed=202",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi58-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "d961b0d25821dc040926a3ac3c51588a4be30a29de55597e26b23a44e48a149e",
+      "summary.json": "b92ef5403dcef8a0ee0a80749ac8c1a7cd25b6bceb152fbaec349bdd9f472e66"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T09:59:26.532522Z",
+    "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+    "note": "batch=day2 spec=wifi58 seed=303",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi58-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "a6ebf9b1d6b3a3e3908be4740a90dee6811e20d672c5cef16ba22f792df1a79d",
+      "summary.json": "8a8c3368d09720271c8c773fd60d6940b7f193697375b1dc32af1da81202cf6a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:01:18.225525Z",
+    "config_hash": "feff6c0a3e786ef1b60749bfeb83f57affaff02b2079cf8ca27dcbabd05df7ed",
+    "note": "batch=day2 spec=wifi58 seed=404",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi58-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "5224d8e59d962e5f659259feb44695b1363a2452b79506ad5dfd4fce40b05fbc",
+      "summary.json": "4aed29e3e5e45d195ffeac3119373df9e4f1b6015fe83b67a2489969b0425f1c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:03:10.656949Z",
+    "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+    "note": "batch=day2 spec=wifi58 seed=505",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-wifi58-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4c8deda062b8e501e236f9f3a7be5fa6396c21bc6bb450d7aabcb7aae65d08fb",
+      "summary.json": "78410f864f39e07af0b0ade85ecd902e1d81efdea4c1a9f0d64242d47e88825b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:05:12.606025Z",
+    "config_hash": "1808695b4a59f621cf4bd9c82bc4e5d6eef3ad985bb75f51806aeaea80930485",
+    "note": "batch=day2 spec=wifi58 seed=101",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi58-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "11cc71c8d261e9082ccf534c0d1d3fb10104794e44ed54279246ac2747090e5f",
+      "summary.json": "96635017ddebc1d7a66b1bcd054452b97fca63714b84b2c16a7695767f965859"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:07:03.051501Z",
+    "config_hash": "dd0b1b98d84cf2a85c599f67a234d21999580775b20c4a8f62ba5f82cfad3229",
+    "note": "batch=day2 spec=wifi58 seed=202",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi58-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "b5a043f0dafb1636287b3a21eac26c768c90954cd18b9c0d78bd848af5b4af1a",
+      "summary.json": "dd1cc5f2027a437229e2e5c36c96c134a74ea90136610f5623c6826c193f9841"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:09:12.018795Z",
+    "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+    "note": "batch=day2 spec=wifi58 seed=303",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi58-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "7c1c8980ac9085d1ef99154a2d959b83e60a94ef0a682617df1b21aee0c8ee3a",
+      "summary.json": "2d477073c80bab178814418a551a7c0af270a7916c30a037f19499d982a82048"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:11:37.133251Z",
+    "config_hash": "feff6c0a3e786ef1b60749bfeb83f57affaff02b2079cf8ca27dcbabd05df7ed",
+    "note": "batch=day2 spec=wifi58 seed=404",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi58-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "e2f10dcfa6e4e6328a4cc7e23e9b2f5be58dd27a686f4a80a6ab5bec1ecf1b88",
+      "summary.json": "4c6133e5229e132b9a277e1d25fb924b2e88416854fba2db71685a606f430604"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:13:38.511004Z",
+    "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+    "note": "batch=day2 spec=wifi58 seed=505",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-wifi58-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "c8ee4514c259c8fc009c100effa74a6bc231af613c1618daf716c99c4dc0092a",
+      "summary.json": "723a1614d368b4b68b6f9b0f2310849435989c21ad169a13e4dc6f467ff440ca"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:17:02.755352Z",
+    "config_hash": "11180ddcbac8a6dd66ea33c2e037ad5c9a6ed5967f65353cbdd5f4e91f56398d",
+    "note": "batch=day2 spec=n78 seed=101",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-n78-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "825159c17df86d4ebac7968bcb9c8309a7be93293edf8d9185971236451bf51b",
+      "summary.json": "f1a70388e9ff6cad771d51f18bac2d94ce25eeb5ab219ba2decfa9227a01b711"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:20:06.450761Z",
+    "config_hash": "999ed79b37f4cdb57b9ec02368e881855464ac6efb4a40ccbd69a9f0ee590dbf",
+    "note": "batch=day2 spec=n78 seed=202",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-n78-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "9441f057ed2dd73b7e7bcbdf9ee8a9556975920eccbdf15f71414d7c161d0810",
+      "summary.json": "4f82c76e259edd041b0758591e7abdb64c4a7bb62d1eeb55e48b5f55678c6fd4"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:23:13.959324Z",
+    "config_hash": "c1d3f68be5d8d66190ed0a6e6d28ee8f15741c9133472d601ff2d9a9621f7d48",
+    "note": "batch=day2 spec=n78 seed=303",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-n78-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "7bc471894e05d7db946f53d530eb78c3f5d75c9119422f53cdcedfb1171f58a6",
+      "summary.json": "acb9787108dcf2e8a5459374327cebfecd5eb0a3cf04ab4d140752aa49910356"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:25:51.209940Z",
+    "config_hash": "34655f608a4fd4669dc8d29b5bb6c30ec24483a47bca9a3548a84fd5a4aa4e4e",
+    "note": "batch=day2 spec=n78 seed=404",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-n78-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "42c5b4056d299d4a6152b1bc622956ce661884b901acd712c80792c9176c734e",
+      "summary.json": "58c7ed8fb258a7ea1d22f1ef074ec039c5f756fd7623341015fc0996eb9f40ff"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:28:39.293772Z",
+    "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+    "note": "batch=day2 spec=n78 seed=505",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day2-n78-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "9c35260a78f925838424a3ffbb42088b87eab8195bbfad1d1572f3c88855af7e",
+      "summary.json": "d879d67be2c07d2faf4c9f69818036f719d82e83f079375fea7a7ad6b0dc9770"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:31:39.555527Z",
+    "config_hash": "11180ddcbac8a6dd66ea33c2e037ad5c9a6ed5967f65353cbdd5f4e91f56398d",
+    "note": "batch=day2 spec=n78 seed=101",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-n78-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "4d16dbb072365f7e33dbb0d13b190f921cea3ffab0dc789a7a75e2bb5c7f419d",
+      "summary.json": "82950c010e57fb23969e7683f7acc9f7899a429610d08a513d1ff05cff3d0027"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:35:01.721463Z",
+    "config_hash": "999ed79b37f4cdb57b9ec02368e881855464ac6efb4a40ccbd69a9f0ee590dbf",
+    "note": "batch=day2 spec=n78 seed=202",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-n78-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "f7f90eb705403ebcdc21831751fc330e8695fa0fa15400efb1683fef81d09c45",
+      "summary.json": "7023a03cb339b2f5602dbfd059b4fdfea58d266278a833afd5d92343caff5546"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:38:18.939066Z",
+    "config_hash": "c1d3f68be5d8d66190ed0a6e6d28ee8f15741c9133472d601ff2d9a9621f7d48",
+    "note": "batch=day2 spec=n78 seed=303",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-n78-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "0cc3878b9f24e6f4af070edc48bae732ce47af2df32e9a592ff69b2a78bdb1bd",
+      "summary.json": "1a4067aac8fa2e1cebc573e585def21a4240c5abe74ba29ce2f888391da078d1"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:41:43.279616Z",
+    "config_hash": "34655f608a4fd4669dc8d29b5bb6c30ec24483a47bca9a3548a84fd5a4aa4e4e",
+    "note": "batch=day2 spec=n78 seed=404",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-n78-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "4540511e72c1be63364505ca5b6a5ebc93279b656350c1cb33e15df50add76a0",
+      "summary.json": "d899360d302c1e0a623bb1a263314e01a22649ff51c31803a56ee6a98460b724"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T10:44:57.925316Z",
+    "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+    "note": "batch=day2 spec=n78 seed=505",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day2-n78-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "1dc8e715fe8e382bc805570e2f08a33ef0865035146bac0ae51f0d86408acef9",
+      "summary.json": "c4479dec787d0a809274a2d0532cb1d4d216f1d070bb5476d2a75d4017e6cbc0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 20
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-09T11:47:14.406288Z",
+    "config_hash": "fa1148e06a010563e4b25d1a642a03dbe27c4e9fceeb2b3f7adbb1e507d0951e",
+    "note": "cross-check target=day2-wifi24-gp-s505 verdict=DIVERGENT",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-crosscheck-wifi24",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "56375f6e099a70e7c7e3a5675220f6dfae6bc694192e0b0b14986c6a0b4f2216",
+      "summary.json": "f0b1002f6ffd30166f2ed9a0af910966f626a8a09125ebc9897346aad059a5a0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T11:47:28.585299Z",
+    "config_hash": "7cb1cff09aef4857f989a00c57932239adcd6b5f581aa027022cddb75e1528f1",
+    "note": "cross-check target=day2-wifi58-gp-s202 verdict=DIVERGENT",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-crosscheck-wifi58",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "e139d9cf8988372bb5dd11cdfa19a6673d9b96df6562d57067497e8a5e4ab18b",
+      "summary.json": "1dfa36bb0ead84d485a06ee989c0ca19dac9810f850601bb1e66a5f21ccf57e6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T11:47:43.999660Z",
+    "config_hash": "082e285a03ff85add7a241358d3d69a018abf5a9689efee831177a25dc9878c6",
+    "note": "cross-check target=day2-n78-gp-s101 verdict=DIVERGENT",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-crosscheck-n78",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "74168abaa4d976b69ef9e6ae1285fc48cbc3f84106439fc4057c6190e8af9f74",
+      "summary.json": "78a88baf51791ae6d134e6746d90433aba13ab36fd35abe92b7e8d4ffce2382f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T11:50:57.764763Z",
+    "config_hash": "77fadcf89b8f3b0679074b369cfa1340c34b5909092c69c99d793d2641fb54ee",
+    "note": "batch=day3-pixel spec=wifi24 seed=0 agent=preflight_pixel",
+    "overwritten": false,
+    "role": "smoke",
+    "run_id": "day3-pixel-wifi24-preflight_pixel-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "9ada2e806969512af572f45098000dbc4371b2ffbd11c72d2fca9b8d8107b9de",
+      "summary.json": "f5feb60a85e74aa185fcbe69eab19ecde8c97aa58a8f39e67bc44a35353e33a3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T11:56:18.623234Z",
+    "config_hash": "910b30643704d39c7c31c475d4ce48d914aa8421cc5471a2777ff6dde568b358",
+    "note": "batch=day3-pixel spec=wifi24 seed=101 agent=evolve_pixel",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-pixel-wifi24-evolve_pixel-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "90bbaf8bc07319340478214900e3b0163855dc3f04b15993b192d1ede03ce3e9",
+      "summary.json": "4e211ab3d82541926cffe15819dcf1bade8047cdaf130342492a590aabc6b757"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T12:01:50.775815Z",
+    "config_hash": "808e96644ae6db6063c30e49cee98b3b34e6210584fd3c1c663074c552928b89",
+    "note": "batch=day3-pixel spec=wifi24 seed=202 agent=evolve_pixel",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-pixel-wifi24-evolve_pixel-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "e5b26290f08f3d85df6b3ea0e1eb6b3ae5d72a6361482ff456272d350692da73",
+      "summary.json": "45148934c87b7e6651e876a562e9f623c9f44d7fe459582dd447825be3a068b6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T12:07:27.351090Z",
+    "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+    "note": "batch=day3-pixel spec=wifi24 seed=303 agent=evolve_pixel",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day3-pixel-wifi24-evolve_pixel-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "26f89bb7304d76652c4140ae3aec9abfc21d98bbdb9739b52f607cec833c5120",
+      "summary.json": "6379b1842b1f84908f99de5d6508a1762db7bfc24b4ce9e434802912ef4d5381"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T12:13:56.596464Z",
+    "config_hash": "910b30643704d39c7c31c475d4ce48d914aa8421cc5471a2777ff6dde568b358",
+    "note": "batch=day3-pixel spec=wifi24 seed=101 agent=random_pixel",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day3-pixel-wifi24-random_pixel-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "188c670dc4f00a94335f4726f1ac90f8a771ea21df98920982424e86f8ba84a1",
+      "summary.json": "6d5b0f6bd28abf44a99d01a226f770148d315d5d2a1fd520fc2b9914c3cba382"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T12:20:26.994502Z",
+    "config_hash": "808e96644ae6db6063c30e49cee98b3b34e6210584fd3c1c663074c552928b89",
+    "note": "batch=day3-pixel spec=wifi24 seed=202 agent=random_pixel",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day3-pixel-wifi24-random_pixel-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "b6cadfd4eb658a56043f8618df99e2458d9f35bf0a8f061cc0e380114678cfe2",
+      "summary.json": "86fe3856223f050f36279cd89076b0c5d65e7c30e7725d7c77ed4c4606a65d48"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T12:27:18.477681Z",
+    "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+    "note": "batch=day3-pixel spec=wifi24 seed=303 agent=random_pixel",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day3-pixel-wifi24-random_pixel-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "b33b0260f888677c3854477836e49a6dabc705bc8cdd633d84e6d9ee4444447c",
+      "summary.json": "696ddc229f37aeddf905669c8f732dc62ce8cc812f5d5790548648ac107f597b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 24
+    },
+    "steps_completed": 24
+  },
+  {
+    "archived_at": "2026-08-09T13:32:58.727481Z",
+    "config_hash": "d8bcc1c620bcb96db895d49ea8df7d3b5356af19157e73e2e5d0e036aca8881e",
+    "note": "anchor protocol=day4-native-curves-v2",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-dipole-anchor",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "6f7a025526a59a4146e16f2d2920e57c9b89d9eb8c89c91beeab3ab61cc0e011",
+      "summary.json": "6cce7d8b1e43d6cd7431665acf63db14e92fa7527beaf605280f8237cfda6a6b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T13:38:21.048825Z",
+    "config_hash": "d7f524aa306fc0cf7f373e54efdb04a5027d1d195b89c3285937a6c1eedb4f19",
+    "note": "convergence source=day3-crosscheck-wifi24 attribution=instrument_boundary",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-attribution-wifi24",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "a19e1ce9b344f25bce8aebdd6772d5237399a61c8cdcef629ed2e0d234b49de9",
+      "summary.json": "d031dc518b1c397215cf2e363930f6e3f7bf5b23adfc1e60b2dbc789b1d795b7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 3
+    },
+    "steps_completed": 3
+  },
+  {
+    "archived_at": "2026-08-09T14:11:09.449139Z",
+    "config_hash": "cd8b28ca89405e450ef12ea785a5b90f051a74a63a84cebfe3e63654702a18ab",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "212bcdc565869dd632dbd65b2c5b70a2e0291a10c80992a4f2ac6dae8036d1a3",
+      "summary.json": "417e9ed7ff24c2f74c8b86437f2fa737676fe2ab5426f9b583264b228c88ccb8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T14:11:09.562467Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "0fb2282b672afd6522eb02c703ae190022ff6f78bdc71d144e23dcb9a93a06f9"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:09.681332Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "7db74fd291156d6c2f1d9b2090a9a518fc7401b54c8b9906d68a0337cda8c0b1"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:09.792429Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "ca08afbf15c32b7967c17274233404a0c03822c9bffc53e607c4ebf7a96f8900"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:09.908124Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "fc80004833a3b9093d80b83f3efc6ca79e79bbc139d3a372872bce942b47418a"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.018724Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "5b202ba1d1a30952f345a6374341b6584823b5a9192792df8f00a5fd32e1398f"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.135470Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "6d063e3b33e1d96f828fd054f0a72677a50b960342a84ade03d59e4eed1cfc8d"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.256313Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "57072f23f17507b19e8cd3849ed2428c583fbb658a1a4d9114f6a735bcf1f1b3"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.368169Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "5f927e4ee62ef7760c14ff1c54ca82db7ad331adfbf6cb4cfde0ff104721df63"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.485693Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "3021d3ae8e29d58c2634191d3d9ee053a4ac05843c399da87e2b8c3d70ea1772"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.612570Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=patch-only active-learning feature keys; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "ceacb803a10bbc55ebfc148ef38dee4f9bf4e7a0063c89140a80073d79015d30"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.733432Z",
+    "config_hash": "cd8b28ca89405e450ef12ea785a5b90f051a74a63a84cebfe3e63654702a18ab",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "a3bb18ded442e07944dfcceb0f4a26262e1a92e8b20f4ee49a16d468ccb80015",
+      "summary.json": "2d10b03213e395846a6d801fa78a5b0ca7e18e40f7ed8de9acfa0b99292215bc"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.848698Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "8945343a38ae3039a8020ec341255dc325dd8cac9d0a054282fa99d9ba14a193",
+      "summary.json": "d4c0017c276471de9e4614602f44c465678a43d01ac00a46742cb229d42c5a84"
+    },
+    "solver_mode_counts": {
+      "subprocess": 9
+    },
+    "steps_completed": 9
+  },
+  {
+    "archived_at": "2026-08-09T14:11:10.967800Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "08552f7620b894f7354a381e972f04e9d2c02e20d19d5b394d9b6b9acb9dbcd9",
+      "summary.json": "ed920a020efec476168231416ba7b1d5df50f4ce8f46399177512b10d7b33d49"
+    },
+    "solver_mode_counts": {
+      "subprocess": 19
+    },
+    "steps_completed": 19
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.081048Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "2c8c3c823caaf9607a0e1224bc2fb3adddbce644738a03a31165b0a828251a57",
+      "summary.json": "69c2208a671735a1689d7e0e35319c3e3d029f37357c3d9cc4ff58355f90cee1"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.203524Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "d90b4748a9a0910c7f67ac1a7c13467591eda191bf61f2257313bca0bb6964cb"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.315642Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "dc0796d42a0d6ac26ae1d607281bca0739d00a6c236adf698d05b9022533ba66",
+      "summary.json": "ef0ec0f97633bcc4fd3e4fd1f55aa0f6992f1e9c3384337e3a16cf6e00cf291e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.429197Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "2acaf2e610c75dd9cd07f476f71eee1dec5cc0a90b634e90556f5662b0d37b75",
+      "summary.json": "f6573383b5a621119d736a5599cb9691a61bd1282f348f4e4e4f5a4ee4b36756"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.548581Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "a968ccfe2a6a8efa18cbcd1d475308a3c9665bea489c1c0b1a460e6f6b4c1b1a",
+      "summary.json": "842eb996d479a5b087a022d1af1218f678247f472cb344ab46db67ab611a0e29"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.675840Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "678dbfae359d5ce7e312f111b5fe3fb825c58f5271fb9e885e0d54846a59a464",
+      "summary.json": "7df83f4ce01c7dac7c174914b5c79b8e3e3af651ec8c87d64eafc138092c3ccb"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.798038Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "a112f6459f6aed585f8cabedebe6d27bea7887b527a7f07e2aa2e067187490a3",
+      "summary.json": "4a633535366e04c377c8876d1d7139530b8f9ec209764c53f533fd189d6587d6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:11.911722Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=GP proposal-layer rejection escaped run loop; excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v2-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "be1135d85f7464732585ee72a05631c2d8024e593e6aa797f4e80ee4cd41e402",
+      "summary.json": "eaa4a9a8d07a1784d7d71c40dea6b008e7b110b5abd99e5e8624b24565b8c833"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.033600Z",
+    "config_hash": "cd8b28ca89405e450ef12ea785a5b90f051a74a63a84cebfe3e63654702a18ab",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "fe1af677747925b4a832ce5184a6082da2584897b660a688a0d8e5ca70ac5071",
+      "summary.json": "c7474d60d3285f8e87ff2a7207b5e8456c5cbd4c915c926926f9ad027d17c1b0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.147908Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "2148293d2bc4ebfab9f28767e0cec04000ebea3b732393b8bb060016db6c26d6",
+      "summary.json": "9c0a21b3c8db7be391f438b246b33ce6da0f91ebe590131a26295c9f1d6a45ee"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.268493Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "789223d4959c90dbe4b4b83b457860ebea6eca8ffe593d0e00f9ed95d0a8061d",
+      "summary.json": "9761c5928746a4a4dcb4ef0927a66e41a75ccbee4fea72580db3e470abef03b5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.382014Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "57659e659932e1399ce8912768c5b0f17e9311d89c3308198579c6abe7d006e7",
+      "summary.json": "597130070c71d22f2b8587e63df244352fef11ce26643836f9aa73c50d6723bf"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.499509Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "ae74c326ecc46538d91b6d43ba6fe618532f13542d5158c27c62dafad9a9f990",
+      "summary.json": "c11a2b2a82cfbabccbd0caddad0c95fd29fd879db265fbe54771f3f2c38ee593"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.611169Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "2b2e00fc37e4dc0f3cab9ab9405f7d976604e1c7b11b2f4df99453b69a6cf784",
+      "summary.json": "e0212a6b753ff16ebf35de12a8c24c4a50f22c188e565a6fc5e651bc4feea0aa"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.729032Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "a50fd767f3a3b568a8931cd5177e5da53d08ec55dbce92b402fa8f3406d24031",
+      "summary.json": "4caa5723b82da0055379a3d2657404b2de7c9de891e141dda1ed3468c7e2db09"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.849984Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "d711decfa1c1f23d6be679fdb92975fe23a8850bd1d9e0c504bc89ca2271bb21",
+      "summary.json": "b68edc6046e5ac85e4dafc55700d1733b5414b1ed63890fbe8f8d7d3354eaa3d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:12.973542Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "890f4735ce250f4c1af2f2713c7060a3ee7190297cb301d6399d07386934eb3f",
+      "summary.json": "58db687b3712f10a9d0e09963e9edf09707ae6183b107e671ab995e803d301f5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:13.088336Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "a5273758eeb2b04a0771e369e5a4791ac40485458339f04c84ed159e0424b559",
+      "summary.json": "18857bdcb0b69cb59afcd83e3bdbe69e6eede1a89f7c967b28a744e67cb947a2"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T14:11:13.202196Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "abandoned_batch root_cause=invalid proposals were not logged as rejected events; numeric results excluded from final analysis",
+    "overwritten": true,
+    "role": "other",
+    "run_id": "day4-wire-v3-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "1f1bdbbf37d437f902bb4fd19456cd1eb8908650059a0b75810f22baf9fe06c5",
+      "summary.json": "20458f15240d0518deccc4719b4b95b57c6f08f07add3d9fbfa6f45343ed3e66"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:05:30.424102Z",
+    "config_hash": "cd8b28ca89405e450ef12ea785a5b90f051a74a63a84cebfe3e63654702a18ab",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=0 agent=classic status=completed",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day4-wire-v4-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "bc18f81bb8aaa656f6fddeb4ac0dcef4fe450aa85bc7b1d062093c7e587c83d5",
+      "summary.json": "83f6a2ee99fb48d4d00865c046421efbe078f0f2b2cd22445b1f94df2fe0407c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:05:42.671222Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=101 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v4-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "428dd8b270ee9c72b50f40fdc5de1c13972ec41bae40a5e540f09e71a7e07694",
+      "summary.json": "4e75315500564aec10b3f14f7856430b33d04f0688488734a6eb07bf7b636bcc"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:05:55.536035Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=202 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v4-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "03a32a339f416bc8d167e3763104f63bf78e8afeaf9c27a63545c3fc51b70874",
+      "summary.json": "95d51f72e5eda9b222f4a42079934d233061b702d0fe4a18f70071163cb138a5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:06:07.465033Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=303 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v4-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "ea13a273a23d0fa948cc94fa31d558e043fdfe29998a2d5b0fd814d6f35b3124",
+      "summary.json": "b6d170183b1e25aead4b714380ca48c38145d0d938df3c46f0732abe9d9197eb"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:06:20.080270Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=404 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v4-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "ed0e4d26bdaf38e941bbf02aaf63ce988c727e0290172babfd38d1c61c0c0f85",
+      "summary.json": "3a81d84b766cc6aa90f996c503429f91fef14c67b40232bf446233ad5022357d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:06:32.179225Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=505 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v4-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "cb46fa1737c637a1399d6e4a06660586b6e4e8da0ccc6620a34a2bbb7f88558c",
+      "summary.json": "145d3c5db07859996985f2024fbd1903188a7d76d4be0c96b7f6413ec852a60f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:06:43.621877Z",
+    "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=101 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v4-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "63452482486bb4a67c77cee9fff1e7b5c91def51fe6d05a7d6dcb3d7d8ef7c1b",
+      "summary.json": "6af87dcaa3b60afd12531b162a638b9729050f3a6c1122984825059eee708653"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:06:55.003730Z",
+    "config_hash": "7aa86714b2e5efe3e795fea3e612efb051ebce7bc7ce94d70e86da229ef5a59f",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=202 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v4-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "f68e5debff70549bd609a545a16af4939e1345fe2f695ebc7b53b0e0147f4666",
+      "summary.json": "8d8a535c7f2e59c569f0796b320b464cff272714dfb69bc5924853f197c06142"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:07:06.337060Z",
+    "config_hash": "15659975071387b70b47168a919a7f30802cfe03ef4528bd2ec93c82f1b26105",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=303 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v4-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "85e73acce48e141ea63cda64ebd987a476d1a2606c000eebcaa3373d2204cba8",
+      "summary.json": "4ebf6bb55b67d3c331845be0beb7a8895e9bb8c47ebbdfb47581ebca3cef60aa"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:07:17.736571Z",
+    "config_hash": "5ef16f3d55f8ab59bd68ffa7a1e35dad0e6a8ce6fe6ac42909c9e9040bf8e008",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=404 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v4-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "c961bf7e3468e4fc0baad0f3bf216d69e41825bc35d67f54dbb84d6a64309fdf",
+      "summary.json": "c7b2393a16cfec1e2259bdb327813637443a1b9fb12a9a621418957b785b8328"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:07:29.247202Z",
+    "config_hash": "7f9673b1ef0bdf2e44ea88d0d12c8371a4c8fdd628cf1431e4b48a78f24cf7f2",
+    "note": "batch=day4-wire-v4 spec=wifi24 seed=505 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v4-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "067b62c1ce0606784f5877d969391eefac77088e0d0b52d9488191cda94a7b75",
+      "summary.json": "2e0a1a7f7df3fe15a828da9757af0ac9c3faccc3461ded5f21a3c0a4d9ecd220"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:08:02.781421Z",
+    "config_hash": "ef610ee83652edf74aa3f5e23e28499f66b0b107a5af8eff204fca5ac560a8ec",
+    "note": "batch=day4-wire native-crosscheck source=day4-wire-v4-wifi24-gp-s303",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-wire-v4-crosscheck-top1",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "74104ccae20e69c4b703fee9f136ab610524d510059dbd55dbb582202d35156c",
+      "summary.json": "9d6a1f72d241b4f38f59eb6f030b6b3c19360a84a9162a49ed2e4126596adf52"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "annotation": [
+      "RETRACTED by artifacts/analysis/day4-wire/RETRACTION.md: day4-wire-v4 verdict reclassified as invalid_metric_artifact; archived evidence bytes remain unchanged."
+    ],
+    "archived_at": "2026-08-09T14:08:07.460845Z",
+    "config_hash": "7daf9be70c3e11908ce4840af2ccd36018789ddc2531d46a57d2823d00e453a2",
+    "note": "batch=day4-wire native-crosscheck source=day4-wire-v4-wifi24-gp-s505",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-wire-v4-crosscheck-top2",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4ea3100d8d260f62deae8bdd6354293d9beef01c9cf31acffc170a94da65c2d9",
+      "summary.json": "adf4e7c30502dc2268f3be5c7133b6f12e7777852e2d99df9e7973c5efbeb789"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T15:43:01.846410Z",
+    "config_hash": "c1e134257c5a0dc9e021a91cd25b2df246740ceee820f944cabbd1001e499bba",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=0 agent=classic status=completed",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day4-wire-v5-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "4e1bfc3d2daacfc41a71843923253e1d51fba7435df87f9981c3d9d61cdf58ee",
+      "summary.json": "1e52fab703fd5b2e3769a5efe16801d8ccfd14dc322eca140e28efc1158b9fca"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T15:43:12.582716Z",
+    "config_hash": "2dd81cfeb95c2d5045e314cf2e7aa247b10c0cf0d8a1718b7edef3932897a719",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=101 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v5-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "48bd3b36c47875245925ebd86be4458e45114940ffd6267040523fc3f9deb5fc",
+      "summary.json": "c4c7f4dda5ed3a905c338d2c84a6befda852a5e59973d60ab6a3d94be13a8f86"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:43:23.545060Z",
+    "config_hash": "bae6a1bfe6df9e7c9fa3be4b0150bf19453cdca8e78010619ae5bf7024e46cfc",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=202 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v5-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "84c7d9dfbcb8826d3b2bbfb8c651a6bd146dd6e6a7be1c906c3d6ed2573471c5",
+      "summary.json": "90ff2d21ff4ac0c146797381fb43470b53bf7cd8cbe20fae467fadf5911940c1"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:43:34.331178Z",
+    "config_hash": "865cc7cd32b4f72241d78588515878aa1d678fede813392b19861acda27f2e7c",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=303 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v5-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "d494687ef5badd738a56d93b17e86300d38877504cceb53c5de7a9ae41727b8b",
+      "summary.json": "bef0e54ab7490ea0d724be987be7831c1fb51a80aae57ead261be9c36ddc3e22"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:43:45.495205Z",
+    "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=404 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v5-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "419f737c5c65c6f40c5e19a34ffbbea909dc186c54c93ddcaee2975c896a7678",
+      "summary.json": "501c8c1283c9613b516355762b427d25ffb0d5adef06443f4a159af9646d4c86"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:43:57.542796Z",
+    "config_hash": "cb89ea23862a1593976e09580285512df3ee9a62e26325aaf1ca04c5c6f225f3",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=505 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day4-wire-v5-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "85c0155e8b701ef4c4bad01ea0315f3392eb9f0f52a7651664dabc689b5e3cbe",
+      "summary.json": "dd38c0c3c7bafbde72dd25e323b40634b510df45ab09b4ca05365448894b66a0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:44:07.780463Z",
+    "config_hash": "2dd81cfeb95c2d5045e314cf2e7aa247b10c0cf0d8a1718b7edef3932897a719",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=101 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v5-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "ca1603683b2f00424efd31f451923978bfe98177c85172d59565516089b8d484",
+      "summary.json": "8a125e8b7d698905c7da98f4460a1ffd59c900addda1b6fde081dc0dd05ec73e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:44:18.070663Z",
+    "config_hash": "bae6a1bfe6df9e7c9fa3be4b0150bf19453cdca8e78010619ae5bf7024e46cfc",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=202 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v5-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "ab0b7bbb0b8776a2a5af2740697c02495e820b40412a434526aa2d75c9e91782",
+      "summary.json": "8f36b2bdd370dd5b2ca9be58808e4a4d66d62ac50634bb6cbdbe68fae8fb8202"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:44:28.346214Z",
+    "config_hash": "865cc7cd32b4f72241d78588515878aa1d678fede813392b19861acda27f2e7c",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=303 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v5-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "8f00fc7582102757b2d6c146245a1e1d3ea0061c9ae76b603a6dcf7c6c26b02c",
+      "summary.json": "d10aafb5585b171f11aff81b58c0eb40df0efc6ec9ed9074b1336774e9420267"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:44:38.693112Z",
+    "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=404 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v5-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "d0c74854fb06a18933b3d0ed0098c028b7090c7382502810177b9ccb10169d73",
+      "summary.json": "dd569e43154562d4545f93780aae121e659272b6bf5e4045029e7406b9f1d41d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:44:48.971929Z",
+    "config_hash": "cb89ea23862a1593976e09580285512df3ee9a62e26325aaf1ca04c5c6f225f3",
+    "note": "batch=day4-wire-v5 spec=wifi24 seed=505 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day4-wire-v5-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "f0773e33c637895b4eb8ea80da191c0f6b55c92b3b67b6ea84f78428a40b7652",
+      "summary.json": "2107a0ff621cac29a042d671eb5f7c5ac48b0cadc65b79f8ff25b9e34875e5c8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 40
+  },
+  {
+    "archived_at": "2026-08-09T15:45:51.726458Z",
+    "config_hash": "971a751633305a984ca5cccd3d2bbb32f759a9405ba9d35b09d54f16387363c5",
+    "note": "batch=day4-wire-v5 native-crosscheck source=day4-wire-v5-wifi24-gp-s303",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-wire-v5-crosscheck-top1",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "199b9dcf420a904f74f24eb25664f0d10c33347bf13c83fe8240ff358320160c",
+      "summary.json": "560bd11eabb34bbe6d4b6a4decf27bec8a4939597e5b2bdcbdf11b979cbd8550"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T15:45:56.698914Z",
+    "config_hash": "dd23815c7dd814b589be9684b1f87122afff3b9c738da96a2788c2b9890cd2ea",
+    "note": "batch=day4-wire-v5 native-crosscheck source=day4-wire-v5-wifi24-gp-s202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day4-wire-v5-crosscheck-top2",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "9414082f871625e3867a663e45009d40864d467a3b09429f7a8b1edbc43682b9",
+      "summary.json": "124d57cf0a9dfb460997ee260ac55939e8e507a6d37131b3d46c60ca60c2e492"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T16:20:56.970196Z",
+    "config_hash": "fb7f7d240e04f2b12a59f1cbfc076b1ed081463952acd17337c690dcf1d0b380",
+    "note": "batch=day5-wire-v6 spec=wifi24 seed=0 agent=classic status=failed deprecated_run error=SolverUnavailableError: [nec2] Job 5895f3cc-71f1-4a65-be4d-19818bf73e86: real solver unavailable (exploration requires real physics; received solver_mode=fallback_analytical) and YAF_NO_FALLBACK is set — refusing to return analytical-fallback results",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "cce30c1601d19245a6c7fbebff2eace4bdd9f287d138d1be8db346984e5ae18a"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-09T16:22:16.074204Z",
+    "config_hash": "fb7f7d240e04f2b12a59f1cbfc076b1ed081463952acd17337c690dcf1d0b380",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=0 agent=classic status=completed",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day5-wire-v6r1-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "5700684cfde2e1f83e742873fc2c7b4dd6614b9fa21e823dcd35418b98561d65",
+      "summary.json": "61d4ca41cc1e946f553dfc4f0bae79db907bc75f26b3fad3137899757ae77388"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T16:25:20.584048Z",
+    "config_hash": "10bfb75a6174fb870cf3c3369f735c26b23e01f817f77438d1bc7df0fc5287a3",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=101 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r1-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "771fb6505a9ef0f4d8fc861abae9fd30513628c54abbb87f4dd49b0f34a13aac",
+      "summary.json": "2680843121a14bdf772d50293425bad7c4a4072df9b0c2b80fab6afeb48c9bdf"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:27:03.190512Z",
+    "config_hash": "6359cee5ba1c61f5e1d4f6a8fcee44c02c9f3a152a0ae575dd85b133de4356b8",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=202 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r1-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "e3507e745053d68b7c396c5099a4438ab6b61cbc25b1012c6514b52675572c3e",
+      "summary.json": "cdcc82bad797a3918f5b8b6b8bf4aed80bc6ff1f56cff772e10249b81da57b64"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:28:46.223040Z",
+    "config_hash": "65fa6847f1ae459786ec9a549bf50f9c00f88c682ba75dc0f10b6dc69d838163",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=303 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r1-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "3883bd27295d7b6b5dae52f632335d8ffa1aad98e7c1fcacef25a1da408dfbc6",
+      "summary.json": "241ff58654dbc57755099f430f1b45b14a42ff2aea78c0140689c5c4d21a4f9d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:30:29.525998Z",
+    "config_hash": "db4596fc5d68a2c9d12f30137e61e02c32d2e8ee3048036e8ee13da5aef113c5",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=404 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r1-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "8afc409bfb556f0476bf88743f7dd8b80c01d9ce9b7a488dbb12c6b010c40277",
+      "summary.json": "7ccf9a16c4d7f1af5aa529564fbbaff1f5f20cf501d63d6f435c8a57658c299c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:31:45.617879Z",
+    "config_hash": "3a589d58057d36d405048c73c41426761db504b3035f38b4467ad4c012d712a9",
+    "note": "batch=day5-wire-v6r1 spec=wifi24 seed=505 agent=gp status=failed deprecated_run error=aborted_after_preregistered_sanity_failure: four completed GP seeds had no internal <=-6 dB target-band resonance; best designs hit the 80 mm length boundary",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6r1-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "1e98ee31f9057c0640bac062bfa788b43055593e00947b697e2e2c2d7bf33584",
+      "summary.json": "16e40472b1b0eb713aa259de80ae7e2797093b584bab997ca6a203537a935abd"
+    },
+    "solver_mode_counts": {
+      "subprocess": 132
+    },
+    "steps_completed": 132
+  },
+  {
+    "archived_at": "2026-08-09T16:32:20.072816Z",
+    "config_hash": "da7955c4424134787d7816be2a2606705ea43a9f6fa4cde501a4489083bd452b",
+    "note": "batch=day5-wire-v6r1 native-crosscheck source=day5-wire-v6r1-wifi24-gp-s101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6r1-crosscheck-top1",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "cee00a524bfb0e6ab294555e9f59dfc2836a334991983747b3782a3ecff17a95",
+      "summary.json": "1506630ed9ce63378f3d71ab04e5ad6f9cd1c54686fc7e684060df0aec20b56c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T16:35:14.264762Z",
+    "config_hash": "89dfb0b4d7d5281e2c9a91b140758a42144c1aafd4d7f0a29a2d3f0a31dff0df",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=0 agent=classic status=completed",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day5-wire-v6r2-wifi24-classic-s0",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "4a94513894b032507d80ce4cac640ca6225d4bda1cea9de465d00a39b7c4795f",
+      "summary.json": "38d9b5313a8719b41c76a48e32041c6dc869a89a2b29623dbd6307bdfae7db37"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T16:36:58.005628Z",
+    "config_hash": "5ca03a697395e5b02b79832bc5b2f5a5b7b3e130c24c72cf4031be364ecdbc9a",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=101 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r2-wifi24-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "37da5d860c8a52a8967a25475ededd0b2e4d8a34757f63360c8567ad1c6c50be",
+      "summary.json": "4e4ef6625f72df5c5141b4e991b0785a34f6b26cba07c9c0908dc767be430e27"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:38:41.683214Z",
+    "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=202 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r2-wifi24-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "69c3937cde1a72c5bc30ced5872f49fd50b00ed26787eaf499e821863c79e861",
+      "summary.json": "d04015a8830821f6a3d49560ab49efbe3291eccecddadd93036784b934cf51e0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:40:26.842665Z",
+    "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=303 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r2-wifi24-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "61475c793708bae128fe53b11b1dbda23a26654707dd167b784c2eee5c38281a",
+      "summary.json": "e551c266b4927c433e7a257d8e62045852398a05fb1a8fb389aba6ea9a3526d4"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:42:11.711769Z",
+    "config_hash": "228b25238c709b49b2c60bb69b9ca326182a7fff7973a4d90aa1f56f6daa5353",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=404 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r2-wifi24-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "62fc62f16c88b44aba1c6ac4cac2301076b9c5a060b717a4a9e5038fe81a1572",
+      "summary.json": "7a4bb56bbc5f56b47fe5856ffdd5a02b18727222c2e2150959ad472721d7b8a3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:43:55.351118Z",
+    "config_hash": "98c514eb9aaf21b4b7f83ce2efcb221127d9bb40fbff130776f5098a6aead695",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=505 agent=gp status=completed",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day5-wire-v6r2-wifi24-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "b5de3591d76e7c5b0a930740877e0601acc5b590960590a4596a240f29fa8daa",
+      "summary.json": "87c2b6126a092206a53c483ec4c35d277f5b77f965b3bafc308e659f546f349d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:45:31.645962Z",
+    "config_hash": "5ca03a697395e5b02b79832bc5b2f5a5b7b3e130c24c72cf4031be364ecdbc9a",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=101 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day5-wire-v6r2-wifi24-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "d17b07bf85c4c32c120a170a3d19e741fe0fac892f082ae5cc3ded6f5d961651",
+      "summary.json": "32a865551acc54ff2d0d6179bee4d02c99519deb32060bad3434a8b8e8011ae9"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:47:07.828270Z",
+    "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=202 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day5-wire-v6r2-wifi24-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "f0ccd07670aab4cc6d8fa4ba68a80d55639481dda7a678028753886552f7e654",
+      "summary.json": "920c18be104f65bbb6e2c571585b301ee6adc969caa34d19834ce3b532359b56"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:48:44.182960Z",
+    "config_hash": "3a165fd7e64e83cc30c8e45b0b956422faaf97d5b3461438964cb7e91fa97274",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=303 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day5-wire-v6r2-wifi24-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "76a10454c46b55136477504bd4b4810dc36e6300fcfd8aeacdc318c4de05116f",
+      "summary.json": "0a85f08003d77209243facd9bd8aa71421648624a463d0cc378c39ae5f7d8b81"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:50:20.671032Z",
+    "config_hash": "228b25238c709b49b2c60bb69b9ca326182a7fff7973a4d90aa1f56f6daa5353",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=404 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day5-wire-v6r2-wifi24-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "00121af29ff718b7d7df958f55adf367f61df61c6e7d53a9f48b1f10e88d8f1c",
+      "summary.json": "54db1f920ee935f1edbd2ddb1cf5318a3b0375deae0626c39843adba1666d165"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:51:57.235198Z",
+    "config_hash": "98c514eb9aaf21b4b7f83ce2efcb221127d9bb40fbff130776f5098a6aead695",
+    "note": "batch=day5-wire-v6r2 spec=wifi24 seed=505 agent=random status=completed",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day5-wire-v6r2-wifi24-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "30d4209d3326664497d34182a610544351bf9fb2ba0293885d51017cdbfed2e9",
+      "summary.json": "c35e7c275e759c4679fe716cd41bd4189f314ecf68860fdb832fc375fc98429e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-09T16:54:22.278819Z",
+    "config_hash": "baeb307ae9e2f19308c58455cc9fcd02edaf24568dbd8e97806badd709a9be51",
+    "note": "batch=day5-wire-v6r2 top1 segmentation-and-mesh-convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6r2-convergence-top1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "ad507822579deaa408d1d18ce963ba84edf9a4e405a75335186291c8bd404918",
+      "summary.json": "d2c8ed7e0a009f11eb9c233b878dc17a1aa24e9bc30ad60c3388cad339a4caf2"
+    },
+    "solver_mode_counts": {
+      "subprocess": 5
+    },
+    "steps_completed": 5
+  },
+  {
+    "archived_at": "2026-08-09T16:54:45.359739Z",
+    "config_hash": "c190c377112d04db588f3beca7ddafca1d87758925fca1a155c42b5f84293316",
+    "note": "batch=day5-wire-v6r2 native-crosscheck source=day5-wire-v6r2-wifi24-gp-s202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6r2-crosscheck-top1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "cfa9b57aad012b3605777ed5b0d9708b9abae35f4e37ca5914bd962b880c84f1",
+      "summary.json": "c44e963a32202570e80e5c907faf90f95ac7330a167cd0df0bef960e4296fec1"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T16:54:50.761069Z",
+    "config_hash": "f63fbb2ebbe4e42ebb9552bf5458e10db7c1832b92599483d5c77205caa41778",
+    "note": "batch=day5-wire-v6r2 native-crosscheck source=day5-wire-v6r2-wifi24-gp-s101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6r2-crosscheck-top2",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "7187b9fd30f156387eada019a752fce62b793b742fcf2d86c203c4163ae5ed44",
+      "summary.json": "e6fbabd07d820ea992c4682f37453065ab34d87e2a4833d3ae78bd93adc38e14"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T19:47:03.166500Z",
+    "config_hash": "1e3a69db0f47c33e0596636f35ffad3e48dc3081ebf91419e315ccedb677c40e",
+    "note": "batch=day5-wire-v6-final candidate=A instrument-convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6-final-convergence-stage1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "3dd3d9298dfd67a2d0a1b6e0ef739db233b4ec6b31971473532c89ccc6e73862",
+      "summary.json": "2e28ff0d5eb607e5a7d26d4d6b07d0867b03de9cca82e238841bad25a8745037"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T19:47:32.799885Z",
+    "config_hash": "ffd762dfe225eb75bc6d0e1c0fe831a67fabcbc55e0b01568297e793748b9690",
+    "note": "batch=day5-wire-v6-final candidate=A instrument-convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6-final-convergence-stage2-openems-8x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "9e89dc1627f11236e44d8ebee7bd60d93b4aa874efc5c9efd6ffbbc94ff42856",
+      "summary.json": "42f664d8c34eee754d5ecccbf60ea4342afbcf1f9160436b2ea6cad81422d9a8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T19:52:09.821248Z",
+    "config_hash": "09d9b0ccaf5f73a196c7e6387e61589c429495d04aaf7e28b9f3df83dc883719",
+    "note": "batch=day5-wire-v6-final candidate=A final-v2.1-crosscheck source=day5-wire-v6r2-wifi24-gp-s202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6-final-crosscheck-top1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "112e2327daab5b49ae67940706d50b6dc7c9062b4795a2d7d8f0931871331196",
+      "summary.json": "23527b2c76f53da9d1f5238c655ed3239ae2b1de8817962fd30373ef569580f7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T19:52:43.059627Z",
+    "config_hash": "2f2a0817e100a60cddc3d49a467f7569698d34b76aab3a11aa5e8dee1d7b04cf",
+    "note": "batch=day5-wire-v6-final candidate=B final-v2.1-crosscheck source=day5-wire-v6r2-wifi24-gp-s202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-wire-v6-final-crosscheck-top2",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "b2a32f76d2f2f3a5b4989128f7126bea8be6327974ea4822d5119f05731c5b6b",
+      "summary.json": "8733f7d43bf46d908386ee69b202027cf2f0061e2c0735d861f6dccfd4b1a9a6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-09T20:48:41.194463Z",
+    "config_hash": "5512065b53100e271e16177de448fe81fa3488d98fb39c807eeef89fd225d6a0",
+    "note": "patch-final openems-self-convergence refinement=2x",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-openems-2x",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "a96070a121b4b121d8a302cd71e51ca2e2b02ceff485f0279c80d30d70021052",
+      "summary.json": "470aecaa2f050252eb8dbbcfde21b88cad2c1e8b6fda4a6773f0145642319a48"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T21:15:47.925546Z",
+    "config_hash": "2f3cd808315423dacb84f1cbf9b5c0441a9a7a9a4a754e2a2ad57c408f1a0cc1",
+    "note": "patch-final nec2-grid-convergence grid=32",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-nec2-grid32",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "2ca5ed5380f070effa3302a168050f1d1e4a84b8e453f50a1d2c2dde124f9c1d",
+      "summary.json": "e6420dc8bc4e1689d8835ce53316e10f2b1a31b6f1f792580d4453d44a6b8d38"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-09T22:07:19.844937Z",
+    "config_hash": "e6aadd552ced3fa9729453b6fa67e2888812985518a31edf11ee77cd6917e54b",
+    "note": "patch-final nec2-grid-convergence grid=36",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-nec2-grid36",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "fcdea51642bfdb4d7ec3d35de21fc47119fe5f3eaef322811320045ec11acf4d",
+      "summary.json": "787fc601face8b0fea5fc5bfc3c7c500e0c360895c38512340d444e183e96d69"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-10T00:42:21.284655Z",
+    "config_hash": "1c76643c367063e1955f513d0eb77736fc536d3629b68b8be3cb2228a98e3ffd",
+    "note": "patch-final nec2-grid-convergence grid=44",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-nec2-grid44",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4de1626ba9d903afaab8564c211650749c86c60a3965130f277c106005d8e967",
+      "summary.json": "0a5c66fe7c1c681950c6f85568e20c0ec4d67fd909147be8bf8db54927a84190"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-10T00:48:31.561489Z",
+    "config_hash": "6db7bc5fef71f3828ca1e732dfc31248a005de16c56ad484d7a83be39c472304",
+    "note": "patch-final unique-candidate protocol-v2.1 source=day2-wifi24-gp-s505",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-crosscheck",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "dcb94ad1eac5fa3b38349db4042ee1349cd6220da9102cac4828ab8510db44c8",
+      "summary.json": "4b86dd5f0845ec3b053d2782d1ad82aa6da6b62b6d7337e735f680d46bdedc43"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-11T16:42:51.072885Z",
+    "config_hash": "900f135060755063e013426ca8dc29fab479cafa78f51cdc69e2ab7d94b34d80",
+    "note": "mesh-count addendum pre-fix XML audit",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-mesh-count-audit",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "a459bcbc7c9a5065292ccc8c39f41c5df2c7fe8215ab3514744de3d573aa04b9",
+      "summary.json": "a3415be81bb92cb7dbae43ecb842b3bf5acc6d407715ff1f936feb6ed19c36a3"
+    },
+    "solver_mode_counts": {
+      "xml_build_only": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-11T16:47:34.710605Z",
+    "config_hash": "6ef34d4fde39687d9a2642277128967ae6583d41d086cca1bcf05f497197ccdf",
+    "note": "mesh-count addendum repaired patch 2x one-shot recheck",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day5-patch-final-openems-2x-mesh-recheck",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "b21c2b98d13ddf9db83641a9fb93f8638d9938931d5aca8fee4c45e80b1e9db1",
+      "summary.json": "df253fae888fbc910a1d8e4c43d805e464401c5788fa22bf7eb98d960b26fd08"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:16:00.898446Z",
+    "config_hash": "972d82b7f05eea9e195306d2b74f582d5759feaf5519a41d79368d8e2dd0a9d3",
+    "note": "batch=day6-freeform failed dimension-preflight N=5 seed=6101; NEC2 aborted before frequency output; no fallback accepted",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-n5-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary.json": "9d6d3b30cc3404d5cd677f961e65d3352eb5cf26cebed95c8250afb99e38b398"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-11T19:33:42.773507Z",
+    "config_hash": "972d82b7f05eea9e195306d2b74f582d5759feaf5519a41d79368d8e2dd0a9d3",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n5-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "7d2b14b80b2f087728bbb92ae58b0633070b4aecb86a17f010394bbba2745847",
+      "summary.json": "cd635db2b7177069f6076f65fecc5818865c225c5f065cd7b3e58194eea4082b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:42.884461Z",
+    "config_hash": "2c87dfd77eb74196e3025a80cacf3d7ca31a50cb25897538a0203ed0b04a7698",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n5-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "e64b7108c38ce3d0d2f73293d18ec8734fe7db84a9dec4f3d9a373475fef9fe6",
+      "summary.json": "7907296bab83c9e03a48543aab0d306d9883cb98eb5cd8857221a4a461d70c6f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:42.988893Z",
+    "config_hash": "94963cd9a5d12cf5267462d74c56e98f97590dfc8efcecb903fff4a20dc099a8",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n5-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "d64de00494dae66dd89ce7e5b7f6b5bbd33b4cb65fd0deafe7c5180a1c0941c8",
+      "summary.json": "b681e978bf4c397773ad47f17115a1cdc9eefa1dc3b476f8cb245735373c78b3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.092001Z",
+    "config_hash": "3ac22f19d3f7454fbcf61ef89856f483efc6424073a4b6aec1d38966f0b00e04",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n6-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "82268e2abbda0f12a123830ce3e61665056dd9ce46f4b4304e49a27400be0663",
+      "summary.json": "b2e562fb27820cca6a074f3cef6cd9247140e61a29b43fe52ec3c424721ad1a6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.195883Z",
+    "config_hash": "bdae5106f36fdd62ff8ee5dae08cc361e9ce2a1552e608c176439fd0bafb4df3",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n6-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "b5a14abf73fe4f5bbe513c73bfea4354f9dd9ef98e14dc0966df384d5504e406",
+      "summary.json": "0249f54e5f103e3d5cbae56853659d7f8d8ce75a3ff6482471508a27f2c885b7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.301659Z",
+    "config_hash": "e61d44de6a169d17a64472fd247e47734b674965e4872a18d26c81c5d140d786",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n6-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "fb67bf00334f44326495fb48e7df29c88927f449833d999364cdc7f744124f9a",
+      "summary.json": "4c2e9e8f198361a6316ac01ae6fdff6285ef05dc3977975b063d44e13aded87e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.412971Z",
+    "config_hash": "04944d14e4eae8f887f6e0dfa4760783616379dd6053096eaedb68f304301e7f",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n7-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "8fb8835af80d412a3ea2147ac91e7f5c8c73c279b59dda7a511aad3920b81b17",
+      "summary.json": "27872fa871b68ff4aff873e6e168c813891e7d4c809ae5a5fff4dd5c9edcd893"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.531969Z",
+    "config_hash": "d820f3f4a6e3d855c8de69fd6e8b89c4fbc7625f6193a1ad51f073723bb82e6e",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n7-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "55c74921da222765ffd9b9c88fad728b079b0ce9affcc91ce0e93ce79772110c",
+      "summary.json": "89a661fb31417d0f0f3f4e3c386129e6ebfdeead4911737edb2632deb29a6e4e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:33:43.635329Z",
+    "config_hash": "0138bde253eb36c04a80ae10fcf0eee8c062b6cb59be4bafcb024181d4f8a8b0",
+    "note": "batch=day6-freeform aborted lambda/160 dimension-preflight; valid real NEC2 but exceeded frozen 10-second exploration gate",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r2-n7-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "dba6933c667ccb2fc499e777c2694de2b11bdee0b1b50734d10c932b46910fa5",
+      "summary.json": "b1ba4d40164d27986ef05791bf3f32a6e544f36324fa2926526776426a01aa92"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.234129Z",
+    "config_hash": "c8ca6e8787cc11c7ed642da88db4f509763940c12dc77c0411b7fee4ee8e7e23",
+    "note": "batch=day6-freeform dimension-preflight N=5 seed=6101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n5-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "111b3bd41de82bf4fa6863284192e29ae0aa5754d9e1f406c7023fee6641f0e5",
+      "summary.json": "f73959729167d26c9963a3272e9bbcd7be9e55071a1e2a0f6e099644a51425c7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.334368Z",
+    "config_hash": "d9d9844855ae1b7ae174d6cb65ff86e8eefc5a39455bb1b36bba0552d7bb06e0",
+    "note": "batch=day6-freeform dimension-preflight N=5 seed=6102",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n5-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "f2aae1899f83e862e65827cbe4839aa2fb6b4b273a87363737cfb0708e254ce6",
+      "summary.json": "f8a0a84579c5b19637c87fdf2548a3c03c06ba254c3c7a45dcf288b6f62e96c8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.436488Z",
+    "config_hash": "0d7ee18628c9760faeaedac1f6f2106d2bc3e1dd529bb9110d5c5a214c5d89cd",
+    "note": "batch=day6-freeform dimension-preflight N=5 seed=6103",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n5-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "e50533da73c9ca42985477f04a0104709ad4abd6bd3fc19c5598a97ecd5cafca",
+      "summary.json": "83e02801f1aaf933fa1af0bf07f1c4364eab14b5df9ddd12dee3865bb39f6571"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.538374Z",
+    "config_hash": "6f5c58731da3031cbd8942bb08991bb84e31365fd1d0917f27722fa651e36200",
+    "note": "batch=day6-freeform dimension-preflight N=6 seed=6101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n6-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "ea378df3a50c46a8676501d76312a2747eb53c1e0770d9a54f9e332c65c9a158",
+      "summary.json": "6ecd83d3127dbf83cd8c494c35e6584a2f90c6d768f6dae767a428e94fd1bb30"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.639604Z",
+    "config_hash": "051a22a6768d1efdcb67d6f5b302f28cc11862a66203a8af0eb5f5d8e23d0590",
+    "note": "batch=day6-freeform dimension-preflight N=6 seed=6102",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n6-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "d4d7d9a6975908b7a27ac3abd82f1a51f7bec4007e3ef00d18da85b45364a0dc",
+      "summary.json": "0247e408e7ebdf9b53da0df4b73b5a9ea82021bc65ad9e91de7f0dede6e0ac81"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.739368Z",
+    "config_hash": "fe2da029bbac90f0a87d83b1a83a565e8aaecf5c3023cfa972c1ba6d596534f6",
+    "note": "batch=day6-freeform dimension-preflight N=6 seed=6103",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n6-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "d0d99e540921d6c7d9ef7ac3d6e617b5e6a14fd49b0384ac22afd21fd9b1931e",
+      "summary.json": "059534a8f344521953eedb67ef9e5e3ea6a351fb2466cd17e2044b88207e1b9d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.838497Z",
+    "config_hash": "3c7fa1b0b62d162961e3e0a064e9fed11a4dfa7bc2f8143deb8492c580adbed2",
+    "note": "batch=day6-freeform dimension-preflight N=7 seed=6101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n7-s6101",
+    "seed": 6101,
+    "sha256": {
+      "log.jsonl": "e54e8f528a6a38926728923a4a9b55f489b84469e6436e5e73e4eeed8415932b",
+      "summary.json": "d79de99a325c15dd740e2b5c06b950c7fe25f1b40d8582b7e6196f21d337f98a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:51.943036Z",
+    "config_hash": "ae02cbec0aad289a843762de3898066397e74b309b7e5fdc9fb1c7625dd11d89",
+    "note": "batch=day6-freeform dimension-preflight N=7 seed=6102",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n7-s6102",
+    "seed": 6102,
+    "sha256": {
+      "log.jsonl": "08806e60292d63fd4f3261469f7bbc237820a20c494ca03328dc119e0b6833be",
+      "summary.json": "db053041ccc580091849c55570e6247299e935e2eb5c4b07b5d677f57be8e110"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:52.055805Z",
+    "config_hash": "7cfc8a2f4ef223447bb9286bdd1cd5fbdc3d8c4207d3d860365a99cbe9d5c0b2",
+    "note": "batch=day6-freeform dimension-preflight N=7 seed=6103",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-preflight-r3-n7-s6103",
+    "seed": 6103,
+    "sha256": {
+      "log.jsonl": "1030e09dfc40918a5b04810ddee1f4ef889cb437194fba062b803b813cbbbbc8",
+      "summary.json": "479f455b099ac231440f06d7a054acf46c80b66d5518024fa157410ebcfcb1ec"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T19:37:52.163506Z",
+    "config_hash": "6316e47df2d771a23a9116893e0ed969c7d8d93b6bc1bb8a8080897cfee735e7",
+    "note": "batch=day6-freeform preregistered 20x20 OCFD reference scan",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day6-freeform-ocfd-grid",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "55f0e65986b558c99477037dc60c80347551ae46f8ca0a8a9280920da925cb9f",
+      "summary.json": "d9025bc01f0477d11973c122b921f4653e124bb888d1e9b6c62c31d19c87e4bc"
+    },
+    "solver_mode_counts": {
+      "subprocess": 400
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-11T19:37:52.266483Z",
+    "config_hash": "f47a538364a9d4ab616412a75977d27585f98d3b70ba676a74b5b3f0a0c93383",
+    "note": "batch=day6-freeform 2.45 GHz tuned straight-dipole control",
+    "overwritten": false,
+    "role": "baseline-classic",
+    "run_id": "day6-freeform-straight-control",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "23b7155903b8573ccb8b3d2474f1c9f7a20ec78fcd01a651bf041d3be844c099",
+      "summary.json": "dd3497fd940a1c7d4349e5f0de9126ffe20f0a61df613a753b89095a450306de"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T22:18:41.782919Z",
+    "config_hash": "1e07b02c4810619c2a1078c378c40e9c59048ab3844f13e4f32518e68e287dcc",
+    "note": "batch=day6-freeform spec=dual seed=101 agent=gp",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day6-freeform-dual-gp-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "1bbccea7cc1b99e08206fd9f3bcc24245cd22517348d3c29f9dd02ae496a88cc",
+      "summary.json": "b9b41d1b90ec0a97df7607b3a51222121cf474a9b31a19c8458dc20f8af603b9"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:41.884052Z",
+    "config_hash": "d8aa8a71cc6ec83acb2b630c4657efb4742ab9bb003dad710aa3a606e46dbf34",
+    "note": "batch=day6-freeform spec=dual seed=202 agent=gp",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day6-freeform-dual-gp-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "52aa849353c67c68b14d64626f2d14d966d092f047bf03da8cdbee234c879f7e",
+      "summary.json": "59b75c8c9b5477f5856f965d6e97f661835e0dbdb23aef96e525bf1dfbed4449"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:41.987401Z",
+    "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+    "note": "batch=day6-freeform spec=dual seed=303 agent=gp",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day6-freeform-dual-gp-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "ad6bc6a9d18a38935039f3f6b0cf5d825219dd74e24d854affa3e8a283a24ff8",
+      "summary.json": "00c8fffb84c1be970fbdba7f89f5c9ece0a1f009a314b46ad2056ef64704f959"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.089392Z",
+    "config_hash": "0d8bab980d48a7db8ddc1c987b24147932a51b80d59521a9199001d938bd278d",
+    "note": "batch=day6-freeform spec=dual seed=404 agent=gp",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day6-freeform-dual-gp-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "ee02c8c006c42b10d985d729876b56eee9a891ba4ff97748683cac52fd8176ec",
+      "summary.json": "d53ebca326ad479ec0fd46609e1cf12ff63f0757077e006f7d03c83d90d45011"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.191931Z",
+    "config_hash": "be0b07c1d28968c6bd5b18a4da1af7f2f98d553d0b70408fa301e4931ae7aea9",
+    "note": "batch=day6-freeform spec=dual seed=505 agent=gp",
+    "overwritten": false,
+    "role": "agent-gp",
+    "run_id": "day6-freeform-dual-gp-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "615558fd43f53687cf02a542fa73f9cb4e4a3127932fdf7362c5b66bada8e480",
+      "summary.json": "3c8b8b3de5a09879acedb3becf81cc38a3e948af9a9fb83408aa92e20b017432"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.300750Z",
+    "config_hash": "1e07b02c4810619c2a1078c378c40e9c59048ab3844f13e4f32518e68e287dcc",
+    "note": "batch=day6-freeform spec=dual seed=101 agent=random",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day6-freeform-dual-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "719cd0be7790b0df2e6af313fbcf64ad00f9fbc5d3670c5ec3c84be76d5daa8d",
+      "summary.json": "7bbfb18e9afbecb47425daf0dc5d8427ccf1540f93638a64e6d0e9ef29619c29"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.404395Z",
+    "config_hash": "d8aa8a71cc6ec83acb2b630c4657efb4742ab9bb003dad710aa3a606e46dbf34",
+    "note": "batch=day6-freeform spec=dual seed=202 agent=random",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day6-freeform-dual-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "4155dea9b92bf452befc7957440b9638639abfed125ec8dc7aca29be3a8de339",
+      "summary.json": "fbf2df4c050966a38d03638fc8fc5f74cf248b1de98be16d0199923229a07ac4"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.508352Z",
+    "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+    "note": "batch=day6-freeform spec=dual seed=303 agent=random",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day6-freeform-dual-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "cc8e1daa7aac1c81c902f14cf3c0eea7e7b2b5caf1a7f6eea54dc808040473e1",
+      "summary.json": "8c3b327f65fd256baeaa0c0e96072991ad04a40f40dbcc64baccfe4bf8e0492c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.610762Z",
+    "config_hash": "0d8bab980d48a7db8ddc1c987b24147932a51b80d59521a9199001d938bd278d",
+    "note": "batch=day6-freeform spec=dual seed=404 agent=random",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day6-freeform-dual-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "c0a90f85fb1039e8ffce18f57144014d49b53b6ec17f390c81aad17b9f6faf1a",
+      "summary.json": "c9fb59af288d1413f60ce2658d1eaf541a32d56ddba03189c651d3e10de731cc"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:18:42.712871Z",
+    "config_hash": "be0b07c1d28968c6bd5b18a4da1af7f2f98d553d0b70408fa301e4931ae7aea9",
+    "note": "batch=day6-freeform spec=dual seed=505 agent=random",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "day6-freeform-dual-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "5c5e72dbc1edcdfbc1aceb20f721fb69b875308b4cda356f1fb8a2f43e6981c2",
+      "summary.json": "6d8a8d2feb0ae0a677d303291acafbd704f4fe4d60424701afbe814e09da9ff7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 200
+    },
+    "steps_completed": 200
+  },
+  {
+    "archived_at": "2026-08-11T22:31:19.828028Z",
+    "config_hash": "301e5813b1d79ded2c752099a4ed7b64a57be019801b5cb1123eb48c29da1583",
+    "note": "batch=day6-freeform candidate=top1 openEMS=1x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-openems-convergence-1x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "3ae06393399305b37de26939fdd687eb8b8de6eabec3dfd69f2a21da0afa053d",
+      "summary.json": "5db934a7c86a503ae5de2644c28ce64cdeed7bec4389df0e75aaa35d277d2e50"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T22:42:08.178741Z",
+    "config_hash": "bbcbf793a404c6412341e37bfd13722e41e2cd6b810b099fe8a32c922316dd7c",
+    "note": "batch=day6-freeform candidate=top1 openEMS=2x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-openems-convergence-2x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "81ca76c0bd9f5ca51c1c8ccc5b6cf8b402bf675c66a3e033848d3ae233cd7aed",
+      "summary.json": "73556e0640e4fc784d539e0666f240c04ab4ff941e68cddf0bf8205da8d73db8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-11T22:49:39.514958Z",
+    "config_hash": "1b594cb5256dea2f922953f459d40359faa8136292bce98571a4fe9f54d02115",
+    "note": "batch=day6-freeform candidate=top1 aborted lambda160 timeout=300s; no numeric decision",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-final-crosscheck-top1-timeout300",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "c76ff4a335987e782cd5becfa39d6c1d2eac40dbcd2c5604e9cb09f3b16587b5",
+      "summary.json": "505f476229e08293b027350f9150a69a3786d44d080dbf5604bd3fb82d3af7e3"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-11T23:09:23.868931Z",
+    "config_hash": "df2853bad6f6cdc56980f7d295831ff2ab5cd2be63cfe4fa9e28289cba172dbf",
+    "note": "batch=day6-freeform candidate=top1 final dual-band v2.1",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-final-crosscheck-top1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "5fdc408404ec71552d6a275ba0825d27ade24874b408f5afb890d466b222f8e2",
+      "summary.json": "ac789e3540072c24b9e29bd23c1cb8cda3eb83afe63b30bfb1348b3e87ab8dc7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-11T23:29:19.736902Z",
+    "config_hash": "529fbfb00747db516b6cba4e37334be844f859577aa1d09181e0132e57908895",
+    "note": "batch=day6-freeform candidate=top2 final dual-band v2.1",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day6-freeform-final-crosscheck-top2",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "1352c54df43df975f30acc929ac7721cd9f3639902be981cd5a594f383beeb52",
+      "summary.json": "f69ad5a4464e463fe094cfde3a88c9620e89700ebc0698e343cee4ada23fed31"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-12T12:14:30.571367Z",
+    "config_hash": "b9151459f06f58944ccb88634be945e065b17d7a6fad16f5ce981cfd1adf8738",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "980890a456cfd6f58a1b8c8cd69718b7f430b482f3c34b076029f42fb74fe880",
+      "summary.json": "5effb6465bda0d4b3baead2c33ce9baef32893dd562452e3ad776adfda0b1e79"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T12:21:39.345195Z",
+    "config_hash": "8f28c131e3272e97c9f0a71412f02ec0ba540fd15dbf5837dfcf333434b1bb7a",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r2",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "864f8e4005a04ec9c17f16a1386db7b28b636127ab923c8449fd115190e972ff",
+      "summary.json": "e6ede67bcd1a534b9ddbf176b0eee983c921fb0d4aadfd7a3c2eb7130f7af056"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T12:29:13.963630Z",
+    "config_hash": "1fdb5c0dbefca68654a4b15f1f4526b997a040d2ee87f898d27e5dae6cd909aa",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r4",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "69465c12053046354d6f806e2eb6589f3bc0bdd0b3db66ed2e7ef1e94037c3cd",
+      "summary.json": "4ba70c2cdc671cd71b54ed1a62cf42ebc71e2d2a898bc97fcf22784a61efba1b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T12:40:33.983533Z",
+    "config_hash": "dc4421c28fa400cdf6703602e3e80716e63da16cf86ea6ba21ba69beb92cb2a7",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r5",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "9a98d6c41487c59d9cacacdd2e9c341b7f0b1367139ad751f6c800ece5c19b83",
+      "summary.json": "541a09529d60cb839cc0f55e4dee50a7cc4241c6752d8f4849e6458b316ea482"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T12:47:29.406567Z",
+    "config_hash": "053fa965fdc8a9a230fdf6f68107d106efd113fe42d11f6e723784ae8df72e08",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r6",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "275173b82f129a0994c954e4e0187fbaeacf67d184876eaa9bdead54dbaf1eed",
+      "summary.json": "465771448a902a72393bd02aa28c5d32dfabe7d8194cc16a739182b1fba8d488"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T13:36:05.285851Z",
+    "config_hash": "26886466331bda16330b41819c896bfcb73c779f5e0f7466268c77adf9029a28",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r7r2",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "d30e2ee3540fe63efd47e2971aaf3ca4cc81e239c35a29d00b6af6f3067176de",
+      "summary.json": "3646092bde5973d98898af56e06d0dd357035b504af7618a80642f08ab09867d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T13:47:36.546464Z",
+    "config_hash": "6c7734ff05109c0ba884a53cf5a9f44a233d685c6c59e5718c01b3b49d84917d",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r8",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "32d7be1a9d80610f572311f8ae662b9e9d3cd175fc08437e9d968505775bf547",
+      "summary.json": "238a3603237ca0363ae5d764ec0da16e2d7b5eb8e0ec2e385e2a105da6bcbbe3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T15:40:03.598743Z",
+    "config_hash": "10fd0251d761fdabc658dd6a847cd9b1670071ccd76b98b6a0fd83d4276ce3af",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r9",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "ce7ac57774ac46d7a855cba8dc917a9c129a530b1b6866baad42ad3e5e6045ce",
+      "summary.json": "9cc7832fa0edc45237bbcde058586e4d246c426eb3799c180e3d6cd82f1ceac5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T17:14:01.062113Z",
+    "config_hash": "8cd3b1e6aa1dce6f2edb79315b5c8cebde53bd75cd9ce182194b1585e3563120",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r10",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "ac44f3b3c8558dff3ea580ee726d39d2212c95d60d738f71383c1417a89764a4",
+      "summary.json": "4911a55a9d48ad896e65109125e2542c9cfbe225b4d64ae4fcdb27eed3f195af"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T17:40:06.271311Z",
+    "config_hash": "a40d58964d21d5bc7e2748f99c0e26977dc5b3565b272bd9cd4fc2dd1de1aa20",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r11",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "26973ba1d54ce72e3da7b1268864ef38c0f75ee34e7676f4cc39efa396d6f250",
+      "summary.json": "5810e9510d68b478f4728b8f8518fc4e2e913d0f5153d7494bc293e189746ad5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T18:10:08.683304Z",
+    "config_hash": "efa3200356c52168fff02c6c3c123f597c348c0d44f846f32b8293d63c14b3b4",
+    "note": "batch=day65-freeform-repair rotation-invariance known answer",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-freeform-rotation-invariance-r12",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "d9bc751e86d702d39aae66acb195638ac8bebb42d3ac39172981049ba78ec491",
+      "summary.json": "714c0f5f6011bccff16d7610255d6677294afe388610b1c154ca74c5ae988e7f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 6
+    },
+    "steps_completed": 6
+  },
+  {
+    "archived_at": "2026-08-12T18:16:43.535156Z",
+    "config_hash": "f506929cce4c8760d89bb8d9a5e7d9f040a5fe9297e925b0e23f076c92198a6e",
+    "note": "batch=day65-freeform-repair candidate=A openEMS=1x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top1-1x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "668d0192f1da1f3db7d80f4a195ee2d94aa9ff88cb6c35a55e88e476d1bf3949",
+      "summary.json": "d74804fe153c62a5bbcf1cafb4c2c58b24b18639d6b9fe28c7b7c36840b69fb7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-12T18:19:52.690215Z",
+    "config_hash": "1c223199ec1bdb2a92470aebac58ada8aeefdaa58c98bbfc8d08c049ebd09bf5",
+    "note": "batch=day65-freeform-repair candidate=A openEMS=2x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top1-2x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "607a231508da2384506fb24d03d9c4a8eca2921ff94c0757e5f214b0f7f56a82",
+      "summary.json": "3c334b55164dcf10214f3a4ea16c899de57c0e2e846f3dde1f85002aec97b32b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-12T19:14:25.734296Z",
+    "config_hash": "4deebdb1619a3eda719ba350f09e47d687780bde44c9ec4e2d91d6af23087bb5",
+    "note": "batch=day65-freeform-repair candidate=A openEMS=4x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top1-4x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "89dbd3c8d533e622c6df778f274df7cb3de6d143618eb51fe06f362ec20b2d0c",
+      "summary.json": "203e07143e513cbf5ede30135dcb307977edd45bec5fd28ccd14adb75c05070a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-12T23:37:15.271092Z",
+    "config_hash": "a05973fdf9627bdb48226d77bfcaca14169e9fd949e2dd64d8b27c2a1f2ae132",
+    "note": "batch=day65-freeform-repair candidate=A openEMS=6x convergence",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top1-6x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "8fd88346f68d7bb97b76bd5f4f0a23045975ca41fc2df16d4faab1306c310909",
+      "summary.json": "07e9efda21615df6d041bdefb0e77f88da3c7fa75c0c3220715e8db6b968112a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-12T23:37:16.468459Z",
+    "config_hash": "a7eaeb35f24c35ab4d6304559510c34e795691cf5b337e60a5f1a84a699e15b6",
+    "note": "batch=day65-freeform-repair candidate=A repaired re-verdict",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-crosscheck-top1",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "846b67d897d756234b8b7b4b74eb266ede7f8f2c78506f8f23918077eceda266",
+      "summary.json": "d78f12a0bf8f00868d16c66a6fc11d0a8af62892f43aff4da45f029b822549af"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T09:43:12.267940Z",
+    "config_hash": "25b0e6f83236eb2aec7b1c22b025989887ac7ba9adca4983358f4c6c7a5083a1",
+    "note": "day65 diagnostic=nec2-surrogate-radius systematic-frequency-bias",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-nec2-surrogate-radius-diagnostic",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "3c52c83695d9719c8d83ab6f2419e997199932f3db2e7ed1ade4e661f26cb575",
+      "summary.json": "cbcac9e731aa3475b5089e9895eb6e8db0799829fc95cfde9dd2abdf45d2505e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:27:18.132404Z",
+    "config_hash": "abc1453fd0bd77fbc09448080bf44a9be823f58a0940cdae2595956c55833ad9",
+    "note": "day65 factor-audit F3 NEC2 lambda/80",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f3-nec2-lambda80",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "bacb9fb306dca7313d48ddec655ee8e838fa1753cbecaeaa009e42653db57bd3",
+      "summary.json": "2be35a6dec9f7ce9cdde52958366074e64a5150c621b043b1c115f3cd905f14a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:27:20.715548Z",
+    "config_hash": "0e7b362c2216b8bf114213fd5732c22283411068e0fa1f567afd04360118faab",
+    "note": "day65 factor-audit F3 NEC2 lambda/320",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f3-nec2-lambda320",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "1ce218419e151a01e60650ba65ce8fa19a64996deecc9886a3f1d8c64c09631d",
+      "summary.json": "2199179e0cbfbda706142eb54a68ca83cfecabed2de992935ff3639483e737c0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:27:31.076051Z",
+    "config_hash": "5223dd6f1b1277837f2baee42cd67ac33cd96584c9952858a98faa234f8ec28d",
+    "note": "day65 factor-audit F4 NEC2 feed-gap",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f4-nec2-feed-gap-0p3mm",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "f7c61e4e9b33b10c788d7040cf0c71c6de29930fe4875eceb5ff709592ed3818",
+      "summary.json": "155aceb0a7f2895bb333294dd750bfded6013218661fe0fcdaf8123ecaef1a42"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:30:31.479441Z",
+    "config_hash": "cd0069f3e2d636b8883747e4e186d3f46d488f6ae86e02bb3439321f0f55af74",
+    "note": "day65 factor-audit F2 endcap",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f2-openems-endcap-shortened",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "3a4f12ae5f5365094d4c36004f6283271c56274aa26b023b4e358437af73c4a3",
+      "summary.json": "5d206b978ef628bb2c1c66ed08e6a4e5059127d7909b387afc0f9a050932d812"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:33:04.232561Z",
+    "config_hash": "cd46a85c92b6d5649c8499cda85a973ae10ad302ac18e92206999f9d5ce312a8",
+    "note": "day65 factor-audit F4 openEMS feed-gap",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f4-openems-feed-gap-0p3mm",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "eae3a4b71cf1f6a5184f7fea512b6cf94a592fdb797c02c7fdfc9b9e9d57a228",
+      "summary.json": "20756b566d7dd0cd06d764b1d6217d61239db69b9dce8940238677d8a94c67a8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T13:40:19.157518Z",
+    "config_hash": "3b48fb34479079285f47ec08f77493d0304cd27ad6b1d45a56a15bca4f3c9f98",
+    "note": "day65 factor-audit F1 openEMS 8x/320k",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-factor-f1-openems-8x",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "61a7745e9c069ae47d839fd19986f59d3cc6d1ba8269881e52645840dc27039a",
+      "summary.json": "851b3e596f0a18602fac19c6753fcea9af8e959ec027dce3c76355acac65b1bc"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T15:53:27.228888Z",
+    "config_hash": "b6888b5b5746fba89e6bb4f8dcbefaf21a5294450c098cd3da108a11f05f5e49",
+    "note": "day65 candidate=B terminal attempt externally interrupted by host reboot",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top2-6x-host-reboot",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "6f677b1874e3bc94130b9e12bbc9f362d3847a761979bc83035812997a2df94f",
+      "summary.json": "e126e4fafb7b772d966cb941119cbd1a3e09d8e0445be4c85fe76fc0dcebfa71"
+    },
+    "solver_mode_counts": {},
+    "steps_completed": 0
+  },
+  {
+    "archived_at": "2026-08-13T23:40:01.472054Z",
+    "config_hash": "008ea63903585a067e77319729213f41ee524dfe7837e8c497b2615d5a8c08a9",
+    "note": "batch=day65-freeform-repair candidate=B openEMS=6x terminal retry",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-openems-convergence-top2-6x",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "fc2768f2f4533e699f243d784392f5660feae9d737f0df1dadfd0915e5566e99",
+      "summary.json": "a3a8d226debc1eef8271374db545e339afe304adc31d6f6887c8aa338c9a22c3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-13T23:40:01.571638Z",
+    "config_hash": "d60bea64bf389e3a91daedbadc310a87ee237d1a21645a1542eb25173f225189",
+    "note": "batch=day65-freeform-repair candidate=B repaired terminal re-verdict",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "day65-repair-crosscheck-top2",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "b9a45e8bcc1642d53f0b20b79612aae85e53ecf072f48c7397769ae2e2ab0d45",
+      "summary.json": "a8282d12b7a0711a4687707a234ff7c0ecfdc79e7b145691ad4bb64f0434341e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-26T17:23:59.189563Z",
+    "config_hash": "12e830dcb94d7b5fa2307c213b7cc8f8bdac6b6d71c2acbbce584d9aa9ce3791",
+    "note": "semifinal G5 5.8 GHz meander renderer anchor r1; anchor_released=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-wifi58-meander-renderer-anchor-r1-combined",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "937bd9d53a992a7bfce54d886652291fbac49c366f8fd617d4681f5ff4258b89",
+      "summary.json": "61d012118b489634f9e04c4c5a02ada6532edbf3e9088f68806376b6b07f68c7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 3
+    },
+    "steps_completed": 3
+  },
+  {
+    "archived_at": "2026-08-27T04:40:40.094569Z",
+    "config_hash": "c7b330767f98b2b5f3c0c7bb8b13b7525936d775fc2e8e428bab86733bc9b05f",
+    "note": "Semifinal wifi58 meander renderer anchor r2 qualification; verdict=not_released_not_converged.",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-wifi58-meander-renderer-anchor-r2-combined",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "8d8387a9859417d6e9f62c07a385ba4d6a89e204e579d6c0359ddeb3b241de2c",
+      "summary.json": "5c0987c439f21147e187cbc630870b57aaea3e6736569d05d28b232fe2dd7871"
+    },
+    "solver_mode_counts": {
+      "subprocess": 5
+    },
+    "steps_completed": 5
+  },
+  {
+    "archived_at": "2026-08-27T05:17:02.972715Z",
+    "config_hash": "f4b3d3fbd1fe483f8664b81f039c68dd9f632498b911203df86345e273ae55b7",
+    "note": "Semifinal wifi58 meander renderer anchor r3 bounded terminal qualification; verdict=not_released_out_of_band_high.",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-wifi58-meander-renderer-anchor-r3-combined",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "0e9da50876fa679870160ba9349a8391c18d7917355d7cef50177899bb967a9f",
+      "summary.json": "d5ac661dc0251d0e7dcecf7a88d967a2c510e568e3338a45c5e84399254f67a9"
+    },
+    "solver_mode_counts": {
+      "subprocess": 7
+    },
+    "steps_completed": 7
+  },
+  {
+    "archived_at": "2026-08-27T17:21:54.818893Z",
+    "config_hash": "a0ae5013a27e4ab79517b104e838ed9d53dab19aefc68c741ff7b8cb5e64918b",
+    "note": "Bounded 5.8 GHz resolved-rod renderer anchor r1 qualification; execution_failed at openEMS 1x because port_ut_1 was absent; no scientific verdict and no retry.",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-wifi58-rod-renderer-anchor-r1-combined",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "39414489ba7b34f8b94526f03c657741ce879b2d521a4061df58b93b802c699f",
+      "summary.json": "152710277aa5f8b4586185a0a00fd77d2d0d1ebf9907d3b130fe0e0972a06d0e"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1
+    },
+    "steps_completed": 1
+  },
+  {
+    "archived_at": "2026-08-27T19:15:14.408617Z",
+    "config_hash": "d618134588d0db607e21638fdffed4ebff3627a669d281b3dfef456bafc43f92",
+    "note": "budget-preflight; 20-pair real NEC2 paired timing calibration",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-budget-preflight",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "48f5e5cf05e7a8f93e89f0ddb72a92531debb07ea322a0fcfb7553b3d346092b",
+      "summary.json": "b0a7f612e98064a3cf415731d89a917872fbc3931ee6d1f0116d8de8aaff6138"
+    },
+    "solver_mode_counts": {
+      "subprocess": 40
+    },
+    "steps_completed": 20
+  },
+  {
+    "archived_at": "2026-08-28T05:44:06.757199Z",
+    "config_hash": "bba43162544a11a6876b26ee0e5f04d407a8ecfb1d403bf0faed03f4c3b60789",
+    "note": "baseline=manual-reconfigurable; frozen v3.4 section 8 discrete template; warm parent diagnostic only",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-manual-baseline",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "838fd4d77e6fe15ad7bd7625d95d6a8071a96cd6c1e2483dcae77824a80420e4",
+      "summary.json": "a089fa75ac3891ea7895b86962574aefda778c9a2d8728d1f29c2db7027cb133"
+    },
+    "solver_mode_counts": {
+      "subprocess": 495
+    },
+    "steps_completed": 495
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.082249Z",
+    "config_hash": "e41a9016baf5cbecd61269e8bedca72eb14f2d48ffe60b55b6e7052c867d3ef5",
+    "note": "batch=semifinal-paired agent=random seed=101",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "semifinal-paired-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "8ba25c344aa89d6c5ebddcb80bb0a6d384069d5be201ef31ce87c90229c07ba9",
+      "summary.json": "dd8cadd7c4a2c82b35caf98d1a7e95b515daf71c8be18c0da1de74a066fec014"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.192809Z",
+    "config_hash": "e78aefbc5b924fead6b9ddd5d40e92622ba774704d9415830e8df0d3bb06e705",
+    "note": "batch=semifinal-paired agent=random seed=202",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "semifinal-paired-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "6d314da8045b620f8303b1335921d1d770d3cac6a5bff1e91fceacb6a6a0626e",
+      "summary.json": "2e9aff581abb264d5a0a7babe0cc48ba0bf61e19c6888051c3d7bfb175ac8bd9"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.300220Z",
+    "config_hash": "060b7cd10a828c235dcdaf2a5c77e62bc87d0c544aa765d4b5ca01427e7eaa5a",
+    "note": "batch=semifinal-paired agent=random seed=303",
+    "overwritten": false,
+    "role": "baseline-random",
+    "run_id": "semifinal-paired-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "a4bb6aeb5c0b0c61f89160e656080fd21f441822a71466133e094ed7269700ad",
+      "summary.json": "791ae20251194e0341316dd926c2b3e50368a503b57cee6466a170707a5a91a6"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.407085Z",
+    "config_hash": "f05fa95cc479b82fbf5a1f9ec091f3285817efedf67ab3c3e71292d3b1346b89",
+    "note": "batch=semifinal-paired agent=es-cold seed=101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-cold-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "ecc801100a5a7200aff147b7580e7c4cb50b07f73e9c28835f513d0985cb40c2",
+      "summary.json": "18a1736aa2f440397a86ca1ed209ee4b492d2143d6b0da2e1bd68c26a6fe4161"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.516983Z",
+    "config_hash": "18e807a4e18af548abfd89c4e10693f8b8f6f135fd8f6a4cb399e3baf9c18613",
+    "note": "batch=semifinal-paired agent=es-cold seed=202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-cold-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "409deb1e21d6c8b7ae0feeee9a3040e4fcf5a4b569ec310d30cc7eaba2057573",
+      "summary.json": "ed9b2651a82a1b36c4620a584089b4323d449f82e4bad97c3ad1216d368e1aac"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.633543Z",
+    "config_hash": "15c37bdf13c41f48e5812654b28cb2cbb6dadea632a5cdf1b40e4eb9f5162dfd",
+    "note": "batch=semifinal-paired agent=es-cold seed=303",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-cold-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "42cf56f6447f0ad3a9071bae843b9340d29cd0857de07649c3af88cc5d081b86",
+      "summary.json": "3285416fe0c57e854d8fb07b885d84b548c9b83a33bf0dd2e032fb4df238b3f4"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.743520Z",
+    "config_hash": "7ed5e6758e8ffd554fa2bcd9e323611f46e0e099a5b2fdd9c74f6ec4401e9cde",
+    "note": "batch=semifinal-paired agent=es-warm seed=101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-warm-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "af5b158d487577d7a07f26186ff66222b34abe05e36bd58596849dc4e3ff6c65",
+      "summary.json": "52cd3ad16c3db5b2f3d98ab2bf394e69d4f6af0381d595d88edd3de3f98e25b7"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.858817Z",
+    "config_hash": "2cbd61a56689630599e77a20163d7b4fe4ccd776a98d269214e3a0dee8348021",
+    "note": "batch=semifinal-paired agent=es-warm seed=202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-warm-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "84bff2c32ee199ba5265dcf2825ac1241187da370b22220a526ed1453c3a5217",
+      "summary.json": "ef6bf4d84cc0d04266c90a4f2778aa23892ac4661b677e9f309da0f1155885a8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T10:24:35.967368Z",
+    "config_hash": "4f48a492053e25ae2faab980edadb9b4ccc19ce2b2f3c9c89f70dee02829f96d",
+    "note": "batch=semifinal-paired agent=es-warm seed=303",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-es-warm-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "17d11c49216974d5576c8e51e8b1aa98206f8e86877422ed75215df6c421690e",
+      "summary.json": "b4cd828f9828e635ad1446104dff5ec4ec4cca5fbb48cf225afd2828904a7f02"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-29T13:36:54.901843Z",
+    "config_hash": "a71adf2132ce11569926f4f15721a8cb55755da67e505bb2baba6999cf87d19a",
+    "note": "Rod-renderer anchor r2 terminal harness diagnostic: repair_not_confirmed; repaired B probes existed but had zero parseable samples; NEC2 and scientific openEMS ladder were not executed.",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-wifi58-rod-renderer-anchor-r2-combined",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "b3dd5214aae9c0f48f1051514109207bbb86c9f5cc3b832afc6180da62347079",
+      "summary.json": "6981fb426ea700a31aa4b716c845bb7b6b6a99a30a41e1013b090eed89dcf6f1"
+    },
+    "solver_mode_counts": {
+      "subprocess": 2
+    },
+    "steps_completed": 2
+  },
+  {
+    "archived_at": "2026-08-30T13:52:41.666023Z",
+    "config_hash": "602feac12c4c783b24d3325bb51bcd06be824588e608f8ffa37c5038e68c3c65",
+    "note": "batch=semifinal-paired-r2 agent=es-r2 seed=101",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-r2-es-warm-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "7b18a9236293d000235df273c7040a9484e6318ab655435c07fbb13f4b3e05cc",
+      "summary.json": "5f3189474c231cb5bf2faee74b0ea55e04febbfc3cb55a6ca792528b2126d656"
+    },
+    "solver_mode_counts": {
+      "subprocess": 800
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-30T13:52:41.775560Z",
+    "config_hash": "c28cba369636e50f2caf513c130c4869240b118a877f7ad2fc38e7c489ea957d",
+    "note": "batch=semifinal-paired-r2 agent=es-r2 seed=202",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-r2-es-warm-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "c819748e495a3f28c9dd499b4bbf4757e357b737e0d0be572c3b9349c715e909",
+      "summary.json": "7f07539b49f897c39616f6ab5bc187b75d4dc5a2d68b8fe65736a2d8ac8afc56"
+    },
+    "solver_mode_counts": {
+      "subprocess": 800
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-30T13:52:41.884311Z",
+    "config_hash": "b7916be9635921532382142143708d9e23d54fbeddcaa3de3941240a9af57dad",
+    "note": "batch=semifinal-paired-r2 agent=es-r2 seed=303",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-r2-es-warm-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "814e3ee02e5db89512d6c6c3d7b74626f91c0f91e108b568c54937002b649c36",
+      "summary.json": "62cdd1dea0785fc4f9bd72922680ea7e3658e99862cea42b52aa44fcb24249b8"
+    },
+    "solver_mode_counts": {
+      "subprocess": 800
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-30T13:52:41.994729Z",
+    "config_hash": "4aff3390b712e15c1c5ec6e306cae2f359386f5eb34bb32dbc83630c1178b841",
+    "note": "batch=semifinal-paired-r2 agent=es-r2 seed=404",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-r2-es-warm-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "1779b154e477d282674f2e44f94203bdc4d7f27e34d2c64cdf59b349037a80db",
+      "summary.json": "53d4fd0022be417bfc119bb5ab67d47ad0f260f009b2c5cee55b4447ba30e32f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 800
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-30T13:52:42.104315Z",
+    "config_hash": "a278abc174ecdd76720158773480205661040a5438f90cceb63b20ff70129304",
+    "note": "batch=semifinal-paired-r2 agent=es-r2 seed=505",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-r2-es-warm-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "ca126577c41a5650fcb01c5ecaf38203f1b125aeb20da6324b7804bfc1c171fb",
+      "summary.json": "68b6b2d903dcb5194befd6dd21d0318f036e17abea345cf42b525ef5b20f606f"
+    },
+    "solver_mode_counts": {
+      "subprocess": 800
+    },
+    "steps_completed": 400
+  },
+  {
+    "archived_at": "2026-08-31T10:11:41.927818Z",
+    "config_hash": "9a12898f768601b2b910c18bb008d416b33d195ce8eace235d669da5e532e182",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=random-stratified-v2 seed=101 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "5302abf0aa92d9c0b4f832b4473aac7803f7c1b887d1c6761f43fc5b26b11170",
+      "summary.json": "07d6b09181972f8c43b1d702e68adbb232406de8b827212575ef27b0b97c274b"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.038664Z",
+    "config_hash": "f365c93aee6ee02b13a69c8276d50f84317760540965ef2afb5bc3af1073987a",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=random-stratified-v2 seed=202 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "86d12fca62a6ab09df908c2907bf078d12a10a2f04ef60c9c6147e6fc779374f",
+      "summary.json": "336363682860a5267005b67c4efc966963cab3b4444c9d07a862588ff00178f0"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.149701Z",
+    "config_hash": "30818bc6e3040468ebd2807991924fe5327c6e9f55a66829a8e230d72f79c225",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=random-stratified-v2 seed=303 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "8d80479e9cdda5e8e40b20f269e848dec06f9e36833aa783d092a50dfea63c5b",
+      "summary.json": "73bd436ea22f28da26b3124126e253e4b8432e9e11e7f5845f196ef91df6c8a5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.261303Z",
+    "config_hash": "1ca2b08d6bae2ead4f93b4ea8840e50384f84c7a358da397ceef6d1a39652f0a",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=random-stratified-v2 seed=404 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "b5ded8a307294e194ad730d88f9be054bf3fd404145d7d00d7e2915359baf178",
+      "summary.json": "9a8cd9ebc3f2be728d29e024170272d20f7ad865a7582f5a5db26e698cc74669"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.374883Z",
+    "config_hash": "56efce954a69d0ca3b7fda8ef96c45e3cb631e6c7f3d0095246bd6a6ac691738",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=random-stratified-v2 seed=505 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "704ba9a37c62bd64db977363cd5c5351caea3746285ee0ac51f43f5060d80a17",
+      "summary.json": "2755568c229e0c045729565e786a8f30d5a721714c6b0632501d22353cffc32a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.488164Z",
+    "config_hash": "fc53046f4e5ec8566fcab387210943e131dc05d3df0391ac431514f9352319c7",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=es-stratified-v2 seed=101 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-es-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "3e8ef3e5b89abaeef21998b04f0eb5c92d5a7d20f76bcc27dc4d95c1ecb165dd",
+      "summary.json": "b28b074e16241a20aa43f04396be6466c0d7cee3b35040ec5e48ad4ea3bcc7c5"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.602858Z",
+    "config_hash": "16e9be465dc5f5022e180ab8172e69aeb0f219ef9db2e3e7167c942a46556e74",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=es-stratified-v2 seed=202 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-es-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "a27bdce507fada2c11594fce6f6f8e759775298f175f4f72ea3d10a9ddc24b33",
+      "summary.json": "75bb52d3b71448c0122e83b43e4cbbe76b518e8a926f145137874f437c9dbab2"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.714926Z",
+    "config_hash": "3b2278c3e1ab755bd9ae4d4df1531ca2cae7cfb6b70d04903d4e343255c9e0d8",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=es-stratified-v2 seed=303 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-es-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "d0a4c310fc577097da02ed9d46d3cce479e6da71603756b306394854dddd2a5b",
+      "summary.json": "82c112d3bcd45d6c1157f9675b749268cd865591c6ef5b47193d13b4f56dd01a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.829562Z",
+    "config_hash": "d51ea414bbedbc7913e28966224d91e786e87a7b896f2b81b3a1340da4c2fedb",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=es-stratified-v2 seed=404 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-es-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "f7039126f8be54ec5d601b13153c80bad067e8f63ef308e04c1d7f803dd5af34",
+      "summary.json": "ceaaa863249a438ecd2224a459b59c1c63d91364980e5b288f79b00b0dabce16"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T10:11:42.943588Z",
+    "config_hash": "8b7956f657568b1692f9d43541b820fb4150e0dbc3e03053f58c86f7c21b62c7",
+    "note": "study_id=semifinal-paired-feasibility-stratified-exact-v2 agent=es-stratified-v2 seed=505 turn_quotas=3:150,4:150,5:150,6:150 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-stratified-v2-es-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "112cfec99478b9495705dda4a4b565ee15c43b7a08f6f33fac56d893677005b9",
+      "summary.json": "4278eb79012a1d90f2ab1f1ea3f7fce67c7908940de9443f543a70fbad1cb28c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 1200
+    },
+    "steps_completed": 600
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.249557Z",
+    "config_hash": "12091a78f63a2586d48204f3200628cfb33da1bedee17b61de50cfbc8123616a",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=random-b-completion seed=101 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "9687e7d0f59d52bf837052695719321c3f8aff544eb6c568b84deec6cec45943",
+      "summary.json": "7ef5f60560bcc06261a01fe2553135432efacd3a4db6cd08d33a2e69040e2f08"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.357120Z",
+    "config_hash": "7cc0c7a5ef7634f7e8d25d3e551804f397106334d815c7ef6e7a234823ed011a",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=random-b-completion seed=202 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "4410e886980bc4c27c85b38ef442e3ceed8eaadfaef576054e3ad62f1fcd0331",
+      "summary.json": "5a284ee623d4987acb5bb1edf9873f87d42dbb93d525f56dc45fa87dcc362511"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.466169Z",
+    "config_hash": "0169dc6893bbc71c604d87b72330006295d09daa53eafdae7f4936415902a379",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=random-b-completion seed=303 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "b8f0c6de39ce9ebfa7f9499bc05676b61b829788cc4a93eaabd4f75c0fe412f8",
+      "summary.json": "3e61a9e3fd3b155a147fbb11bc6bb16c63f9b75c4c6ebcecdf2d4bd648265b91"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.585664Z",
+    "config_hash": "1c07199803bce0de82ec3d6a1b835c92f0268736985f141f4178fc5353ebb314",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=random-b-completion seed=404 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "5ded5e86d8bacfdf7a14d950ff3b66f6fad6921632b97531ca566b6b1f2f6f1f",
+      "summary.json": "c6da72fe93856cc04b9866581f56169a2ac77c9c8c9734b061b672e16e5fda6c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.693503Z",
+    "config_hash": "51cb8fb0dae505206039394c7ec7379d5fa16472af5193ba9c076ebb4b0a59c5",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=random-b-completion seed=505 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4dd5bdf3f81d8ec080fbec0dcb0b2b4cabb3ffd47b0257f3a45cbf08a8882e32",
+      "summary.json": "595c24149b31b8ec3dc39233af263add34a7d01db6ec81ce142e681fa6d36c52"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.798703Z",
+    "config_hash": "a5d294dfb666cc3dde529de4027f095e9a14ca787e722ddf8a52399c21097af3",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=es-b-completion seed=101 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-es-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "de20f0838b220400b8a22aafe5652edc74c7f45566d3219b724172bd3946287f",
+      "summary.json": "d8df3c574260da63fd876c765e09cb05e6d263339ffddb2091434b02385e4b41"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:45.904084Z",
+    "config_hash": "cb0c8b1523d4f97f00cea247c03d0ee71797a469eb7cd814ce352bca8e345ac8",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=es-b-completion seed=202 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-es-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "80d2a75593e80538589855cd15a2edfd67bf32923d42ec587d04ce4d96689351",
+      "summary.json": "fdb879c428145198802edcc3391bd47328c04e14788c25e3b255957ba3c0b14d"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.013053Z",
+    "config_hash": "7417afaecc4aa208232fa32c3ccf7fb7af49d1937c853e935545c1061a785144",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=es-b-completion seed=303 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-es-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "0f114381371f52f925f01ceec2937c8da2599efec933d744ae22f188ce9c2234",
+      "summary.json": "bde9283644da341c14c22d4daa436cab364e480bceb0462a0e3f57cd20973cbf"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.123354Z",
+    "config_hash": "e5cda0ce7d4da4390ef98e0d7f3b197714ba876941facd0815876c95d26a4379",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=es-b-completion seed=404 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-es-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "0e1d4a7a689c8bf1a3aedaca81b0de5c66e2c43a0540401a6b71cfd0529bee9e",
+      "summary.json": "552c32eb7427775c6c5dc283e3746561f1e2b201bff05de946b4f6d2710aaf37"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.228784Z",
+    "config_hash": "6ac58a75b3214fbf09c75d429b60a77619efd1f629d67b65feb58d7126a99edd",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p01 agent=es-b-completion seed=505 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p01-es-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "f2b257a12f2cfbcab7ef9d15dee8a5eb2cff043ce928f6794e9a6175eb6b78ec",
+      "summary.json": "3be2b35ce51880ef3620ea5beaa54b99066a2358fb85326dfd43e361b9d52663"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.335065Z",
+    "config_hash": "28fd8b23abc48bd3c93c962d967c00538f4ce4ee9358988821b4623349c9768c",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=random-b-completion seed=101 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-random-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "a2e4f468455572bf5aba37f914cc02cf237d05575b6d3033dd829595d8161650",
+      "summary.json": "4f2252adff752d002e8f011db56d92e678ca176f18d40c33bb23de99769e2c84"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.440953Z",
+    "config_hash": "39da8e193ecf8dd7641c14a9516fedc2cb29dc4c89d9bfffdcf9f5984228b8cf",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=random-b-completion seed=202 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-random-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "3a564cc3bf8b3cd981352bdbddb53406877fd18eb173b178158a488f724911a3",
+      "summary.json": "82587500d07721424f2791c2e415a4c38152160ee9fcf45593366144f97c3f25"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.545511Z",
+    "config_hash": "fab4ecacacbce20b80e19016eb6b83906b91674123beaf117f4809e55af8af11",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=random-b-completion seed=303 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-random-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "581520b27f1b0150a8b31f21d17747d8208940ca5125aa0f00aac8941012e97c",
+      "summary.json": "d1c7d5be2c3a055d4156521c069abee91c48d92e847d89c456ec1d1ab85e2c53"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.650750Z",
+    "config_hash": "5681e25532e865b16a1f3a5085a6cb5b5c09a3657894f2361b0b7e9e82841307",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=random-b-completion seed=404 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-random-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "466041a295d4e5399f2e0831ecd39b500c9c9360ee7e840c93e29f45f77c7865",
+      "summary.json": "ffa9214960afbeca38ba142833e6a16eae50847bb907660670ec7754ebee476a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.756726Z",
+    "config_hash": "2dd1b7899d1d857bf12e7c0b41bb7f40864e41af2717e70bb4e445a911031f2d",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=random-b-completion seed=505 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-random-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "6b6fbc62141a7bea0a2b55c87fe33de777ddb387ae8d3987f47f3f49caa07cd6",
+      "summary.json": "c730cdab6aa676e650b0d9d1e82b1703e3cbe05868ab49a1fc3e6c9df168c551"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.861590Z",
+    "config_hash": "af9cb46dbfc2f19b788a9f137cfb42ff529172b1ac8e446915dad3578ffe40f6",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=es-b-completion seed=101 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-es-s101",
+    "seed": 101,
+    "sha256": {
+      "log.jsonl": "dda68733af2fe8d750dc96e1a44a713d7f3ae18ef25b7d824438ee4e9eac60fc",
+      "summary.json": "fea8ec9d0cbb0a73dcb6c36e4e5003d41e272e4696b60c0107413b862dc7f67a"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:46.969962Z",
+    "config_hash": "d0fc4059cfce51f66343dcc713b332390ebf52b103afa7f4c01292a0e429a004",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=es-b-completion seed=202 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-es-s202",
+    "seed": 202,
+    "sha256": {
+      "log.jsonl": "fc17bad6ffa2ea5166e667ce20a2b57ad668b9e1ba3fe2211d504714928b149e",
+      "summary.json": "e01317e73824ad65ab8724700c2dd40e0b1f127aa29ab8cee555e8ef65661193"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:47.077905Z",
+    "config_hash": "6b6c652cb3ba815f34a25c79eb1b46fe75ae5f7ec7bf182882d7d29a2343fe31",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=es-b-completion seed=303 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-es-s303",
+    "seed": 303,
+    "sha256": {
+      "log.jsonl": "a89c6f5d763609026f8ddcc5c4b91c09af6d0a7c4abdef05faf6bdca6c789603",
+      "summary.json": "f5767195b981da8c6156e26cc11d66df69edf5d7f4461abe2f1cf2838336383c"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:47.184817Z",
+    "config_hash": "f88e2414968c34b46cd7c1d3e9c662fbc14004e7252560d0bde64a86864d2067",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=es-b-completion seed=404 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-es-s404",
+    "seed": 404,
+    "sha256": {
+      "log.jsonl": "a43d82e6d287db660cd85701c2f1875084dfde8a0cbf560ca35e26430d832949",
+      "summary.json": "6fa876d036a87cb1cc9a97331149cf68693083f1f6f09a50ffa85f1698157e60"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-08-31T18:26:47.292172Z",
+    "config_hash": "f8f88fc9085ac917ee2b5e2aa39e0b7d223dbd6e0a6dac29d5d80a422122b373",
+    "note": "study_id=semifinal-paired-b-parent-conditional-completion-v1 parent=p02 agent=es-b-completion seed=505 openems=false",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-paired-b-completion-p02-es-s505",
+    "seed": 505,
+    "sha256": {
+      "log.jsonl": "4c62c97b33153449fe742d6f0b171638471774cd4fb3e1a680b763fb90e96983",
+      "summary.json": "39aeec5df6982850dfbc01b100fced00ba2b191e27d5128a8105f9ba1225d3ee"
+    },
+    "solver_mode_counts": {
+      "subprocess": 600
+    },
+    "steps_completed": 300
+  },
+  {
+    "archived_at": "2026-09-01T14:44:14.940896Z",
+    "config_hash": "6bba05ceb825e79c9495957317d06d7930ef63f8bc4588e10cf3a0d1af8953b5",
+    "note": "study=semifinal-a-span-support-causal-probe-v1 calls=32",
+    "overwritten": false,
+    "role": "other",
+    "run_id": "semifinal-a-span-support-causal-probe-v1",
+    "seed": 0,
+    "sha256": {
+      "log.jsonl": "b341ba63fca22ed2375256ac5ba7be563bc2da1fa9a28162e778dfe34a0da3c3",
+      "summary.json": "f50833412fde81878d4857dc059c14d7528b19416cf773baf8d51674b974f2a3"
+    },
+    "solver_mode_counts": {
+      "subprocess": 32
+    },
+    "steps_completed": 32
+  }
+]

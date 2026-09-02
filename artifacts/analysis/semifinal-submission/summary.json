@@ -1,0 +1,236 @@
+{
+  "archive": {
+    "all_ok": true,
+    "manifest_entry_count": 219,
+    "manifest_sha256": "cd6d8bd106ae6b7da478c836913a84511f1a484e55641e07f21cbe17013dfb8c",
+    "verified_ok_count": 219
+  },
+  "candidate": {
+    "box_size_mm": 40.0,
+    "feed_gap_ratio_ppm": 58388,
+    "hardware_hash": "b6f72349504b6994a10ff9d32ffb7059424073fb25bc2900860f7e1348b9340c",
+    "label": "paired-state computational hypothesis",
+    "maximum_adjacent_node_displacement_mm": 0.2617344680342499,
+    "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+    "minimum_clearance_mm": 0.20275218914699994,
+    "minimum_height_mm": 0.4055043782939999,
+    "minimum_pitch_mm": 3.512815,
+    "pair_hash": "8a4ad18c710ec185728fd5bff0e6f16461aea29362024893e1bb6ddd3dcc73ca",
+    "physical_feed_gap_mm": 2.33552,
+    "source_log_sha256": "af5b158d487577d7a07f26186ff66222b34abe05e36bd58596849dc4e3ff6c65",
+    "source_proposal_index": 658,
+    "source_run_id": "semifinal-paired-es-warm-s101",
+    "source_step_index": 213,
+    "source_summary_sha256": "52cd3ad16c3db5b2f3d98ab2bf394e69d4f6af0381d595d88edd3de3f98e25b7",
+    "state_a": {
+      "geometry_hash": "4d8c585c7e4112d1d8aad9d8c33b55642549008cec6649075a75ffa4a4b15b55",
+      "reflected_power_fraction": 0.20541677746768625,
+      "selected_frequency_ghz": 2.493,
+      "selected_index": 93,
+      "selected_s11_db": -6.873640881775399,
+      "span_ratio": 0.998536,
+      "state": "A",
+      "total_wire_length_mm": 70.731,
+      "valid_internal_minimum": true
+    },
+    "state_b": {
+      "geometry_hash": "84566f8b6ab538d6ff1ae730b2ecd74f445fc127f877f8edb1a53530e509c33e",
+      "reflected_power_fraction": 0.02460188078250949,
+      "selected_frequency_ghz": 5.7355,
+      "selected_index": 7,
+      "selected_s11_db": -16.090316903664355,
+      "span_ratio": 0.760951,
+      "state": "B",
+      "total_wire_length_mm": 26.057,
+      "valid_internal_minimum": true
+    },
+    "terminal_ratio_ppm": 87831,
+    "trajectory_point_count": 21,
+    "trajectory_valid": true,
+    "turn_count": 3,
+    "wire_radius_mm": 0.05
+  },
+  "candidate_freeze_commit": "4a8222eb7528a24acaa5879e7afa2398f0413740",
+  "effect_gate": {
+    "candidate_value": 0.20541677746768625,
+    "manual_reference_value": 0.21548949210811824,
+    "maximum_allowed_value": 0.19394054289730642,
+    "metric": "worst-state-reflected-power-fraction",
+    "observed_reduction_fraction": 0.04674341445557906,
+    "passed": false,
+    "required_reduction_fraction": 0.1
+  },
+  "final_verdict": "insufficient_evidence",
+  "frozen_candidates_sha256": "0e814e2cc85ae0fe361c91a4d7338ae2175369b494eb49cdef8bd165338695d5",
+  "instrument": {
+    "candidate_openems_authorized": false,
+    "candidate_openems_executed": false,
+    "rod_r2_failure_reasons": [
+      "repaired_voltage_probe_unparseable",
+      "repaired_current_probe_unparseable"
+    ],
+    "rod_r2_repair_gate_passed": false,
+    "rod_r2_repaired_current_probe_exists": true,
+    "rod_r2_repaired_current_samples": 0,
+    "rod_r2_repaired_voltage_probe_exists": true,
+    "rod_r2_repaired_voltage_samples": 0,
+    "rod_r2_result_status": "repair_not_confirmed",
+    "rod_r2_run_id": "semifinal-wifi58-rod-renderer-anchor-r2-combined",
+    "thin_box_r3_anchor_released": false,
+    "thin_box_r3_frequency_gap_fraction": 0.013605442176870748,
+    "thin_box_r3_last_shift_fraction": 0.006802721088435374,
+    "thin_box_r3_pearson": 0.9694827295488124,
+    "thin_box_r3_run_id": "semifinal-wifi58-meander-renderer-anchor-r3-combined",
+    "thin_box_r3_verdict": "not_released_out_of_band_high"
+  },
+  "manual_comparator": {
+    "assembled_pair_count": 5184,
+    "evidence": {
+      "evidence_commit": "906835eceeae2e48a652e2b7fa891fd3e8461440",
+      "log_sha256": "838fd4d77e6fe15ad7bd7625d95d6a8071a96cd6c1e2483dcae77824a80420e4",
+      "run_id": "semifinal-paired-manual-baseline",
+      "summary_sha256": "a089fa75ac3891ea7895b86962574aefda778c9a2d8728d1f29c2db7027cb133"
+    },
+    "scored_pair_count": 756,
+    "selected_state_a_index": 100,
+    "selected_step_index": 288,
+    "selected_valid_pair": false,
+    "valid_pair_count": 0
+  },
+  "matrix": [
+    {
+      "accepted_pairs": 300,
+      "agent": "random",
+      "proposal_attempts": 779,
+      "rejected_proposals": 479,
+      "seed": 101,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 238.619769
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "random",
+      "proposal_attempts": 862,
+      "rejected_proposals": 562,
+      "seed": 202,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 208.887696
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "random",
+      "proposal_attempts": 791,
+      "rejected_proposals": 491,
+      "seed": 303,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 240.715203
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-cold",
+      "proposal_attempts": 453,
+      "rejected_proposals": 153,
+      "seed": 101,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 222.817172
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-cold",
+      "proposal_attempts": 924,
+      "rejected_proposals": 624,
+      "seed": 202,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 240.628439
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-cold",
+      "proposal_attempts": 493,
+      "rejected_proposals": 193,
+      "seed": 303,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 223.602603
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-warm",
+      "proposal_attempts": 836,
+      "rejected_proposals": 536,
+      "seed": 101,
+      "subprocess_curves": 600,
+      "valid_pairs": 48,
+      "wall_seconds": 222.659675
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-warm",
+      "proposal_attempts": 518,
+      "rejected_proposals": 218,
+      "seed": 202,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 219.801762
+    },
+    {
+      "accepted_pairs": 300,
+      "agent": "es-warm",
+      "proposal_attempts": 554,
+      "rejected_proposals": 254,
+      "seed": 303,
+      "subprocess_curves": 600,
+      "valid_pairs": 0,
+      "wall_seconds": 225.129035
+    }
+  ],
+  "meander_r3_evidence": {
+    "evidence_commit": "6bee5eeac5642386f7015bf496e8a592424cb75c",
+    "log_sha256": "0e9da50876fa679870160ba9349a8391c18d7917355d7cef50177899bb967a9f",
+    "run_id": "semifinal-wifi58-meander-renderer-anchor-r3-combined",
+    "summary_sha256": "d5ac661dc0251d0e7dcecf7a88d967a2c510e568e3338a45c5e84399254f67a9"
+  },
+  "prohibited_claims": [
+    "invented a new antenna",
+    "YAF-M1",
+    "confirmed improvement",
+    "dual-solver confirmed",
+    "manufacturable autonomous adaptive antenna",
+    "ES was stable across seeds",
+    "continuous motion was validated",
+    "static dual-band operation is impossible",
+    "the frozen manual comparator is the strongest baseline"
+  ],
+  "rod_r2_evidence": {
+    "evidence_commit": "ba53596f8191ec1a820ae7470349c89091a5bbe8",
+    "log_sha256": "b3dd5214aae9c0f48f1051514109207bbb86c9f5cc3b832afc6180da62347079",
+    "run_id": "semifinal-wifi58-rod-renderer-anchor-r2-combined",
+    "summary_sha256": "6981fb426ea700a31aa4b716c845bb7b6b6a99a30a41e1013b090eed89dcf6f1"
+  },
+  "rod_r2_evidence_commit": "ba53596f8191ec1a820ae7470349c89091a5bbe8",
+  "schema_version": 1,
+  "scientific_question": "Can one ideal telescopic PEC meander in a 40 mm box use two actuator states to serve 2.45 GHz and 5.8 GHz while reducing the worse-state reflected power by at least 10% versus the frozen manual comparator within a frozen search space, budget, and seed set?",
+  "source_evidence_commit": "a19684b5449774db82b21907cc11c7874287f838",
+  "source_manifest_sha256": "6de538d4ec44931eda14cd4ce1828b2962176c8af500106f48bb0fbba331ffcb",
+  "static_day6_context": {
+    "evidence_commit": "acbf4736b8755b682d215e16fe479ffff534360d",
+    "final_verdict": "insufficient_evidence",
+    "report_path": "artifacts/analysis/day6-freeform/report.md",
+    "report_sha256": "07426556777d842bd71489a4e866f6a5487714a95e0f10b3ec52f137aac95d00",
+    "summary_path": "artifacts/analysis/day6-freeform/summary.json",
+    "summary_sha256": "28def8a7b5a204e7da394f458ab6bd6e027f124f0da025571065c904ef1a4df1"
+  },
+  "strongest_supported_claim": "Within the frozen search space, budget, and seed set, YAF found one NEC2-valid, 21-point-audited paired-state computational hypothesis, but the 4.674% descriptive reduction missed the frozen 10% effect gate, cross-seed stability was not established, and independent openEMS confirmation was not authorized.",
+  "title": "From a static dual-band negative result within a frozen search space, budget, and seed set to a shared-hardware two-state computational hypothesis",
+  "total_accepted_pairs": 2700,
+  "total_proposal_attempts": 6210,
+  "total_rejected_proposals": 3510,
+  "total_subprocess_curves": 5400,
+  "total_valid_pairs": 48,
+  "valid_cells": 1
+}

@@ -1,0 +1,99 @@
+# --- Phase 0: reference projects (cloned for study, never committed) ---
+_reference/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+.venv-review/
+.uv-cache/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# --- ML / data ---
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.npy
+*.npz
+*.pkl
+runs/
+!artifacts/
+!artifacts/runs/
+!artifacts/runs/**
+checkpoints/
+mlruns/
+wandb/
+
+# test fixtures are the exception: small, locked reference data
+!tests/fixtures/**/*.h5
+
+# openEMS reference simulation work dirs (large field dumps)
+tests/fixtures/openems/_sim_*/
+
+# --- Solver outputs ---
+*.s1p
+*.s2p
+*.snp
+*.csx
+*.xml.bak
+openems_run_*/
+
+# --- Docker / infra ---
+.docker/
+postgres-data/
+minio-data/
+qdrant-data/
+redis-data/
+
+# --- Misc ---
+.claude/
+**/.claude/
+.deepseek/
+tmp/
+GOAI初赛-*
+test_write.txt
+*.tmp
+*.bak

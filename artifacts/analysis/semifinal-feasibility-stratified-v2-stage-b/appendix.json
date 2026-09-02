@@ -1,0 +1,1156 @@
+{
+  "mapping_version": "conditional-exact-feasible-turn-v2",
+  "matrix_exception_message": null,
+  "matrix_exception_type": null,
+  "rows": [
+    {
+      "accepted_count": 600,
+      "agent": "random",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "5302abf0aa92d9c0b4f832b4473aac7803f7c1b887d1c6761f43fc5b26b11170",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-random-s101",
+      "seed": 101,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "07d6b09181972f8c43b1d702e68adbb232406de8b827212575ef27b0b97c274b",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.6269798701004141,
+            "hardware_hash": "90552cc54eda053a43a32067720304bfc1319c5283f3109502d60e19061d9b84",
+            "pair_hash": "80aa0327f96b7257d63048d2e682fdb5dd6eaff1866fde68e5024b83364a27a7",
+            "proposal_index": 188,
+            "run_id": "semifinal-paired-stratified-v2-random-s101",
+            "seed": 101,
+            "step_index": 188,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.37302012989958583
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.48790658874737547,
+            "hardware_hash": "be29edb0fabb4ca11b2f10220789ddbac8f934eddce9956066efbf2e9f1d3586",
+            "pair_hash": "44943deca9cca72da345e0411e47e1a0ec90d450b594ecc5c1c84f2115d3e8ac",
+            "proposal_index": 261,
+            "run_id": "semifinal-paired-stratified-v2-random-s101",
+            "seed": 101,
+            "step_index": 261,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.5120934112526245
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.28406057211496816,
+            "hardware_hash": "3f62f4214b9eba5a3f34adbfe3759667781a9ef17c242f9c0e60c9ff182f63f2",
+            "pair_hash": "93448f14c511557751508103f48d9c47cf04a381409fc3b8c56427ad89f8d0cf",
+            "proposal_index": 110,
+            "run_id": "semifinal-paired-stratified-v2-random-s101",
+            "seed": 101,
+            "step_index": 110,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.7159394278850318
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.34992952517406706,
+            "hardware_hash": "4067adf67b7a5b568ab64365168d22851a44d2625a819500322c9be93073b328",
+            "pair_hash": "e6c27d01848edb8a7ef92e93badb1335800a81a6bad1ca9f600dbd2d426ba863",
+            "proposal_index": 499,
+            "run_id": "semifinal-paired-stratified-v2-random-s101",
+            "seed": 101,
+            "step_index": 499,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6500704748259329
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "random",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "86d12fca62a6ab09df908c2907bf078d12a10a2f04ef60c9c6147e6fc779374f",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-random-s202",
+      "seed": 202,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "336363682860a5267005b67c4efc966963cab3b4444c9d07a862588ff00178f0",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.7514482193659138,
+            "hardware_hash": "b824795975d269de5e7bbf8e4cbdf7ae925ef9a1cb2ee52fc8362d75c7f9036b",
+            "pair_hash": "0b0dc9a0a0bef331608f1d1af3d2f9c9afec12b5cec540f57c1dd21b492f080c",
+            "proposal_index": 324,
+            "run_id": "semifinal-paired-stratified-v2-random-s202",
+            "seed": 202,
+            "step_index": 324,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2485517806340862
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.5240170774336115,
+            "hardware_hash": "b45de7a3ff8bef03fdc0eb30254e0b935142bff560f32780b182ed4e9ecfbe91",
+            "pair_hash": "566cfe0a5ea74596cdf63636708a2b46dd9a34e1f8d7ad13a855fd1be774dad5",
+            "proposal_index": 17,
+            "run_id": "semifinal-paired-stratified-v2-random-s202",
+            "seed": 202,
+            "step_index": 17,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.4759829225663885
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.2956595194101145,
+            "hardware_hash": "fd5bc2213ada3f1b093dfef5c805b6d5a7dabd9a5cee14aead9bcfe1d79fec5b",
+            "pair_hash": "7878433f8de57b7b67d4a0f8b9fbc4993baf155d5386172bf83e29a48a01a4d7",
+            "proposal_index": 146,
+            "run_id": "semifinal-paired-stratified-v2-random-s202",
+            "seed": 202,
+            "step_index": 146,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.7043404805898855
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.3315595823261043,
+            "hardware_hash": "aa4bd1e6e48db5825a4bb454969facd80fe911df9952dbd5a6feda93e77eb148",
+            "pair_hash": "172284bc7a1a365c34b7303098937ee5eed2918f4231b79e88ecb184681b9dcb",
+            "proposal_index": 255,
+            "run_id": "semifinal-paired-stratified-v2-random-s202",
+            "seed": 202,
+            "step_index": 255,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6684404176738957
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "random",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "8d80479e9cdda5e8e40b20f269e848dec06f9e36833aa783d092a50dfea63c5b",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-random-s303",
+      "seed": 303,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "73bd436ea22f28da26b3124126e253e4b8432e9e11e7f5845f196ef91df6c8a5",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.5057332116499392,
+            "hardware_hash": "2c0f66bfe5e392f15231ed064111424de7c0111e1b35ad9436c0054688f7cade",
+            "pair_hash": "36f1b92ca7e181f04188ae51132f0847c7da8b62760b5dd1fefbfb1f44ecb454",
+            "proposal_index": 20,
+            "run_id": "semifinal-paired-stratified-v2-random-s303",
+            "seed": 303,
+            "step_index": 20,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.49426678835006077
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.4284163075410037,
+            "hardware_hash": "4943319a6e85c12f4c94ea638a0e48e754e24c981b8a7b4b65213d1d40e56517",
+            "pair_hash": "bf0392cc9a55d78a3fa845366ed8de6519555ec2c4dbd6d7bfd0222e01071813",
+            "proposal_index": 117,
+            "run_id": "semifinal-paired-stratified-v2-random-s303",
+            "seed": 303,
+            "step_index": 117,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.5715836924589963
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.38206320313332576,
+            "hardware_hash": "8942359c087cac4ff76885e4a5f1195da961ead922f69334a68f936ade5c7718",
+            "pair_hash": "c48426d9fca63163cf4b6f38c81a5b241760c8aeed43e2de63cad604fef61f37",
+            "proposal_index": 406,
+            "run_id": "semifinal-paired-stratified-v2-random-s303",
+            "seed": 303,
+            "step_index": 406,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6179367968666742
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.2699484578723744,
+            "hardware_hash": "75fbc6a6d5d3fb1c7dadd6385be0ef345ce4f909b38dbeec0105c5d64c1d0d76",
+            "pair_hash": "259a6b7bdc77350a3419066ef4d6bebd8611951629d75d1c940371b94510efc6",
+            "proposal_index": 271,
+            "run_id": "semifinal-paired-stratified-v2-random-s303",
+            "seed": 303,
+            "step_index": 271,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.7300515421276256
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "random",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "b5ded8a307294e194ad730d88f9be054bf3fd404145d7d00d7e2915359baf178",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-random-s404",
+      "seed": 404,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "9a8cd9ebc3f2be728d29e024170272d20f7ad865a7582f5a5db26e698cc74669",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.4489458775963523,
+            "hardware_hash": "10f01b20db132dc49b379038ea6d73c1768db88d945314c592f349c6fa0015dc",
+            "pair_hash": "b48a6cab936b3d906fe09e53396b26d1d03b344afaf9f4b5fe2a4218ae19e3f2",
+            "proposal_index": 136,
+            "run_id": "semifinal-paired-stratified-v2-random-s404",
+            "seed": 404,
+            "step_index": 136,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.5510541224036477
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.4487561087931443,
+            "hardware_hash": "641fb5f39ad64bd0703bc9c0be2d055b540911bc86c6870828cdb81f52bda15d",
+            "pair_hash": "41298f4ba5dfd99312ae82e2233672bd232a871b2fb299a3627bd74da840f2cc",
+            "proposal_index": 25,
+            "run_id": "semifinal-paired-stratified-v2-random-s404",
+            "seed": 404,
+            "step_index": 25,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.5512438912068557
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.5611943295550674,
+            "hardware_hash": "89e5afd29b95d7b789fa591c1c1aaf99adb9c77a07921ed66d82f3cf2abb11d4",
+            "pair_hash": "3abd37f84a5d09d2181f95c458b910d957efc0e60a121231e64f5e3c0208fd26",
+            "proposal_index": 134,
+            "run_id": "semifinal-paired-stratified-v2-random-s404",
+            "seed": 404,
+            "step_index": 134,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.4388056704449326
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.3227564151775354,
+            "hardware_hash": "8bdd9af1580d61c1657c3b569aada85ed9c2a2d944f7025eea83a69069e722a6",
+            "pair_hash": "2976c749190978a462160df03597075ba193e0a36f45cc3f5fdcbe4c92a17955",
+            "proposal_index": 267,
+            "run_id": "semifinal-paired-stratified-v2-random-s404",
+            "seed": 404,
+            "step_index": 267,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6772435848224646
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "random",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "704ba9a37c62bd64db977363cd5c5351caea3746285ee0ac51f43f5060d80a17",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-random-s505",
+      "seed": 505,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "2755568c229e0c045729565e786a8f30d5a721714c6b0632501d22353cffc32a",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.6662958389741638,
+            "hardware_hash": "0587121f3dc4ae894866256f23cb7f1829e037ba4f4ae3c1c8059f83dc3896dd",
+            "pair_hash": "29ad085f909d1676007df507bca307672d2b5ecad7919da0967cac61f86f5a0f",
+            "proposal_index": 428,
+            "run_id": "semifinal-paired-stratified-v2-random-s505",
+            "seed": 505,
+            "step_index": 428,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.3337041610258363
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.44546018810763177,
+            "hardware_hash": "4a21d673511c1a7c8f387e517c4374f91b460ce263e8d9d4d3c002b74e7aa6ac",
+            "pair_hash": "6bd31be6a5819713ea35cc069443c4a8d3c9c67c0104fd5ada13bfbcbf5a9a7e",
+            "proposal_index": 493,
+            "run_id": "semifinal-paired-stratified-v2-random-s505",
+            "seed": 505,
+            "step_index": 493,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.5545398118923682
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.3568016144301338,
+            "hardware_hash": "f670b28531bd4f9ab500dfee7ac9b5496a1442c26b72d560819680caeb0cefd2",
+            "pair_hash": "4102628bf25bc5c9fc18679e804b2fb5f4f2500961176a3713572dc2be6f2259",
+            "proposal_index": 182,
+            "run_id": "semifinal-paired-stratified-v2-random-s505",
+            "seed": 505,
+            "step_index": 182,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6431983855698662
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "random",
+            "base_score": 0.3202321120239039,
+            "hardware_hash": "77e139a65ac59d5610b9fa1ebb313c0dd52a8040fac7909e0d3373ffe81650a2",
+            "pair_hash": "46d5eccadd3375284c69f065265db773652750607e0a326f7504d57ceb05d425",
+            "proposal_index": 279,
+            "run_id": "semifinal-paired-stratified-v2-random-s505",
+            "seed": 505,
+            "step_index": 279,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.6797678879760961
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "es",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "3e8ef3e5b89abaeef21998b04f0eb5c92d5a7d20f76bcc27dc4d95c1ecb165dd",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-es-s101",
+      "seed": 101,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "b28b074e16241a20aa43f04396be6466c0d7cee3b35040ec5e48ad4ea3bcc7c5",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7668417094770439,
+            "hardware_hash": "f58162c31748980bb5ad3ca451d5a408e05f4f2f78ce19a801b33795da99f06f",
+            "pair_hash": "57d7461579cab2a560e1837be7a253ef3e4a2a2073cb3024284564be28120014",
+            "proposal_index": 568,
+            "run_id": "semifinal-paired-stratified-v2-es-s101",
+            "seed": 101,
+            "step_index": 568,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.23315829052295614
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.8448968177216916,
+            "hardware_hash": "c2d561d0647b7e4808baae4d2fa122d023dabc2e23ae111b78e6cea44c7aa234",
+            "pair_hash": "7585b89d4e72faf174f90027e9c8fe1353b277e336fe61aaaef76ff30aa13c0b",
+            "proposal_index": 593,
+            "run_id": "semifinal-paired-stratified-v2-es-s101",
+            "seed": 101,
+            "step_index": 593,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.15510318227830844
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.74289598501403,
+            "hardware_hash": "6bdfe094aa3135f6d2660a39899dd2871be6944e1988d8ae93c0b132e339bbbd",
+            "pair_hash": "cfe5c7615a4a6c60cd23d28911d9984038f1b388ceef1f0a7739e70129bc9d78",
+            "proposal_index": 586,
+            "run_id": "semifinal-paired-stratified-v2-es-s101",
+            "seed": 101,
+            "step_index": 586,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2571040149859701
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.574520176758056,
+            "hardware_hash": "42c012a3c5cd473b4d472d089f0942c168b5b9417c102685fd2677bd8b956d37",
+            "pair_hash": "5ff57c467bf11e8e48c8f8d9f51833b0a67c0888f58cf76b3ef3e33c449776fb",
+            "proposal_index": 591,
+            "run_id": "semifinal-paired-stratified-v2-es-s101",
+            "seed": 101,
+            "step_index": 591,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.425479823241944
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "es",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "a27bdce507fada2c11594fce6f6f8e759775298f175f4f72ea3d10a9ddc24b33",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-es-s202",
+      "seed": 202,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "75bb52d3b71448c0122e83b43e4cbbe76b518e8a926f145137874f437c9dbab2",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.6871817950595426,
+            "hardware_hash": "a89f7a6c00c903a93efe67b81ceff75b84302711051578fd1724f0e8a5216d63",
+            "pair_hash": "09ca8eebac724a725dc4a5cda0c53190b60fcfe4e2284d69826aa24aaefd2995",
+            "proposal_index": 588,
+            "run_id": "semifinal-paired-stratified-v2-es-s202",
+            "seed": 202,
+            "step_index": 588,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.3128182049404574
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7920945794786107,
+            "hardware_hash": "16029f119280767de18c1e416c0b6f7717245dce1b8b40cec23095ad51df45f1",
+            "pair_hash": "a246eb565ec199e2856744f8c6ecffe022835915271384761f54e99f4cad33d2",
+            "proposal_index": 565,
+            "run_id": "semifinal-paired-stratified-v2-es-s202",
+            "seed": 202,
+            "step_index": 565,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.20790542052138924
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7349704742998865,
+            "hardware_hash": "84a9e92111a963ca39138b88dae575f0b3dee10b6103945966f5a3b388a26521",
+            "pair_hash": "7ee9d975bea4d4256b505bf4981f01be9c946e7593bc8b843818069144c5174d",
+            "proposal_index": 382,
+            "run_id": "semifinal-paired-stratified-v2-es-s202",
+            "seed": 202,
+            "step_index": 382,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2650295257001135
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.5504696842529337,
+            "hardware_hash": "75204ded1ca0c09b90e79c762f969ed7063d81149d53db005e71bb332b97012d",
+            "pair_hash": "8399843bf941400905a1bed00274796c055442829c06b6bf3cdf307e79e77f19",
+            "proposal_index": 575,
+            "run_id": "semifinal-paired-stratified-v2-es-s202",
+            "seed": 202,
+            "step_index": 575,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.44953031574706626
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "es",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "d0a4c310fc577097da02ed9d46d3cce479e6da71603756b306394854dddd2a5b",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-es-s303",
+      "seed": 303,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "82c112d3bcd45d6c1157f9675b749268cd865591c6ef5b47193d13b4f56dd01a",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.6675402824100782,
+            "hardware_hash": "4322dbea1ee8275b6b083cf52c825a8276ab5748207b3a796b02d5c2b2a05817",
+            "pair_hash": "9b18f5f9c2d5e058a3f030af75cf102dfa8cab8ee6c580e7d634d10d731537ba",
+            "proposal_index": 588,
+            "run_id": "semifinal-paired-stratified-v2-es-s303",
+            "seed": 303,
+            "step_index": 588,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.3324597175899217
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.8332867721325486,
+            "hardware_hash": "70189525251d4055b2a25e7b38680bbeddea1a1a1c51eab02727c6e748ae73b9",
+            "pair_hash": "4c4eb410e0a883a10c7121eefbe17b8e74ed8b87c763adc7688ce991452c57ea",
+            "proposal_index": 565,
+            "run_id": "semifinal-paired-stratified-v2-es-s303",
+            "seed": 303,
+            "step_index": 565,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.16671322786745135
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7302590609951047,
+            "hardware_hash": "8d9f48fa38c74ed5f444403fd27dc14347657d8f78a386fe6af6f5826dcc6f59",
+            "pair_hash": "962965f416a59934b5f1bff8c789d0707d245b7259905dc6bdb8cec6b5a873dc",
+            "proposal_index": 598,
+            "run_id": "semifinal-paired-stratified-v2-es-s303",
+            "seed": 303,
+            "step_index": 598,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2697409390048952
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.6059660607106818,
+            "hardware_hash": "79eef900592ba03385c2a147043023569e90e29a03736b22e47dc900e7609439",
+            "pair_hash": "06a1c4e61afd6b4577d2f607d83a12ff59020c87c1ae40bf845d927b92c1c375",
+            "proposal_index": 595,
+            "run_id": "semifinal-paired-stratified-v2-es-s303",
+            "seed": 303,
+            "step_index": 595,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.39403393928931824
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "es",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "f7039126f8be54ec5d601b13153c80bad067e8f63ef308e04c1d7f803dd5af34",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-es-s404",
+      "seed": 404,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "ceaaa863249a438ecd2224a459b59c1c63d91364980e5b288f79b00b0dabce16",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7713767371165786,
+            "hardware_hash": "57b265f5766b245e3d77c7113ff20fb28e7fa545d71f355335861ba40d8f7355",
+            "pair_hash": "8079309e86f40435603214edbab827cf1a90ac1e2bdc4f4eaa088b3ea8c01539",
+            "proposal_index": 592,
+            "run_id": "semifinal-paired-stratified-v2-es-s404",
+            "seed": 404,
+            "step_index": 592,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.22862326288342139
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.8276287728719987,
+            "hardware_hash": "523f7cbfff206fda3b7d0ea194036f3bfd23ddc6e024908bc2bcf5945f06524d",
+            "pair_hash": "7a3439bc154b6c71686c401564e7a505b8d3780bbb38e8b74c2e8c5ba3d7b6f4",
+            "proposal_index": 593,
+            "run_id": "semifinal-paired-stratified-v2-es-s404",
+            "seed": 404,
+            "step_index": 593,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.17237122712800135
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7334596729380576,
+            "hardware_hash": "f6419e395056ab28ea00b63f3c8378bc1c20cc66111c61eff5aeb3f38b274b63",
+            "pair_hash": "4a6e106018cc8f05628d3ad89e412ec5b7f5b482a9c9c15a198776a0263a3867",
+            "proposal_index": 574,
+            "run_id": "semifinal-paired-stratified-v2-es-s404",
+            "seed": 404,
+            "step_index": 574,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2665403270619425
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.6061664842613865,
+            "hardware_hash": "34776e85a353e9dc31e073cb32adf7ebb13932a26de9a50c62c9796075642249",
+            "pair_hash": "ad64aa4081e9ff9af5fab6bc23fbcefd0c392b1ac1736e28841de4788bd84fd9",
+            "proposal_index": 579,
+            "run_id": "semifinal-paired-stratified-v2-es-s404",
+            "seed": 404,
+            "step_index": 579,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.39383351573861347
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    },
+    {
+      "accepted_count": 600,
+      "agent": "es",
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "112cfec99478b9495705dda4a4b565ee15c43b7a08f6f33fac56d893677005b9",
+      "mapping_invariant_failures": 0,
+      "proposal_attempts": 600,
+      "rejected_count": 0,
+      "run_id": "semifinal-paired-stratified-v2-es-s505",
+      "seed": 505,
+      "solver_mode_counts": {
+        "subprocess": 1200
+      },
+      "source_status": "completed",
+      "summary_sha256": "4278eb79012a1d90f2ab1f1ea3f7fce67c7908940de9443f543a70fbad1cb28c",
+      "turns": [
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7691967339780843,
+            "hardware_hash": "ca4767787b863ebb98b4643cbbc5bb4bf5ed42d6da9e17dbc264e7142908984b",
+            "pair_hash": "9347911c984264a1977fa8436a2838c8aacf2836ac7aac712954d18d109cb268",
+            "proposal_index": 560,
+            "run_id": "semifinal-paired-stratified-v2-es-s505",
+            "seed": 505,
+            "step_index": 560,
+            "turn": 3,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2308032660219157
+          },
+          "pass_count": 0,
+          "turn": 3,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.7411034635603292,
+            "hardware_hash": "23c83f7c8e512b03acd803fe24fbaecea04ebaa913863a72531cc72f3d713b7b",
+            "pair_hash": "18bf78e5266bec7f6a6257ea5f1d38787bc7db2b1306dd2fb6c6f32fbe890217",
+            "proposal_index": 597,
+            "run_id": "semifinal-paired-stratified-v2-es-s505",
+            "seed": 505,
+            "step_index": 597,
+            "turn": 4,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.2588965364396708
+          },
+          "pass_count": 0,
+          "turn": 4,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.748866315389646,
+            "hardware_hash": "54b727d75d5c2c9ff9d86848692b8058988e56a3a7b729bfec2178c4d8e20f2b",
+            "pair_hash": "b405b9c2e8ceccc9e6886ebce1295afd8a3184eba949f49a7326bb3540f95088",
+            "proposal_index": 562,
+            "run_id": "semifinal-paired-stratified-v2-es-s505",
+            "seed": 505,
+            "step_index": 562,
+            "turn": 5,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.25113368461035396
+          },
+          "pass_count": 0,
+          "turn": 5,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        },
+        {
+          "accepted_count": 150,
+          "best_gate_crossing": null,
+          "best_valid": null,
+          "diagnostic_top": {
+            "agent": "es",
+            "base_score": 0.5973583055515672,
+            "hardware_hash": "81ae6d72a51069688259ea6bd4d9a1bb2e625396a88a2ee63e1f3c3a6e646d4f",
+            "pair_hash": "c7b3f6f93ceb407325fed82eed95ed6bb04c814379317b08518f113d639a74c9",
+            "proposal_index": 587,
+            "run_id": "semifinal-paired-stratified-v2-es-s505",
+            "seed": 505,
+            "step_index": 587,
+            "turn": 6,
+            "valid_pair_search": false,
+            "worst_reflected_power_fraction": 0.40264169444843273
+          },
+          "pass_count": 0,
+          "turn": 6,
+          "unique_candidate_count": 150,
+          "valid_count": 0
+        }
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "scientific_endpoint": "no_gate_crossing_observed_under_frozen_stratified_study",
+  "selected_hypothesis": {
+    "agent": "es",
+    "base_score": 0.8448968177216916,
+    "hardware_hash": "c2d561d0647b7e4808baae4d2fa122d023dabc2e23ae111b78e6cea44c7aa234",
+    "pair_hash": "7585b89d4e72faf174f90027e9c8fe1353b277e336fe61aaaef76ff30aa13c0b",
+    "proposal_index": 593,
+    "run_id": "semifinal-paired-stratified-v2-es-s101",
+    "seed": 101,
+    "step_index": 593,
+    "turn": 4,
+    "valid_pair_search": false,
+    "worst_reflected_power_fraction": 0.15510318227830844
+  },
+  "spec_revision": "2.0-exact-nominal-support",
+  "study_id": "semifinal-paired-feasibility-stratified-exact-v2",
+  "study_status": "complete",
+  "turn_seed_counts": [
+    {
+      "agent": "random",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 3
+    },
+    {
+      "agent": "random",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 4
+    },
+    {
+      "agent": "random",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 5
+    },
+    {
+      "agent": "random",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 6
+    },
+    {
+      "agent": "es",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 3
+    },
+    {
+      "agent": "es",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 4
+    },
+    {
+      "agent": "es",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 5
+    },
+    {
+      "agent": "es",
+      "pass_count": 0,
+      "passing_seeds": [],
+      "turn": 6
+    }
+  ],
+  "verdict_ceiling": "insufficient_evidence"
+}

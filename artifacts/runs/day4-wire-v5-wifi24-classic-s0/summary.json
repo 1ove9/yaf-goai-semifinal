@@ -1,0 +1,103 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 1,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, adaptive lambda/20 segmentation, wire-realized-gain-v2 score with zero lossless-efficiency weight, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v1-5d",
+    "require_real_solver": true,
+    "seed": 0,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 2.15,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "c1e134257c5a0dc9e021a91cd25b2df246740ceee820f944cabbd1001e499bba",
+  "evaluation_budget": 1,
+  "failure": null,
+  "finished_at": "2026-08-09T15:43:01.758643Z",
+  "rejected_proposals": 0,
+  "run_id": "day4-wire-v5-wifi24-classic-s0",
+  "schema_version": 1,
+  "seed": 0,
+  "solver_mode_counts": {
+    "subprocess": 1
+  },
+  "started_at": "2026-08-09T15:42:58.529403Z",
+  "status": "completed",
+  "steps_completed": 1,
+  "top_designs": [
+    {
+      "config_hash": "c1e134257c5a0dc9e021a91cd25b2df246740ceee820f944cabbd1001e499bba",
+      "event_type": "evaluation",
+      "geometry_hash": "f7f721eb7022584dd1763a86a2a649d080c2b7ae26e459e0dfa6941a19370735",
+      "geometry_summary": {
+        "antenna_class": "box_straight_dipole",
+        "dimensions_m": [
+          0.03,
+          0.0,
+          0.0
+        ],
+        "name": "classic_box_straight_dipole",
+        "num_faces": 1,
+        "num_vertices": 2,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.006711363281920085,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.82,
+        "min_s11_db": -0.037276829868691484,
+        "mismatch_efficiency": 0.008546575862532824,
+        "realized_gain_dbi": -18.862078480628696,
+        "vswr": 466.02154744707565
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.02,
+        "height_ratio": 0.15,
+        "span_ratio": 1.0,
+        "terminal_ratio": 1.0,
+        "turns": 2.0
+      },
+      "proposer": "classic",
+      "run_id": "day4-wire-v5-wifi24-classic-s0",
+      "schema_version": 1,
+      "score": 0.006711363281920085,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 0,
+      "timestamp": "2026-08-09T15:43:01.756578Z",
+      "topology": null
+    }
+  ]
+}

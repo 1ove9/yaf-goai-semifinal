@@ -1,0 +1,52 @@
+name: Public snapshot checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evidence:
+    name: 255-entry evidence and terminal facts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install solver-free reviewer dependencies
+        run: pip install -r requirements-semifinal.txt pytest
+      - name: Verify all archived bytes
+        run: python scripts/archive_run.py --verify
+      - name: Verify sanitized-snapshot terminal facts
+        run: python scripts/semifinal_public_snapshot_verify.py
+      - name: Run the snapshot-verifier regression test
+        run: pytest tests/unit/test_semifinal_public_snapshot_verify.py -q
+      - name: Reject publication-only prompt and tool-state paths
+        shell: bash
+        run: |
+          test ! -e BUILD_SPEC.md
+          test ! -e YAF_PROJECT_CONTEXT.md
+          test ! -e .deepseek
+          test ! -e .claude/settings.local.json
+          test ! -e frontend/.claude/settings.local.json
+
+  lint:
+    name: Ruff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/ruff-action@v3
+        with:
+          args: check .
+
+# The original science repository recorded 795 passing tests and mypy strict success over
+# 165 source files. Some of those tests deliberately require private historical commit objects.
+# The sanitized public snapshot therefore runs the history-independent evidence regression above;
+# the omitted-history limitation is disclosed in docs/semifinal-reproducibility.md.

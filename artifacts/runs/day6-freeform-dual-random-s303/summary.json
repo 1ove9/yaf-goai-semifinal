@@ -1,0 +1,272 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 200,
+    "explorable_problem_definition": "The agent may explore only freeform-wire-3d-v1-n7; invalid physical centerlines are rejected without consuming budget.",
+    "fixed_problem_definition": "The 40 mm cube, symmetric single-feed wire, 1.5--6.5 GHz/251-point sweep, lambda/20 real NEC2 exploration oracle, accepted-power worst-band score, reference, budget, top-2 rule, and v2.1 discovery gates are fixed.",
+    "nec2_segments_per_wavelength": 20,
+    "optimizer_window": null,
+    "proposal_space_version": "freeform-wire-3d-v1-n7",
+    "require_real_solver": true,
+    "seed": 303,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": null,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        1500000000.0,
+        6500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {
+        "frequency_points": 251,
+        "score_version": "dual-band-accepted-power-min-v1",
+        "target_bands_hz": [
+          [
+            2400000000.0,
+            2500000000.0
+          ],
+          [
+            5725000000.0,
+            5875000000.0
+          ]
+        ]
+      },
+      "name": "day6_freeform_dual_band",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.02,
+        "x_min": -0.02,
+        "y_max": 0.02,
+        "y_min": -0.02,
+        "z_max": 0.02,
+        "z_min": -0.02
+      },
+      "target_gain_dbi": null,
+      "target_pattern": null,
+      "target_vswr": null
+    }
+  },
+  "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+  "evaluation_budget": 200,
+  "failure": null,
+  "finished_at": "2026-08-11T21:48:20.721808Z",
+  "rejected_proposals": 0,
+  "run_id": "day6-freeform-dual-random-s303",
+  "schema_version": 1,
+  "seed": 303,
+  "solver_mode_counts": {
+    "subprocess": 200
+  },
+  "started_at": "2026-08-11T21:33:33.997824Z",
+  "status": "completed",
+  "steps_completed": 200,
+  "top_designs": [
+    {
+      "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+      "event_type": "evaluation",
+      "geometry_hash": "cc75e2e66ffc67bbe78db4bdd3c8a6f2c758063f2dd0b93d23de67315e2cb11e",
+      "geometry_summary": {
+        "antenna_class": "freeform_wire_3d",
+        "dimensions_m": [
+          0.03762461534082624,
+          0.036605781971605605,
+          0.039754256212110844
+        ],
+        "name": "random_freeform_wire_3d",
+        "num_faces": 113,
+        "num_vertices": 114,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2400000000.0,
+        "band_24_index": 45.0,
+        "band_24_min_s11_db": -8.986684262463925,
+        "band_24_mismatch_efficiency": 0.8737208721532198,
+        "band_58_frequency_hz": 5860000000.0,
+        "band_58_index": 218.0,
+        "band_58_min_s11_db": -4.329123161026989,
+        "band_58_mismatch_efficiency": 0.6309478974665328,
+        "composite_score": 0.6309478974665328,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 7.75
+      },
+      "proposal_parameters": {
+        "node_0_x_m": 0.013167446440893262,
+        "node_0_y_m": -0.005454989219740023,
+        "node_0_z_m": -0.01905943114437726,
+        "node_1_x_m": -0.009998568165200492,
+        "node_1_y_m": -0.01623898800601069,
+        "node_1_z_m": -0.006359997526344859,
+        "node_2_x_m": 0.002944925373604787,
+        "node_2_y_m": -0.009613161277128524,
+        "node_2_z_m": 0.013392892095283961,
+        "node_3_x_m": 0.008873648476069595,
+        "node_3_y_m": -0.0013573367580661175,
+        "node_3_z_m": -0.013484109672529443,
+        "node_4_x_m": -0.01321011273770916,
+        "node_4_y_m": -0.017265131894532368,
+        "node_4_z_m": 0.01987712810605542,
+        "node_5_x_m": -0.012404622422199139,
+        "node_5_y_m": 0.0183028909858028,
+        "node_5_z_m": -0.0038647654746304418,
+        "node_6_x_m": 0.018812307670413125,
+        "node_6_y_m": -0.009085408312699396,
+        "node_6_z_m": -0.015922296333584558
+      },
+      "proposer": "random",
+      "run_id": "day6-freeform-dual-random-s303",
+      "schema_version": 1,
+      "score": 0.6309478974665328,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 169,
+      "timestamp": "2026-08-11T21:46:12.246591Z",
+      "topology": null
+    },
+    {
+      "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+      "event_type": "evaluation",
+      "geometry_hash": "9424351422c9a32ad0cdd164b29819f8e88c37eb0d9a10c0f69b0d63d6a999fe",
+      "geometry_summary": {
+        "antenna_class": "freeform_wire_3d",
+        "dimensions_m": [
+          0.0357070217264281,
+          0.03625985827325974,
+          0.039781493537733
+        ],
+        "name": "random_freeform_wire_3d",
+        "num_faces": 117,
+        "num_vertices": 118,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2480000000.0,
+        "band_24_index": 49.0,
+        "band_24_min_s11_db": -4.460707524608242,
+        "band_24_mismatch_efficiency": 0.6419618969114937,
+        "band_58_frequency_hz": 5860000000.0,
+        "band_58_index": 218.0,
+        "band_58_min_s11_db": -3.055534170206777,
+        "band_58_mismatch_efficiency": 0.5051807542220745,
+        "composite_score": 0.5051807542220745,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 8.437000000034459
+      },
+      "proposal_parameters": {
+        "node_0_x_m": 0.01785351086321405,
+        "node_0_y_m": -0.013358912978540784,
+        "node_0_z_m": -0.003263085009070254,
+        "node_1_x_m": 0.008102330753251726,
+        "node_1_y_m": 0.01169263687279894,
+        "node_1_z_m": -0.017386547584682943,
+        "node_2_x_m": 0.010606905440071618,
+        "node_2_y_m": -0.015102187631362708,
+        "node_2_z_m": 0.007476492080772442,
+        "node_3_x_m": -0.015878735204020493,
+        "node_3_y_m": 0.013897658873828708,
+        "node_3_z_m": -0.0198907467688665,
+        "node_4_x_m": 0.017772219260019883,
+        "node_4_y_m": -0.014991024687651074,
+        "node_4_z_m": -0.006407191583223448,
+        "node_5_x_m": -0.005724612274650159,
+        "node_5_y_m": 0.018129929136629867,
+        "node_5_z_m": -0.015800035766996477,
+        "node_6_x_m": 0.012759348097944271,
+        "node_6_y_m": 0.0034097927312599433,
+        "node_6_z_m": -0.00712924088727402
+      },
+      "proposer": "random",
+      "run_id": "day6-freeform-dual-random-s303",
+      "schema_version": 1,
+      "score": 0.5051807542220745,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 163,
+      "timestamp": "2026-08-11T21:45:40.654895Z",
+      "topology": null
+    },
+    {
+      "config_hash": "062433154c9365dec89e64befae9d2d5e957bdf1b711ef92e57956891317651a",
+      "event_type": "evaluation",
+      "geometry_hash": "10ecd2f1286199777c4b6898643d3cc17d2198904433044a1cb8160d12cd8607",
+      "geometry_summary": {
+        "antenna_class": "freeform_wire_3d",
+        "dimensions_m": [
+          0.03947979451018994,
+          0.03872456333306607,
+          0.03486469876052919
+        ],
+        "name": "random_freeform_wire_3d",
+        "num_faces": 85,
+        "num_vertices": 86,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2500000000.0,
+        "band_24_index": 50.0,
+        "band_24_min_s11_db": -3.675917726937846,
+        "band_24_mismatch_efficiency": 0.5710484639911282,
+        "band_58_frequency_hz": 5740000000.0,
+        "band_58_index": 212.0,
+        "band_58_min_s11_db": -2.898365274153644,
+        "band_58_mismatch_efficiency": 0.48694553375607974,
+        "composite_score": 0.48694553375607974,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 4.14100000000326
+      },
+      "proposal_parameters": {
+        "node_0_x_m": 0.01973989725509497,
+        "node_0_y_m": 0.019362281666533036,
+        "node_0_z_m": 0.0009750175506949878,
+        "node_1_x_m": -0.01174837691959913,
+        "node_1_y_m": 0.01933354919311586,
+        "node_1_z_m": -0.01103612468247686,
+        "node_2_x_m": -0.011030414742620299,
+        "node_2_y_m": 0.0145849052586722,
+        "node_2_z_m": 0.009126861520509216,
+        "node_3_x_m": 0.01630045947146513,
+        "node_3_y_m": -0.004465545431212723,
+        "node_3_z_m": 0.011239523557654056,
+        "node_4_x_m": -0.0049793194145805325,
+        "node_4_y_m": 0.002959494645468713,
+        "node_4_z_m": -0.006745745502156808,
+        "node_5_x_m": 0.005232508496665757,
+        "node_5_y_m": -0.0010668707628753438,
+        "node_5_z_m": -0.017432349380264594,
+        "node_6_x_m": -0.007337945457553596,
+        "node_6_y_m": 0.003752242687975294,
+        "node_6_z_m": -0.0063899801502668024
+      },
+      "proposer": "random",
+      "run_id": "day6-freeform-dual-random-s303",
+      "schema_version": 1,
+      "score": 0.48694553375607974,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 98,
+      "timestamp": "2026-08-11T21:40:41.531051Z",
+      "topology": null
+    }
+  ]
+}

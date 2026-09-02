@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-08-09T07:35:00-07:00",
+  "full_output_sha256": "183ebd585b6fc9dcb2178bcdf6083decb552312255d675b145af205a10b067c6",
+  "geometry": {
+    "antenna_class": "wire_dipole_anchor",
+    "length_m": 0.061182134285714285,
+    "wire_radius_m": 0.0005
+  },
+  "runner": "real nec2c subprocess through WSL",
+  "source_frequency_hz": 2450000000.0,
+  "stored_content": "Exact parser-relevant lines extracted from the first frequency block of the captured real output."
+}

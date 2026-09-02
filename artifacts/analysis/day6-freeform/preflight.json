@@ -1,0 +1,108 @@
+{
+  "batch_id": "day6-freeform",
+  "created_at": "2026-08-11T19:37:51.142947Z",
+  "estimated_matrix_seconds": 9225.025199935772,
+  "gp_suggestion_seconds_at_300": 0.01851259998511523,
+  "ocfd": {
+    "band_24_min_s11_db": -4.315946346411636,
+    "band_58_min_s11_db": -4.1695707995125435,
+    "parameters": {
+      "feed_offset_ratio": 0.22105263157894733,
+      "total_length_m": 0.0538421052631579
+    },
+    "run_id": "day6-freeform-ocfd-grid",
+    "score": 0.6171374213680576,
+    "step_index": 152
+  },
+  "optimizer_window": null,
+  "probes": [
+    {
+      "frequency_points": 251,
+      "node_count": 5,
+      "run_id": "day6-freeform-preflight-r3-n5-s6101",
+      "seed": 6101,
+      "simulation_seconds": 0.8440000000409782,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 5,
+      "run_id": "day6-freeform-preflight-r3-n5-s6102",
+      "seed": 6102,
+      "simulation_seconds": 1.8600000000442378,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 5,
+      "run_id": "day6-freeform-preflight-r3-n5-s6103",
+      "seed": 6103,
+      "simulation_seconds": 2.0790000000270084,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 6,
+      "run_id": "day6-freeform-preflight-r3-n6-s6101",
+      "seed": 6101,
+      "simulation_seconds": 0.9839999999967404,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 6,
+      "run_id": "day6-freeform-preflight-r3-n6-s6102",
+      "seed": 6102,
+      "simulation_seconds": 1.7189999999827705,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 6,
+      "run_id": "day6-freeform-preflight-r3-n6-s6103",
+      "seed": 6103,
+      "simulation_seconds": 3.7339999999967404,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 7,
+      "run_id": "day6-freeform-preflight-r3-n7-s6101",
+      "seed": 6101,
+      "simulation_seconds": 1.6880000000237487,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 7,
+      "run_id": "day6-freeform-preflight-r3-n7-s6102",
+      "seed": 6102,
+      "simulation_seconds": 3.9369999999762513,
+      "solver_mode": "subprocess"
+    },
+    {
+      "frequency_points": 251,
+      "node_count": 7,
+      "run_id": "day6-freeform-preflight-r3-n7-s6103",
+      "seed": 6103,
+      "simulation_seconds": 4.5939999999827705,
+      "solver_mode": "subprocess"
+    }
+  ],
+  "schema_version": 1,
+  "scoring_sanity_passed": true,
+  "selected_budget": 200,
+  "selected_node_count": 7,
+  "selected_space_version": "freeform-wire-3d-v1-n7",
+  "straight": {
+    "band_24_min_s11_db": -12.845878329130247,
+    "band_58_min_s11_db": -0.45923253773299927,
+    "parameters": {
+      "feed_offset_ratio": 0.0,
+      "total_length_m": 0.061182134285714285
+    },
+    "run_id": "day6-freeform-straight-control",
+    "score": 0.10034344996329037,
+    "step_index": 0
+  }
+}

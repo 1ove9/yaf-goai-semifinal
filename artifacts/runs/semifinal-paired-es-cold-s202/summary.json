@@ -1,0 +1,43 @@
+{
+  "config": {
+    "agent": "es-cold",
+    "anchor_released": false,
+    "budget_source_config_hash": "d618134588d0db607e21638fdffed4ebff3627a669d281b3dfef456bafc43f92",
+    "budget_source_summary_sha256": "b0a7f612e98064a3cf415731d89a917872fbc3931ee6d1f0116d8de8aaff6138",
+    "evaluation_budget": 300,
+    "execution_commit": "ae4022c2108763689d1f8022f2ed619125b5298f",
+    "manual_baseline_commit": null,
+    "max_consecutive_rejections": 100,
+    "max_total_proposal_attempts": 6000,
+    "openems_cross_check_authorized": false,
+    "preregistration_commit": "abeca0e58e080bdeb297c8169d3c931694daa3ec",
+    "run_id": "semifinal-paired-es-cold-s202",
+    "seed": 202,
+    "warm_parent_document_sha256": null,
+    "warm_parent_hardware_grid_index": null,
+    "warm_parent_hardware_hash": null,
+    "warm_parent_pair_grid_index": null,
+    "warm_parent_pair_hash": null,
+    "warm_parent_run_id": null,
+    "warm_parent_search_score": null,
+    "warm_parent_state_a_geometry_hash": null,
+    "warm_parent_state_b_geometry_hash": null,
+    "warm_parent_step_index": null
+  },
+  "config_hash": "18e807a4e18af548abfd89c4e10693f8b8f6f135fd8f6a4cb399e3baf9c18613",
+  "evaluation_budget": 300,
+  "finished_at": "2026-08-29T10:08:48.622794Z",
+  "proposal_attempts": 924,
+  "rejected_proposals": 624,
+  "run_id": "semifinal-paired-es-cold-s202",
+  "schema_version": 1,
+  "seed": 202,
+  "solver_mode_counts": {
+    "subprocess": 600
+  },
+  "started_at": "2026-08-29T10:04:47.994355Z",
+  "status": "completed",
+  "steps_completed": 300,
+  "termination_reason": "accepted paired-evaluation budget completed",
+  "verdict_ceiling": "insufficient_evidence"
+}

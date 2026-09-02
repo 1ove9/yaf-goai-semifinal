@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use YAF in your research, please cite it as below."
+title: "YAF: YuanXu Antenna Forge — AI-driven antenna inverse design platform"
+type: software
+authors:
+  - name: "1ove9"
+    email: 1ove9@users.noreply.github.com
+version: 0.1.0
+date-released: 2026-05-21
+license: MIT
+repository-code: "https://github.com/1ove9/yaf-goai-semifinal"
+keywords:
+  - antenna design
+  - inverse design
+  - electromagnetics
+  - FDTD
+  - method of moments
+  - deep learning
+  - differentiable simulation
+  - metasurface
+  - topology optimization
+abstract: >-
+  YAF is an open-source platform for AI-driven antenna design: it combines
+  differentiable FDTD (JAX), generative models (VAE/GAN/diffusion), neural
+  operator surrogates (FNO/DeepONet), Bayesian and evolutionary optimization,
+  and adapters to classical electromagnetic solvers (NEC2, openEMS) behind a
+  single FastAPI + task-queue architecture.

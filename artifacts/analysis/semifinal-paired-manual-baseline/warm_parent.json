@@ -1,0 +1,48 @@
+{
+  "base_score": 0.7845105078918817,
+  "baseline_commit": null,
+  "encoded_warm_parent": [
+    0.125,
+    1.0,
+    0.0,
+    0.40718,
+    1.0,
+    0.1671304347826087,
+    0.0
+  ],
+  "hardware_grid_index": 6,
+  "hardware_hash": "d8d7e70ee2f085ca4c9a73b37c9c69a63bd02b97bdb0307d4fda0934642ca933",
+  "pair_grid_index": 963,
+  "pair_hash": "e9f13ba6ede326e3adc4a48ba0a7658c0ca712434550ed98bffab681d262b321",
+  "parent_run_id": "semifinal-paired-manual-baseline",
+  "positive_eligible": false,
+  "proposal": {
+    "hardware": {
+      "box_size_um": 40000,
+      "feed_gap_ratio_ppm": 60000,
+      "max_total_wire_length_um": 100000,
+      "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+      "quantization_version": "integer-um-ppm-v1",
+      "schema_version": 1,
+      "terminal_ratio_ppm": 0,
+      "turn_count": 3,
+      "wire_radius_um": 50
+    },
+    "proposer": "manual-physics-baseline",
+    "state_a": {
+      "span_ratio_ppm": 1000000,
+      "state": "A",
+      "total_wire_length_um": 70359
+    },
+    "state_b": {
+      "span_ratio_ppm": 760000,
+      "state": "B",
+      "total_wire_length_um": 25844
+    }
+  },
+  "schema_version": 1,
+  "search_score": 0.7845105078918817,
+  "state_a_geometry_hash": "cc6d3d8b48d03d8843c4663eb3018b55c10cec15f5066c8975537b01019c69e9",
+  "state_b_geometry_hash": "371fb99d21536e5de565755d55599e778ae9b0cf3fb277c0a155adde4071e783",
+  "valid_pair_search": false
+}

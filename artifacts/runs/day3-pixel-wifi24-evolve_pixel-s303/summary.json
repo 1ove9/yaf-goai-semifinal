@@ -1,0 +1,205 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 24,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "pixel-wifi24-v1-16x16",
+    "require_real_solver": true,
+    "seed": 303,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "wifi24_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.06,
+        "x_min": -0.06,
+        "y_max": 0.06,
+        "y_min": -0.06,
+        "z_max": 0.01,
+        "z_min": -0.01
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+  "evaluation_budget": 24,
+  "finished_at": "2026-08-09T12:07:27.262089Z",
+  "rejected_proposals": 0,
+  "run_id": "day3-pixel-wifi24-evolve_pixel-s303",
+  "schema_version": 1,
+  "seed": 303,
+  "solver_mode_counts": {
+    "subprocess": 24
+  },
+  "started_at": "2026-08-09T12:01:50.786816Z",
+  "steps_completed": 24,
+  "top_designs": [
+    {
+      "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+      "event_type": "evaluation",
+      "geometry_hash": "a9b3af10cd4832d8f5362223896554f8b8868fc35ff224bd10a1b65b2cf13b74",
+      "geometry_summary": {
+        "antenna_class": "pixel_patch",
+        "dimensions_m": [
+          0.04654282647860547,
+          0.04654282647860547,
+          0.0
+        ],
+        "name": "evolve_pixel_pixel_patch",
+        "num_faces": 216,
+        "num_vertices": 436,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.4967809587850097,
+        "efficiency": 0.4684548918116745,
+        "gain_dbi": 3.6156329086958516,
+        "min_s11_db": -1.7768068890525825,
+        "vswr": 17.747553054739427
+      },
+      "proposal_parameters": {
+        "metal_fraction": 0.421875,
+        "mutation_k": 1.0,
+        "novelty_vs_classic_rectangle": 0.1311475409836066
+      },
+      "proposer": "evolve_pixel",
+      "run_id": "day3-pixel-wifi24-evolve_pixel-s303",
+      "schema_version": 1,
+      "score": 0.4967809587850097,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 23,
+      "timestamp": "2026-08-09T12:07:27.260090Z",
+      "topology": {
+        "columns": 16,
+        "connected_to_feed": true,
+        "iou_vs_classic_rectangle": 0.8688524590163934,
+        "left_right_symmetric": true,
+        "metal_pixels": 108,
+        "novelty_vs_classic_rectangle": 0.1311475409836066,
+        "rle": "0:51,1:3,0:4,1:3,0:5,1:12,0:4,1:12,0:4,1:12,0:3,1:5,0:1,1:2,0:1,1:5,0:3,1:12,0:4,1:1,0:1,1:8,0:1,1:1,0:4,1:12,0:4,1:1,0:1,1:8,0:1,1:1,0:4,1:4,0:1,1:2,0:1,1:4,0:50",
+        "rows": 16,
+        "sha256": "0559267ea5159387052b95038a8b949186637a1ab4a0cbf8d0f44334a8d7ed8a"
+      }
+    },
+    {
+      "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+      "event_type": "evaluation",
+      "geometry_hash": "25065b7190a9c8c6ab47569d1d6942ac5c82b9b8beea4da2508cd235340c91ef",
+      "geometry_summary": {
+        "antenna_class": "pixel_patch",
+        "dimensions_m": [
+          0.04654282647860547,
+          0.04654282647860547,
+          0.0
+        ],
+        "name": "evolve_pixel_pixel_patch",
+        "num_faces": 220,
+        "num_vertices": 444,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.4965356461602609,
+        "efficiency": 0.46825596743600856,
+        "gain_dbi": 3.6137623595992325,
+        "min_s11_db": -1.776787415888101,
+        "vswr": 17.75914486654366
+      },
+      "proposal_parameters": {
+        "metal_fraction": 0.4296875,
+        "mutation_k": 2.0,
+        "novelty_vs_classic_rectangle": 0.11475409836065575
+      },
+      "proposer": "evolve_pixel",
+      "run_id": "day3-pixel-wifi24-evolve_pixel-s303",
+      "schema_version": 1,
+      "score": 0.4965356461602609,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 18,
+      "timestamp": "2026-08-09T12:06:23.862677Z",
+      "topology": {
+        "columns": 16,
+        "connected_to_feed": true,
+        "iou_vs_classic_rectangle": 0.8852459016393442,
+        "left_right_symmetric": true,
+        "metal_pixels": 110,
+        "novelty_vs_classic_rectangle": 0.11475409836065575,
+        "rle": "0:51,1:3,0:4,1:3,0:5,1:12,0:4,1:12,0:4,1:12,0:3,1:14,0:3,1:12,0:4,1:1,0:1,1:8,0:1,1:1,0:4,1:12,0:4,1:1,0:1,1:8,0:1,1:1,0:4,1:4,0:1,1:2,0:1,1:4,0:50",
+        "rows": 16,
+        "sha256": "7236f33a2c9d08f63f0d4376d0a0ab955dc4f1ce8d5a1aec3d51eb16c867f824"
+      }
+    },
+    {
+      "config_hash": "027ed41ab8ec92c6d5510aa9eba45104a2114672b4868f6096ab50f7950e8e04",
+      "event_type": "evaluation",
+      "geometry_hash": "834c0525c6b314bff0573d63e01d99b3c5dc62b33316550e0570273447defaab",
+      "geometry_summary": {
+        "antenna_class": "pixel_patch",
+        "dimensions_m": [
+          0.04654282647860547,
+          0.04654282647860547,
+          0.0
+        ],
+        "name": "evolve_pixel_pixel_patch",
+        "num_faces": 220,
+        "num_vertices": 444,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.493585780752813,
+        "efficiency": 0.46618716319167053,
+        "gain_dbi": 3.5982326929975845,
+        "min_s11_db": -1.6840438914855158,
+        "vswr": 18.35694954780916
+      },
+      "proposal_parameters": {
+        "metal_fraction": 0.4296875,
+        "mutation_k": 1.0,
+        "novelty_vs_classic_rectangle": 0.08333333333333337
+      },
+      "proposer": "evolve_pixel",
+      "run_id": "day3-pixel-wifi24-evolve_pixel-s303",
+      "schema_version": 1,
+      "score": 0.493585780752813,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 17,
+      "timestamp": "2026-08-09T12:06:08.795736Z",
+      "topology": {
+        "columns": 16,
+        "connected_to_feed": true,
+        "iou_vs_classic_rectangle": 0.9166666666666666,
+        "left_right_symmetric": true,
+        "metal_pixels": 110,
+        "novelty_vs_classic_rectangle": 0.08333333333333337,
+        "rle": "0:51,1:3,0:4,1:3,0:5,1:12,0:4,1:12,0:4,1:12,0:4,1:12,0:4,1:12,0:4,1:12,0:4,1:12,0:4,1:1,0:1,1:8,0:1,1:1,0:4,1:4,0:1,1:2,0:1,1:4,0:50",
+        "rows": 16,
+        "sha256": "21eed64b858b69f0b43c143af6c2924181d93023495ba6a7053f847364680d56"
+      }
+    }
+  ]
+}

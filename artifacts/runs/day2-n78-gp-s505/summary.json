@@ -1,0 +1,171 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 20,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 505,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.14084507042253522,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        3300000000.0,
+        3800000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "n78_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.04140845070422535,
+        "x_min": -0.04140845070422535,
+        "y_max": 0.04140845070422535,
+        "y_min": -0.04140845070422535,
+        "z_max": 0.006901408450704225,
+        "z_min": -0.006901408450704225
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+  "evaluation_budget": 20,
+  "finished_at": "2026-08-09T10:28:39.205361Z",
+  "run_id": "day2-n78-gp-s505",
+  "schema_version": 1,
+  "seed": 505,
+  "solver_mode_counts": {
+    "subprocess": 20
+  },
+  "started_at": "2026-08-09T10:25:51.221940Z",
+  "steps_completed": 20,
+  "top_designs": [
+    {
+      "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+      "geometry_hash": "ebb9806e55a4974ff73067dd6791ca4cd96f67239a478a115a188e1f8e922603",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.018680454252469697,
+          0.02452648157992875,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.8540140453587383,
+        "efficiency": 0.6133967847210892,
+        "gain_dbi": 4.619325181214476,
+        "min_s11_db": -21.108206851770717,
+        "vswr": 1.6376287165384296
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0037785554160397,
+        "f_ratio": 1.0496975349289426,
+        "feed_ratio": 0.2857150758353123,
+        "substrate_scale": 1.7019524239456802
+      },
+      "proposer": "gp",
+      "run_id": "day2-n78-gp-s505",
+      "schema_version": 1,
+      "score": 0.8540140453587383,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 19,
+      "timestamp": "2026-08-09T10:28:39.203830Z"
+    },
+    {
+      "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+      "geometry_hash": "583aee92df8425016d35fc02cfbf944471ff610f32c3a32ea00e206d91eea056",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.01883695930804353,
+          0.02435374513169227,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.8440687082249313,
+        "efficiency": 0.6122671670849742,
+        "gain_dbi": 4.504822354049286,
+        "min_s11_db": -18.290627539904914,
+        "vswr": 1.3356389733449079
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 0.9884518695108955,
+        "f_ratio": 1.049041040560342,
+        "feed_ratio": 0.29099581568914035,
+        "substrate_scale": 1.6481256743021486
+      },
+      "proposer": "gp",
+      "run_id": "day2-n78-gp-s505",
+      "schema_version": 1,
+      "score": 0.8440687082249313,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 17,
+      "timestamp": "2026-08-09T10:28:28.198875Z"
+    },
+    {
+      "config_hash": "59911b4ad3ee305dae0fdfab75254bd34eada0de4f91ff6650f16f95aac033c6",
+      "geometry_hash": "a2e81cfee47d339d346a936451584ff12b3f238edf2e044cf7746eefeec82b95",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.018889774924091995,
+          0.02457710092546505,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.8317001969170321,
+        "efficiency": 0.6050665622651453,
+        "gain_dbi": 4.387259953296619,
+        "min_s11_db": -17.79249662100028,
+        "vswr": 1.2960433048954452
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 0.9949516236357521,
+        "f_ratio": 1.0429195336124704,
+        "feed_ratio": 0.2936372558336273,
+        "substrate_scale": 1.6033899365642204
+      },
+      "proposer": "gp",
+      "run_id": "day2-n78-gp-s505",
+      "schema_version": 1,
+      "score": 0.8317001969170321,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 18,
+      "timestamp": "2026-08-09T10:28:33.489838Z"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 400,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space meander-dipole-v2.1-5d.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, adaptive lambda/20 segmentation, wire-realized-gain-v2 score with zero lossless-efficiency weight, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v2.1-5d",
+    "require_real_solver": true,
+    "seed": 202,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 2.15,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+  "evaluation_budget": 400,
+  "failure": null,
+  "finished_at": "2026-08-09T16:38:41.596893Z",
+  "rejected_proposals": 0,
+  "run_id": "day5-wire-v6r2-wifi24-gp-s202",
+  "schema_version": 1,
+  "seed": 202,
+  "solver_mode_counts": {
+    "subprocess": 400
+  },
+  "started_at": "2026-08-09T16:36:58.019743Z",
+  "status": "completed",
+  "steps_completed": 400,
+  "top_designs": [
+    {
+      "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+      "event_type": "evaluation",
+      "geometry_hash": "e3bcb25f8878021a281d458e2d94821c8a7bf79da8116b2618d4623a5dc66ca8",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.029954667767183453,
+          0.0046870229980664055,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 27,
+        "num_vertices": 28,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7061724619536333,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.94,
+        "min_s11_db": -6.128246308767721,
+        "mismatch_efficiency": 0.7561204589168347,
+        "realized_gain_dbi": 0.7259098925184921,
+        "resonance_frequency_hz": 2478000000.0,
+        "resonance_index": 39.0,
+        "vswr": 2.9513323512553433
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.05166008263178219,
+        "span_ratio": 0.9986467443505643,
+        "terminal_ratio": 0.9988334244935697,
+        "total_length_m": 0.0815119207459139,
+        "turns": 5.906579656565064
+      },
+      "proposer": "gp",
+      "run_id": "day5-wire-v6r2-wifi24-gp-s202",
+      "schema_version": 1,
+      "score": 0.7061724619536333,
+      "seed": 202,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 255,
+      "timestamp": "2026-08-09T16:38:03.863238Z",
+      "topology": null
+    },
+    {
+      "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+      "event_type": "evaluation",
+      "geometry_hash": "e580526705b059e0064bc3b4d0d432927bcb6ec67f788607ca2086ded2391ebe",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.029440689004262645,
+          0.00468554701657807,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 27,
+        "num_vertices": 28,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7061332002813302,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.91,
+        "min_s11_db": -6.175476786386045,
+        "mismatch_efficiency": 0.7587583326994352,
+        "realized_gain_dbi": 0.7110347354033257,
+        "resonance_frequency_hz": 2498000000.0,
+        "resonance_index": 49.0,
+        "vswr": 2.930536300712949
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.059112582048279946,
+        "span_ratio": 0.9934845182961476,
+        "terminal_ratio": 0.9091394724253632,
+        "total_length_m": 0.0809817061866214,
+        "turns": 5.527146757163459
+      },
+      "proposer": "gp",
+      "run_id": "day5-wire-v6r2-wifi24-gp-s202",
+      "schema_version": 1,
+      "score": 0.7061332002813302,
+      "seed": 202,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 253,
+      "timestamp": "2026-08-09T16:38:03.336166Z",
+      "topology": null
+    },
+    {
+      "config_hash": "d7a1beb3829199a5c7c0cf5616f871282b7632af540521f39fe4833bb8bf78a6",
+      "event_type": "evaluation",
+      "geometry_hash": "c72c08dc28407d80785fae4ece3f9f5225acd2a70963cf3edf22fcb5128ffa31",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.029538317721446126,
+          0.004641673921894162,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 27,
+        "num_vertices": 28,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7050947768861217,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 1.98,
+        "min_s11_db": -6.0497565504646325,
+        "mismatch_efficiency": 0.7516727695481376,
+        "realized_gain_dbi": 0.7402881757456556,
+        "resonance_frequency_hz": 2500000000.0,
+        "resonance_index": 50.0,
+        "vswr": 2.9866401540498213
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.04492622856842507,
+        "span_ratio": 0.9996964640997233,
+        "terminal_ratio": 0.889396307337542,
+        "total_length_m": 0.0805967308622819,
+        "turns": 5.76999771018907
+      },
+      "proposer": "gp",
+      "run_id": "day5-wire-v6r2-wifi24-gp-s202",
+      "schema_version": 1,
+      "score": 0.7050947768861217,
+      "seed": 202,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 373,
+      "timestamp": "2026-08-09T16:38:34.737803Z",
+      "topology": null
+    }
+  ]
+}

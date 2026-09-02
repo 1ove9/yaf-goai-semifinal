@@ -1,0 +1,483 @@
+{
+  "agent_run_statistics": [
+    {
+      "accepted_pair_count": 300,
+      "agent": "random",
+      "best_raw_base_score": 0.4029418597382737,
+      "best_valid_base_score": null,
+      "proposal_attempts": 779,
+      "rejected_proposals": 479,
+      "run_id": "semifinal-paired-random-s101",
+      "seed": 101,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 238.619769
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "random",
+      "best_raw_base_score": 0.5340091394517721,
+      "best_valid_base_score": null,
+      "proposal_attempts": 862,
+      "rejected_proposals": 562,
+      "run_id": "semifinal-paired-random-s202",
+      "seed": 202,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 208.887696
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "random",
+      "best_raw_base_score": 0.48020256072248724,
+      "best_valid_base_score": null,
+      "proposal_attempts": 791,
+      "rejected_proposals": 491,
+      "run_id": "semifinal-paired-random-s303",
+      "seed": 303,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 240.715203
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-cold",
+      "best_raw_base_score": 0.8077490722123942,
+      "best_valid_base_score": null,
+      "proposal_attempts": 453,
+      "rejected_proposals": 153,
+      "run_id": "semifinal-paired-es-cold-s101",
+      "seed": 101,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 222.817172
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-cold",
+      "best_raw_base_score": 0.6823017579923798,
+      "best_valid_base_score": null,
+      "proposal_attempts": 924,
+      "rejected_proposals": 624,
+      "run_id": "semifinal-paired-es-cold-s202",
+      "seed": 202,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 240.628439
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-cold",
+      "best_raw_base_score": 0.7819842493662035,
+      "best_valid_base_score": null,
+      "proposal_attempts": 493,
+      "rejected_proposals": 193,
+      "run_id": "semifinal-paired-es-cold-s303",
+      "seed": 303,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 223.602603
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-warm",
+      "best_raw_base_score": 0.7993123917441163,
+      "best_valid_base_score": 0.7945832225323137,
+      "proposal_attempts": 836,
+      "rejected_proposals": 536,
+      "run_id": "semifinal-paired-es-warm-s101",
+      "seed": 101,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 48,
+      "valid_pair_fraction": 0.16,
+      "wall_seconds": 222.659675
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-warm",
+      "best_raw_base_score": 0.8283396841168057,
+      "best_valid_base_score": null,
+      "proposal_attempts": 518,
+      "rejected_proposals": 218,
+      "run_id": "semifinal-paired-es-warm-s202",
+      "seed": 202,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 219.801762
+    },
+    {
+      "accepted_pair_count": 300,
+      "agent": "es-warm",
+      "best_raw_base_score": 0.8288641616915968,
+      "best_valid_base_score": null,
+      "proposal_attempts": 554,
+      "rejected_proposals": 254,
+      "run_id": "semifinal-paired-es-warm-s303",
+      "seed": 303,
+      "subprocess_curve_count": 600,
+      "valid_pair_count": 0,
+      "valid_pair_fraction": 0.0,
+      "wall_seconds": 225.129035
+    }
+  ],
+  "candidates": [
+    {
+      "base_score": 0.7945832225323137,
+      "category": "top-es",
+      "hardware_hash": "b6f72349504b6994a10ff9d32ffb7059424073fb25bc2900860f7e1348b9340c",
+      "metrics": {
+        "base_score": 0.7945832225323137,
+        "search_score": 1.0445832225323137,
+        "state_a": {
+          "figure_of_merit": 0.7945832225323137,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.20541677746768625,
+          "selected_frequency_hz": 2493000000.0,
+          "selected_index": 93,
+          "selected_s11_db": -6.873640881775399,
+          "state": "A",
+          "valid_search": true
+        },
+        "state_b": {
+          "figure_of_merit": 0.9753981192174905,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.02460188078250949,
+          "selected_frequency_hz": 5735500000.0,
+          "selected_index": 7,
+          "selected_s11_db": -16.090316903664355,
+          "state": "B",
+          "valid_search": true
+        },
+        "valid_pair_search": true,
+        "worst_reflected_power_fraction": 0.20541677746768625
+      },
+      "pair_hash": "8a4ad18c710ec185728fd5bff0e6f16461aea29362024893e1bb6ddd3dcc73ca",
+      "positive_eligible": true,
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 58388,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 87831,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "es",
+        "state_a": {
+          "span_ratio_ppm": 998536,
+          "state": "A",
+          "total_wire_length_um": 70731
+        },
+        "state_b": {
+          "span_ratio_ppm": 760951,
+          "state": "B",
+          "total_wire_length_um": 26057
+        }
+      },
+      "proposer": "es",
+      "search_score": 1.0445832225323137,
+      "source_log_sha256": "af5b158d487577d7a07f26186ff66222b34abe05e36bd58596849dc4e3ff6c65",
+      "source_proposal_index": 658,
+      "source_record_count": 1800,
+      "source_run_id": "semifinal-paired-es-warm-s101",
+      "source_run_ids": [
+        "semifinal-paired-es-cold-s101",
+        "semifinal-paired-es-cold-s202",
+        "semifinal-paired-es-cold-s303",
+        "semifinal-paired-es-warm-s101",
+        "semifinal-paired-es-warm-s202",
+        "semifinal-paired-es-warm-s303"
+      ],
+      "source_step_index": 213,
+      "source_summary_sha256": "52cd3ad16c3db5b2f3d98ab2bf394e69d4f6af0381d595d88edd3de3f98e25b7",
+      "state_a_geometry_hash": "4d8c585c7e4112d1d8aad9d8c33b55642549008cec6649075a75ffa4a4b15b55",
+      "state_b_geometry_hash": "84566f8b6ab538d6ff1ae730b2ecd74f445fc127f877f8edb1a53530e509c33e",
+      "trajectory": {
+        "maximum_adjacent_node_displacement_m": 0.0002617344680342499,
+        "minimum_clearance_m": 0.00020275218914699993,
+        "minimum_height_m": 0.00040550437829399986,
+        "minimum_pitch_m": 0.003512815,
+        "point_count": 21,
+        "rejection_reason": null,
+        "state_geometry_hashes": [
+          "294dea95c9a29b2a2e553109b147d0753f374e34a0927dec14a5e3072411f66d",
+          "3eed697657901ebfcda369fd574031e764330a54535bc47d4b5df551c1da1d83",
+          "2dc9108ca0fc7bf1acc433b38921efccc12160895a27a75af51260c60b8f9370",
+          "8e3466abae014995cac62a6ae52b327aa75feb001920af384274870506068c05",
+          "ee5a92ec7e41e402a7a1838efd13c535a6aff7f59a4dd3c24f716cfe9af480a2",
+          "adf966691f424db1ff49eec4411207c158f29df47392fcfd95bdb35e8eddac33",
+          "db77d08cb650a345ea42c5a15b01d89d75740ca277f90818cf2f867d7f193aac",
+          "8b5fa89723958e2c01af42ad8db440fd134a938effcc6ab01bfe91032bf2105a",
+          "c29f18ad48f2e6baf657fbbb2f1ed68b8717ac4bf5054fe8bbb68f3c9ae25ba3",
+          "f1f909c58249b209905fdeef0e7e72c8c569231dc6f37b1d6b71b901b46d3bfb",
+          "80f0bda5414933cb664fb58f1ea1881a4acdd3a7dbf1be34d84a876ac19e92c4",
+          "b667060a8ca373d0cc6f57231186e98d4cb40a09648107f7dfd88f0a46cffda6",
+          "160025d68e4f7f6e73aa32754a7632f24345695eb7a5d1a89c4b82ca2a7f1d1a",
+          "f35829640c803aadcfa827c9d2acda73727f1e94548ac895f7d558c9ee23dbd8",
+          "117d2b9ddc15d80bc545839a359e0a7c97a78e145b951b5986ce151f63200b33",
+          "1e665d8e93cc4e2a582fd4bc29db09c2bb343d51d5aed78d73d0bcc5acb276af",
+          "05b373925c86a65611939684dcb42b2c6912d6130cda2a210077a30d0ef8f449",
+          "d5ee8c638cbecee6dbbe96934dd82f6342b83bcf50fff87e41639426c0bfbfa9",
+          "6ae553abef56237ee0009c56125974e90de7dcf12f5d3f9b9530703ff42ba11f",
+          "5ec9b9f619d096e5dce642032076ac40de2d4e075356a67669fcdc2c6247ecde",
+          "2649941a4916314ca652b2b75c157aaa655359fc309599d5afe8d62b7d70012e"
+        ],
+        "valid": true
+      },
+      "valid_pair_search": true,
+      "valid_record_count": 48
+    },
+    {
+      "base_score": 0.5340091394517721,
+      "category": "top-random",
+      "hardware_hash": "ab8ef88383f7f66bc70aec7ef1ca2b38ad95bc262b5880f36a76718be1355d47",
+      "metrics": {
+        "base_score": 0.5340091394517721,
+        "search_score": 0.5340091394517721,
+        "state_a": {
+          "figure_of_merit": 0.5340091394517721,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.46599086054822786,
+          "selected_frequency_hz": 2500000000.0,
+          "selected_index": 100,
+          "selected_s11_db": -3.316226010190041,
+          "state": "A",
+          "valid_search": false
+        },
+        "state_b": {
+          "figure_of_merit": 0.5589209335865346,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.4410790664134654,
+          "selected_frequency_hz": 5725000000.0,
+          "selected_index": 0,
+          "selected_s11_db": -3.554835533230487,
+          "state": "B",
+          "valid_search": false
+        },
+        "valid_pair_search": false,
+        "worst_reflected_power_fraction": 0.46599086054822786
+      },
+      "pair_hash": "cbf69fb9b291f64fbf5b965ee2ad6910542cecf54068aa485aabfbafcc03c130",
+      "positive_eligible": false,
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 31913,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 131963,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "random",
+        "state_a": {
+          "span_ratio_ppm": 979759,
+          "state": "A",
+          "total_wire_length_um": 68290
+        },
+        "state_b": {
+          "span_ratio_ppm": 765765,
+          "state": "B",
+          "total_wire_length_um": 31426
+        }
+      },
+      "proposer": "random",
+      "search_score": 0.5340091394517721,
+      "source_log_sha256": "6d314da8045b620f8303b1335921d1d770d3cac6a5bff1e91fceacb6a6a0626e",
+      "source_proposal_index": 349,
+      "source_record_count": 900,
+      "source_run_id": "semifinal-paired-random-s202",
+      "source_run_ids": [
+        "semifinal-paired-random-s101",
+        "semifinal-paired-random-s202",
+        "semifinal-paired-random-s303"
+      ],
+      "source_step_index": 130,
+      "source_summary_sha256": "2e9aff581abb264d5a0a7babe0cc48ba0bf61e19c6888051c3d7bfb175ac8bd9",
+      "state_a_geometry_hash": "3ac1ffaf3d897135bb98f762323a55183356cfd6a05f63fd04f5131929aa6ddc",
+      "state_b_geometry_hash": "53e4f3bb11960af76621adf6d6888a55a877bf46496a5d2e4aa3f8fd4abe7123",
+      "trajectory": {
+        "maximum_adjacent_node_displacement_m": 0.0002064143496331425,
+        "minimum_clearance_m": 0.0004208203934422855,
+        "minimum_height_m": 0.000841640786884571,
+        "minimum_pitch_m": 0.002935408,
+        "point_count": 21,
+        "rejection_reason": null,
+        "state_geometry_hashes": [
+          "c824fc2bfe6790d7f43ae43dd1ac2887103e53968c4ceaa51bd05e08914381e8",
+          "bee8a5612f3428f8de24525a30f4c5d648f7f2f0c58cbf4923538686a12d4b95",
+          "b853f9b63aabd2f0b249b74ee89280099a2e7d1a305b0d9fc6f2d193a367d641",
+          "52e73593ed56cc76b6b4e7efc17ae3f50febf2b2f13953dd6cfecd679394ad4c",
+          "264d2674ea012f37c8fe52072e03c7c2611efb64fb98e468244e88aaa59d0294",
+          "899a889b2916f828727e2c7bea6def2a5819c230bbaccbc7772fc057fcca80e0",
+          "b241a6941d9521e7d0e0eaa728bb176e38b9fbd7a199464065f4979c4604512f",
+          "8e0f30d54e3a3b3ec0da685dca81b98615991a5b977798d7660ead63a926d195",
+          "dba74f8a707096c507dfb15ac94b061c74d8001b6f2de2161efeb3ea244dc16b",
+          "b3a0556cdc99754e1c82c033f7e01a1e03beda3502d426777bf887cdb8d4dfc8",
+          "fc44cd08f2be606f0d5be33d4b0fafb9dfb5cc0e6394db55c0da1959a13567e7",
+          "f8f002784a62275c8ccf0c3dfb1c8bca89d38508c7615419bed9903f93e4061f",
+          "365f491d40bea02d14ef0ac8e85cd4ce12c3d714a75a2341f47bf6eba9072485",
+          "987a84a60f010fa9f621ad817c14ff1b7bea6d18f74f48fab52b182af09104e7",
+          "dc83c5bc9b4fa898c2f47fd63ae95dc77ebe96e6394b75bc775dd555787f3d4e",
+          "0ac32ded6dd13a9e4d8b0929cb6e68576a57f4c686d23150ca5ece5d7a626844",
+          "c161a4dddfa0cf2783967b088d569a9159b4f8a161687996e7cdb2dfd8ab147d",
+          "0f9b4232f0cb876fb4116be16703162b20124f805030ea3dcd0c9127fc511a4f",
+          "477e2ff8b283f1bf64c56b16ef69982f46e84edc95fbff0b1295316627769267",
+          "a6a37040db2e989aea7c5e4de6665955280e9f212335ad09dbca5c0e4de056d8",
+          "4821850943d1237ed05cf4b18f09ad67be50b17634d4ae1f93efd98940bd1295"
+        ],
+        "valid": true
+      },
+      "valid_pair_search": false,
+      "valid_record_count": 0
+    },
+    {
+      "base_score": 0.7845105078918817,
+      "category": "manual-baseline",
+      "hardware_hash": "d8d7e70ee2f085ca4c9a73b37c9c69a63bd02b97bdb0307d4fda0934642ca933",
+      "metrics": {
+        "base_score": 0.7845105078918817,
+        "search_score": 0.7845105078918817,
+        "state_a": {
+          "figure_of_merit": 0.7845105078918817,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.21548949210811824,
+          "selected_frequency_hz": 2500000000.0,
+          "selected_index": 100,
+          "selected_s11_db": -6.665739024439646,
+          "state": "A",
+          "valid_search": false
+        },
+        "state_b": {
+          "figure_of_merit": 0.978572049104169,
+          "realized_gain_dbi": null,
+          "reflected_power_fraction": 0.021427950895831084,
+          "selected_frequency_hz": 5852500000.0,
+          "selected_index": 85,
+          "selected_s11_db": -16.690193575247726,
+          "state": "B",
+          "valid_search": true
+        },
+        "valid_pair_search": false,
+        "worst_reflected_power_fraction": 0.21548949210811824
+      },
+      "pair_hash": "e9f13ba6ede326e3adc4a48ba0a7658c0ca712434550ed98bffab681d262b321",
+      "positive_eligible": false,
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "manual-physics-baseline",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 70359
+        },
+        "state_b": {
+          "span_ratio_ppm": 760000,
+          "state": "B",
+          "total_wire_length_um": 25844
+        }
+      },
+      "proposer": "manual-physics-baseline",
+      "search_score": 0.7845105078918817,
+      "source_log_sha256": "838fd4d77e6fe15ad7bd7625d95d6a8071a96cd6c1e2483dcae77824a80420e4",
+      "source_proposal_index": 963,
+      "source_record_count": 756,
+      "source_run_id": "semifinal-paired-manual-baseline",
+      "source_run_ids": [
+        "semifinal-paired-manual-baseline"
+      ],
+      "source_step_index": 288,
+      "source_summary_sha256": "a089fa75ac3891ea7895b86962574aefda778c9a2d8728d1f29c2db7027cb133",
+      "state_a_geometry_hash": "cc6d3d8b48d03d8843c4663eb3018b55c10cec15f5066c8975537b01019c69e9",
+      "state_b_geometry_hash": "371fb99d21536e5de565755d55599e778ae9b0cf3fb277c0a155adde4071e783",
+      "trajectory": {
+        "maximum_adjacent_node_displacement_m": 0.0002592673523604553,
+        "minimum_clearance_m": 0.0002443999999999998,
+        "minimum_height_m": 0.0004887999999999996,
+        "minimum_pitch_m": 0.0035,
+        "point_count": 21,
+        "rejection_reason": null,
+        "state_geometry_hashes": [
+          "56a8501986a3237ef3cf71bdf4ab10873520cead4e6ab93aa7ad88616ffbae5e",
+          "b99b84e28a54137516cc8b32cc06f1b91d8c6bd0cb232bf3e8124b4a6676e64c",
+          "1780ae08ae47c647cab30378af2760bf3f85b7e42431b2110c7cf30f1f7b366c",
+          "d79cd29dfc9d5eddc25b5730e0b770c149ccb89d2d310e344efb93931f269476",
+          "9aacf648afcf786ef396e8047df7bb29e40ae795b94bcfa45b492408a9da1f0d",
+          "1a767091eb9e2f0bda7ccd321869fa9f7c3d803ef9eba25e5acd4e70edd04868",
+          "2ec499d6141d1822b4530dcfa607e3168e329cb94b8c70fb312e5e8aaefa3c19",
+          "0d80167bfbc92729044159ef9d9f6251de316c6ed8f0df34d6e4541604fb5146",
+          "946843855ad88e410f17299cff06d8ff0726b8de823c92400d687ad83294a944",
+          "7c537fabb20788b9cf4f0688a148323641af98e1161b2c9ec98d9192a561e849",
+          "71c34db12c0bfdb65286a847a3e30b6373ab1e174917596dcb28bdfeb5eb0368",
+          "07b88ed47c7517a408415baaa9a02875b47ce124617dd01d14b4177f1816ead0",
+          "a0af83acbbf5b2730a1f960d0feece9a2e670ab707c3bc852495daa10dd738e1",
+          "4e8236e8d59362ad0c9873eabec791bc4017f75924c093e37abd7d2e46ed3697",
+          "83afbd732e312b4fe16d4c8f870c42a81e1eff66aabfb34662dafd003296d277",
+          "c00f0cc4c097951a833981643c09967ae38c86dc6effa426667ee7d436a8d2e1",
+          "9ed24fea394dc1631d595273692ee6d2d6a1725d80bf21cd78e0088842a25a0b",
+          "6176fa69b1d2a165b68de85dc6c37cb854d5ecffa350765e30a3d0caaf9dfa19",
+          "d792b015df2746aaec620776a115691ff5f8177b3edd6c278b261969532b46a1",
+          "c409214440e2de811ab8833a8864e70a5678b1aa288d1e1794117e21d4a34ff9",
+          "b8db6f05a47ee71748a341ac38f354620abec5939456db561b3dadb0f3a70915"
+        ],
+        "valid": true
+      },
+      "valid_pair_search": false,
+      "valid_record_count": 0
+    }
+  ],
+  "concept_label": "paired-state-hypothesis",
+  "effect_assessment": {
+    "candidate_category": "top-es",
+    "candidate_value": 0.20541677746768625,
+    "maximum_candidate_to_reference_ratio": 0.9,
+    "metric": "worst-state-reflected-power-fraction",
+    "observed_candidate_to_reference_ratio": 0.9532565855444209,
+    "passed": false,
+    "reference_category": "manual-baseline",
+    "reference_value": 0.21548949210811824,
+    "relative_reduction_fraction": 0.04674341445557906,
+    "threshold_fraction": 0.1
+  },
+  "matrix_budget_complete": true,
+  "openems_cross_check_authorized": false,
+  "schema_version": 1,
+  "selection_order": "valid_pair_search first; base_score desc; hardware_hash; run_id; step",
+  "selection_preregistration_commit": "abeca0e58e080bdeb297c8169d3c931694daa3ec",
+  "source_evidence_commit": "a19684b5449774db82b21907cc11c7874287f838",
+  "source_manifest_sha256": "6de538d4ec44931eda14cd4ce1828b2962176c8af500106f48bb0fbba331ffcb",
+  "validity_gate_diagnostic": {
+    "apparent_reduction_fraction": 0.20582745527777901,
+    "base_score": 0.8288641616915968,
+    "pair_hash": "67085aa8d9592abf647cdc735419732c1eb2b20dcb1e558735cb7cfafb62205d",
+    "source_run_id": "semifinal-paired-es-warm-s303",
+    "source_step_index": 214,
+    "state_a_selected_index": 100,
+    "state_b_selected_index": 0,
+    "valid_pair_search": false,
+    "worst_reflected_power_fraction": 0.17113583830840323
+  },
+  "verdict_ceiling": "insufficient_evidence"
+}

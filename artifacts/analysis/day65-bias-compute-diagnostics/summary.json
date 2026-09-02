@@ -1,0 +1,101 @@
+{
+  "candidate_a": {
+    "candidate": "A",
+    "estimated_field_memory_bytes": 5646775680,
+    "estimated_field_memory_gib": 5.258969664573669,
+    "memory_estimate_method": "six_float64_field_components_per_Yee_cell_lower_bound",
+    "mesh": {
+      "refinement": 6.0,
+      "total_cells": 117641160,
+      "x": {
+        "cell_count": 490,
+        "line_count": 491,
+        "maximum_cell_size_m": 0.0046121916616000055,
+        "minimum_cell_size_m": 7.499999999999998e-05
+      },
+      "xml_sha256": "a6aab62a1055a3c6effb3f652fa7dbe99e9ab9922c951f111cd0fe52a91caede",
+      "y": {
+        "cell_count": 486,
+        "line_count": 487,
+        "maximum_cell_size_m": 0.004612191661599999,
+        "minimum_cell_size_m": 8.305903519999908e-05
+      },
+      "z": {
+        "cell_count": 494,
+        "line_count": 495,
+        "maximum_cell_size_m": 0.0046121916616000055,
+        "minimum_cell_size_m": 8.314080739999993e-05
+      }
+    },
+    "openems_solve_invoked": false,
+    "rank": 1,
+    "seed": 202,
+    "source_geometry_hash": "84fe11996e0ebd59ae36a4907a376f15c1038d99319e340225e116d3f317b4d2",
+    "source_run_id": "day6-freeform-dual-gp-s202",
+    "source_step_index": 193,
+    "xml_sha256": "a6aab62a1055a3c6effb3f652fa7dbe99e9ab9922c951f111cd0fe52a91caede"
+  },
+  "candidate_b": {
+    "candidate": "B",
+    "estimated_field_memory_bytes": 6564672000,
+    "estimated_field_memory_gib": 6.113827228546143,
+    "memory_estimate_method": "six_float64_field_components_per_Yee_cell_lower_bound",
+    "mesh": {
+      "refinement": 6.0,
+      "total_cells": 136764000,
+      "x": {
+        "cell_count": 500,
+        "line_count": 501,
+        "maximum_cell_size_m": 0.004612191661599999,
+        "minimum_cell_size_m": 7.499999999999998e-05
+      },
+      "xml_sha256": "c0db05cf170b873201529461cf90c4fd5a2c981cd39be1cdce15e911ee3471ba",
+      "y": {
+        "cell_count": 524,
+        "line_count": 525,
+        "maximum_cell_size_m": 0.0046121916616000055,
+        "minimum_cell_size_m": 8.305082490000018e-05
+      },
+      "z": {
+        "cell_count": 522,
+        "line_count": 523,
+        "maximum_cell_size_m": 0.004612191661599999,
+        "minimum_cell_size_m": 8.326261529000012e-05
+      }
+    },
+    "openems_solve_invoked": false,
+    "rank": 2,
+    "seed": 202,
+    "source_geometry_hash": "9d47e040d4144247c0030479f3b02959222c8b10b269d8366ab15269be93a2b3",
+    "source_run_id": "day6-freeform-dual-gp-s202",
+    "source_step_index": 172,
+    "xml_sha256": "c0db05cf170b873201529461cf90c4fd5a2c981cd39be1cdce15e911ee3471ba"
+  },
+  "compute_decision": {
+    "cells_b_over_a": 1.1625522903718393,
+    "classification": "future_timeout_extension_authorized",
+    "future_timeout_seconds": 43200.0,
+    "retry_in_this_task": false,
+    "threshold": 1.35
+  },
+  "correction_proposal": [
+    "Treat conductor radius as one contributor and pre-register a factorial anchor audit of radius, feed representation, and grid resolution before changing any protocol threshold.",
+    "A future, separately executed candidate-B audit may raise only openems_timeout_seconds to 43200; geometry, mesh, sweep, and every verdict gate must remain unchanged."
+  ],
+  "generated_at": "2026-08-13T09:43:30.081338Z",
+  "preregistration_path": "DECISIONS.md",
+  "radius_decision": {
+    "classification": "partial_attribution",
+    "explained_fraction": 0.3333333333333333
+  },
+  "radius_run_id": "day65-nec2-surrogate-radius-diagnostic",
+  "schema_version": 1,
+  "solver_invocations": {
+    "nec2_subprocess": 1,
+    "openems_time_stepping": 0
+  },
+  "timeout_evidence_paths": [
+    "runs/day65-pipeline.stdout.log",
+    "runs/day65-pipeline.stderr.log"
+  ]
+}

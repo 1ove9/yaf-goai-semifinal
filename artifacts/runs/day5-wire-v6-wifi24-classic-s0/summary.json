@@ -1,0 +1,56 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 1,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space meander-dipole-v2-5d.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, adaptive lambda/20 segmentation, wire-realized-gain-v2 score with zero lossless-efficiency weight, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v2-5d",
+    "require_real_solver": true,
+    "seed": 0,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 2.15,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "fb7f7d240e04f2b12a59f1cbfc076b1ed081463952acd17337c690dcf1d0b380",
+  "evaluation_budget": 1,
+  "failure": "SolverUnavailableError: [nec2] Job 5895f3cc-71f1-4a65-be4d-19818bf73e86: real solver unavailable (exploration requires real physics; received solver_mode=fallback_analytical) and YAF_NO_FALLBACK is set \u2014 refusing to return analytical-fallback results",
+  "finished_at": "2026-08-09T16:20:56.883398Z",
+  "rejected_proposals": 0,
+  "run_id": "day5-wire-v6-wifi24-classic-s0",
+  "schema_version": 1,
+  "seed": 0,
+  "solver_mode_counts": {},
+  "started_at": "2026-08-09T16:20:56.853211Z",
+  "status": "failed",
+  "steps_completed": 0,
+  "top_designs": []
+}

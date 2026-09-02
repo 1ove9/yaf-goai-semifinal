@@ -1,0 +1,17 @@
+                               --------- FREQUENCY --------
+                                FREQUENCY : 2.4500E+03 MHz
+                        --------- ANTENNA INPUT PARAMETERS ---------
+  TAG   SEG       VOLTAGE (VOLTS)         CURRENT (AMPS)         IMPEDANCE (OHMS)        ADMITTANCE (MHOS)     POWER
+  No:   No:     REAL      IMAGINARY     REAL      IMAGINARY     REAL      IMAGINARY    REAL       IMAGINARY   (WATTS)
+    1     6  1.0000E+00  0.0000E+00  8.3854E-03 -4.5855E-03  9.1802E+01  5.0202E+01  8.3854E-03 -4.5855E-03  4.1927E-03
+                               ---------- POWER BUDGET ---------
+                               INPUT POWER   =  4.1927E-03 Watts
+                               RADIATED POWER=  4.1927E-03 Watts
+                               STRUCTURE LOSS=  0.0000E+00 Watts
+                               NETWORK LOSS  =  0.0000E+00 Watts
+                               EFFICIENCY    =  100.00 Percent
+                             ---------- RADIATION PATTERNS -----------
+ ---- ANGLES -----     ----- POWER GAINS -----       ---- POLARIZATION ----   ---- E(THETA) ----    ----- E(PHI) ------
+  THETA      PHI       VERTC    HORIZ    TOTAL       AXIAL      TILT  SENSE   MAGNITUDE    PHASE    MAGNITUDE     PHASE
+ DEGREES   DEGREES        DB       DB       DB       RATIO   DEGREES            VOLTS/M   DEGREES     VOLTS/M   DEGREES
+   90.00      0.00      2.19  -999.99     2.19      0.0000      0.00 LINEAR  6.4500E-01     55.30  0.0000E+00      0.00

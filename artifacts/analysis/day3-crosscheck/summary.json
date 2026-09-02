@@ -1,0 +1,117 @@
+{
+  "batch_id": "day3-crosscheck",
+  "decisions": [
+    {
+      "cross_check_run_id": "day3-crosscheck-n78",
+      "cross_solver_verdict": "DIVERGENT",
+      "day2_improvement_fraction": 0.4299405293553167,
+      "day2_improvement_threshold_met": true,
+      "nec2_resonance_frequency_hz": 9019300000.0,
+      "nec2_resonance_s11_db": -5.029710570530982,
+      "openems_resonance_frequency_hz": 6944087000.990699,
+      "openems_resonance_s11_db": -13.92496116695912,
+      "reason": "The air-variant cross-solver result is DIVERGENT (or the Day 2 improvement threshold was not met), so the positive verdict remains insufficient_evidence; the disagreement is retained as an anomaly signal.",
+      "resonance_relative_difference": 0.29884605401879827,
+      "s11_depth_difference_db": 8.895250596428138,
+      "source_run_ids": [
+        "day2-n78-classic-s0",
+        "day2-n78-gp-s101",
+        "day2-n78-random-s101",
+        "day2-n78-gp-s202",
+        "day2-n78-random-s202",
+        "day2-n78-gp-s303",
+        "day2-n78-random-s303",
+        "day2-n78-gp-s404",
+        "day2-n78-random-s404",
+        "day2-n78-gp-s505",
+        "day2-n78-random-s505",
+        "day3-crosscheck-n78"
+      ],
+      "spec": "n78",
+      "verdict": "insufficient_evidence"
+    },
+    {
+      "cross_check_run_id": "day3-crosscheck-wifi24",
+      "cross_solver_verdict": "DIVERGENT",
+      "day2_improvement_fraction": 0.48634381671974714,
+      "day2_improvement_threshold_met": true,
+      "nec2_resonance_frequency_hz": 6447600000.0,
+      "nec2_resonance_s11_db": -3.5165961534210224,
+      "openems_resonance_frequency_hz": 4917649227.986121,
+      "openems_resonance_s11_db": -36.08694012445614,
+      "reason": "The air-variant cross-solver result is DIVERGENT (or the Day 2 improvement threshold was not met), so the positive verdict remains insufficient_evidence; the disagreement is retained as an anomaly signal.",
+      "resonance_relative_difference": 0.3111142542064606,
+      "s11_depth_difference_db": 32.57034397103512,
+      "source_run_ids": [
+        "day2-wifi24-classic-s0",
+        "day2-wifi24-gp-s101",
+        "day2-wifi24-random-s101",
+        "day2-wifi24-gp-s202",
+        "day2-wifi24-random-s202",
+        "day2-wifi24-gp-s303",
+        "day2-wifi24-random-s303",
+        "day2-wifi24-gp-s404",
+        "day2-wifi24-random-s404",
+        "day2-wifi24-gp-s505",
+        "day2-wifi24-random-s505",
+        "day3-crosscheck-wifi24"
+      ],
+      "spec": "wifi24",
+      "verdict": "insufficient_evidence"
+    },
+    {
+      "cross_check_run_id": "day3-crosscheck-wifi58",
+      "cross_solver_verdict": "DIVERGENT",
+      "day2_improvement_fraction": 0.32981032548406986,
+      "day2_improvement_threshold_met": true,
+      "nec2_resonance_frequency_hz": 16229000000.0,
+      "nec2_resonance_s11_db": -3.4448251269965957,
+      "openems_resonance_frequency_hz": 11277552429.22986,
+      "openems_resonance_s11_db": -7.460251829593034,
+      "reason": "The air-variant cross-solver result is DIVERGENT (or the Day 2 improvement threshold was not met), so the positive verdict remains insufficient_evidence; the disagreement is retained as an anomaly signal.",
+      "resonance_relative_difference": 0.4390533851952371,
+      "s11_depth_difference_db": 4.015426702596438,
+      "source_run_ids": [
+        "day2-wifi58-classic-s0",
+        "day2-wifi58-gp-s101",
+        "day2-wifi58-random-s101",
+        "day2-wifi58-gp-s202",
+        "day2-wifi58-random-s202",
+        "day2-wifi58-gp-s303",
+        "day2-wifi58-random-s303",
+        "day2-wifi58-gp-s404",
+        "day2-wifi58-random-s404",
+        "day2-wifi58-gp-s505",
+        "day2-wifi58-random-s505",
+        "day3-crosscheck-wifi58"
+      ],
+      "spec": "wifi58",
+      "verdict": "insufficient_evidence"
+    }
+  ],
+  "failed_attempts": [
+    {
+      "error": "nec2c exited with 255: nec2c: Input file name too long - aborting",
+      "result_status": "no_numeric_decision",
+      "source_design_index": 0,
+      "source_run_id": "day2-wifi24-gp-s505",
+      "timestamp": "2026-08-09T11:46:02.300109Z"
+    },
+    {
+      "error": "nec2c output is unusable: nec2c output contains no FREQUENCY block — output is empty, truncated, or the run aborted before the frequency loop",
+      "result_status": "no_numeric_decision",
+      "source_design_index": 0,
+      "source_run_id": "day2-wifi24-gp-s505",
+      "timestamp": "2026-08-09T11:46:17.176642Z"
+    },
+    {
+      "error": "nec2c output is unusable: nec2c output contains no FREQUENCY block — output is empty, truncated, or the run aborted before the frequency loop; output_tail=2    0.0162    0.0166    0.0000    0.0110    0.0000   90.0000    0.0005   114   162   163   162\n   163    0.0162    0.0276    0.0000    0.0110    0.0000   90.0000    0.0005   120   163  -126   163\n   164    0.0240   -0.0276    0.0000    0.0110    0.0000   90.0000    0.0005    91   164   165   164\n   165    0.0240   -0.0166    0.0000    0.0110    0.0000   90.0000    0.0005    97   165   166   165\n   166    0.0240   -0.0055    0.0000    0.0110    0.0000   90.0000    0.0005   103   166   167   166\n   167    0.0240    0.0055    0.0000    0.0110    0.0000   90.0000    0.0005   109   167   168   167\n   168    0.0240    0.0166    0.0000    0.0110    0.0000   90.0000    0.0005   115   168   169   168\n   169    0.0240    0.0276    0.0000    0.0110    0.0000   90.0000    0.0005   121   169  -127   169\n\n\n\n  DATA CARD No:   1 EX   0     1     1     0  1.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00\n  DATA CARD No:   2 FR   0    51     0     0  4.09804E+03  5.46410E+01  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00\n  DATA CARD No:   3 EN   0     0     0     0  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00\n\n  TOTAL RUN TIME: 0 msec",
+      "result_status": "no_numeric_decision",
+      "source_design_index": 0,
+      "source_run_id": "day2-wifi24-gp-s505",
+      "timestamp": "2026-08-09T11:46:40.418075Z"
+    }
+  ],
+  "protocol_version": "day3-air-wire-grid-v1",
+  "schema_version": 1
+}

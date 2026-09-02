@@ -1,0 +1,95 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 1,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 0,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.14084507042253522,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        3300000000.0,
+        3800000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "n78_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.04140845070422535,
+        "x_min": -0.04140845070422535,
+        "y_max": 0.04140845070422535,
+        "y_min": -0.04140845070422535,
+        "z_max": 0.006901408450704225,
+        "z_min": -0.006901408450704225
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "593db7bbaf773e4edfb16d3ea1649c1a7e8a4057d64cb89421db91f5832fbb05",
+  "evaluation_budget": 1,
+  "finished_at": "2026-08-09T09:15:42.626094Z",
+  "run_id": "day2-n78-classic-s0",
+  "schema_version": 1,
+  "seed": 0,
+  "solver_mode_counts": {
+    "subprocess": 1
+  },
+  "started_at": "2026-08-09T09:15:32.011259Z",
+  "steps_completed": 1,
+  "top_designs": [
+    {
+      "config_hash": "593db7bbaf773e4edfb16d3ea1649c1a7e8a4057d64cb89421db91f5832fbb05",
+      "geometry_hash": "5bc20bf0e420de3a5f2fce4cb17b2b4e1a1900eebfd4adac62e9f88c3c46d5d0",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.019681329507555335,
+          0.025696884478328658,
+          0.0032
+        ],
+        "name": "classic_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.5978061840227047,
+        "efficiency": 0.5637058036855411,
+        "gain_dbi": 3.886752835591145,
+        "min_s11_db": -13.767025504846096,
+        "vswr": 6.888322499512891
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0,
+        "f_ratio": 1.0,
+        "feed_ratio": 0.1875,
+        "substrate_scale": 1.5
+      },
+      "proposer": "classic",
+      "run_id": "day2-n78-classic-s0",
+      "schema_version": 1,
+      "score": 0.5978061840227047,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 0,
+      "timestamp": "2026-08-09T09:15:42.624095Z"
+    }
+  ]
+}

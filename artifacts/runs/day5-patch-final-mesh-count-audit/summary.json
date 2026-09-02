@@ -1,0 +1,86 @@
+{
+  "archived_refinement_run_id": "day5-patch-final-openems-2x",
+  "archived_resonance_shift": 0.0,
+  "config": {
+    "effective_ratio": 3.0,
+    "execution_note": "docs/patch-mesh-count-execution-note.md",
+    "frequency_points": 51,
+    "frequency_range_hz": [
+      4098041023.321768,
+      6830068372.202946
+    ],
+    "partially_supported_ratio": 1.2,
+    "refinements": [
+      1.0,
+      2.0
+    ],
+    "solver_invoked": false,
+    "source_geometry_hash": "61d215dd9b4e463e7d067f90f1612655ebed0a066f580f9817460c3d6659def1",
+    "source_run_id": "day2-wifi24-gp-s505"
+  },
+  "config_hash": "900f135060755063e013426ca8dc29fab479cafa78f51cdc69e2ab7d94b34d80",
+  "decision": {
+    "claim_status": "self_convergence_not_established",
+    "interpretation": "ineffective",
+    "requires_part2": true,
+    "total_cell_ratio": 1.0
+  },
+  "evaluation_budget": 0,
+  "finished_at": "2026-08-11T16:42:50.816057Z",
+  "mesh_1x": {
+    "refinement": 1.0,
+    "total_cells": 116064,
+    "x": {
+      "cell_count": 52,
+      "line_count": 53,
+      "maximum_cell_size_m": 0.0030164056035900007,
+      "minimum_cell_size_m": 0.0010551211317999989
+    },
+    "xml_sha256": "facda569a7662662a4982be1a33d2f9310d77e9a3320b42e9e8db77d63f4379a",
+    "y": {
+      "cell_count": 62,
+      "line_count": 63,
+      "maximum_cell_size_m": 0.0025410944646000015,
+      "minimum_cell_size_m": 0.0010551211318000006
+    },
+    "z": {
+      "cell_count": 36,
+      "line_count": 37,
+      "maximum_cell_size_m": 0.0021102422636000012,
+      "minimum_cell_size_m": 0.00039999999999999986
+    }
+  },
+  "mesh_2x": {
+    "refinement": 2.0,
+    "total_cells": 116064,
+    "x": {
+      "cell_count": 52,
+      "line_count": 53,
+      "maximum_cell_size_m": 0.0030164056035900007,
+      "minimum_cell_size_m": 0.0010551211317999989
+    },
+    "xml_sha256": "facda569a7662662a4982be1a33d2f9310d77e9a3320b42e9e8db77d63f4379a",
+    "y": {
+      "cell_count": 62,
+      "line_count": 63,
+      "maximum_cell_size_m": 0.0025410944646000015,
+      "minimum_cell_size_m": 0.0010551211318000006
+    },
+    "z": {
+      "cell_count": 36,
+      "line_count": 37,
+      "maximum_cell_size_m": 0.0021102422636000012,
+      "minimum_cell_size_m": 0.00039999999999999986
+    }
+  },
+  "run_id": "day5-patch-final-mesh-count-audit",
+  "schema_version": 1,
+  "seed": 505,
+  "solver_mode_counts": {
+    "xml_build_only": 2
+  },
+  "source_geometry_hash": "61d215dd9b4e463e7d067f90f1612655ebed0a066f580f9817460c3d6659def1",
+  "source_run_id": "day2-wifi24-gp-s505",
+  "started_at": "2026-08-11T16:42:50.812978Z",
+  "steps_completed": 2
+}

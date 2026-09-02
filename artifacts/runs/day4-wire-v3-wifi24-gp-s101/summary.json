@@ -1,0 +1,182 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 40,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, score, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v1-5d",
+    "require_real_solver": true,
+    "seed": 101,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+  "evaluation_budget": 40,
+  "failure": null,
+  "finished_at": "2026-08-09T14:02:21.997656Z",
+  "rejected_proposals": 0,
+  "run_id": "day4-wire-v3-wifi24-gp-s101",
+  "schema_version": 1,
+  "seed": 101,
+  "solver_mode_counts": {
+    "subprocess": 40
+  },
+  "started_at": "2026-08-09T14:02:09.854725Z",
+  "status": "completed",
+  "steps_completed": 40,
+  "top_designs": [
+    {
+      "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+      "event_type": "evaluation",
+      "geometry_hash": "fb3e98687b83f52e3d1920c2a28a3f59f6d6b28facc88f20cd64251b289e7ab0",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.022619158588021788,
+          0.022669717987902228,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 15,
+        "num_vertices": 16,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7513738012598846,
+        "efficiency": 1.0,
+        "gain_dbi": 6.19,
+        "min_s11_db": -0.04879373013498482,
+        "vswr": 363.9536624402361
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.021262598895508522,
+        "height_ratio": 0.7556572662634076,
+        "span_ratio": 0.8406763233416992,
+        "terminal_ratio": 0.5767492399947792,
+        "turns": 3.1964344609269997
+      },
+      "proposer": "gp",
+      "run_id": "day4-wire-v3-wifi24-gp-s101",
+      "schema_version": 1,
+      "score": 0.7513738012598846,
+      "seed": 101,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 34,
+      "timestamp": "2026-08-09T14:02:20.466410Z",
+      "topology": null
+    },
+    {
+      "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+      "event_type": "evaluation",
+      "geometry_hash": "e2f1a57276ddcf8eed3bc014a45986c3eab4d5fee8528e95114406d134f9c4da",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.022286912419118857,
+          0.023006650901030917,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 15,
+        "num_vertices": 16,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7513405316445807,
+        "efficiency": 1.0,
+        "gain_dbi": 6.3,
+        "min_s11_db": -0.04754378262018696,
+        "vswr": 372.98634614208925
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.02062817482262993,
+        "height_ratio": 0.7668883633676973,
+        "span_ratio": 0.8426411745492296,
+        "terminal_ratio": 0.514634956161963,
+        "turns": 3.1876093284572993
+      },
+      "proposer": "gp",
+      "run_id": "day4-wire-v3-wifi24-gp-s101",
+      "schema_version": 1,
+      "score": 0.7513405316445807,
+      "seed": 101,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 32,
+      "timestamp": "2026-08-09T14:02:19.853403Z",
+      "topology": null
+    },
+    {
+      "config_hash": "f12131093deb7fc4b28a93ab2a5fb585a5b393b2294fc23297822bf8e2c9584e",
+      "event_type": "evaluation",
+      "geometry_hash": "c5cb5d9efbf0a18e967a65ecfad6fbef72fe6977655f808f5de413d762e9a41f",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.022255856983815513,
+          0.02384295755765531,
+          0.0
+        ],
+        "name": "gp_meander_dipole",
+        "num_faces": 15,
+        "num_vertices": 16,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7512451892519042,
+        "efficiency": 1.0,
+        "gain_dbi": 6.46,
+        "min_s11_db": -0.04395965046552164,
+        "vswr": 401.54538696456115
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.02097822369446919,
+        "height_ratio": 0.7947652519218437,
+        "span_ratio": 0.8508655306066477,
+        "terminal_ratio": 0.4746099609514053,
+        "turns": 2.669809148016282
+      },
+      "proposer": "gp",
+      "run_id": "day4-wire-v3-wifi24-gp-s101",
+      "schema_version": 1,
+      "score": 0.7512451892519042,
+      "seed": 101,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 37,
+      "timestamp": "2026-08-09T14:02:21.395503Z",
+      "topology": null
+    }
+  ]
+}

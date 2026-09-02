@@ -1,0 +1,947 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Day 6.5 长时计算阶段审计报告",
+    "description": "自由形 openEMS 仪器修复、候选 A 收敛与重判、候选 B 超时的阶段性证据报告。",
+    "generatedAt": "2026-08-13T08:44:44.8635398Z",
+    "charts": [
+      {
+        "id": "candidate_a_target_band_depth",
+        "title": "候选 A 在不同 openEMS 网格档的目标带最小 S11",
+        "subtitle": "1.5–6.5 GHz/251 点；虚线为冻结的 −6 dB 有效谐振深度门槛。数值越负，匹配越深。",
+        "type": "bar",
+        "dataset": "convergence_long",
+        "sourceId": "convergence_long_derived",
+        "intent": "comparison",
+        "comparisonContext": {
+          "baseline": "−6 dB 有效谐振深度门槛",
+          "grain": "openEMS 网格档 × 目标频段",
+          "unit": "dB"
+        },
+        "encodings": {
+          "x": {
+            "field": "refinement",
+            "type": "ordinal",
+            "label": "openEMS 网格档"
+          },
+          "y": {
+            "field": "min_s11_db",
+            "type": "quantitative",
+            "label": "目标带最小 S11",
+            "format": "number",
+            "unit": "dB"
+          },
+          "color": {
+            "field": "band",
+            "type": "nominal",
+            "label": "目标频段"
+          },
+          "tooltip": [
+            {
+              "field": "run_id",
+              "type": "text",
+              "label": "source run_id"
+            },
+            {
+              "field": "simulation_time_s",
+              "type": "quantitative",
+              "label": "仿真耗时",
+              "unit": "s"
+            },
+            {
+              "field": "band_min_frequency_ghz",
+              "type": "quantitative",
+              "label": "带内最小值频率",
+              "unit": "GHz"
+            }
+          ]
+        },
+        "referenceLines": [
+          {
+            "axis": "y",
+            "value": -6,
+            "label": "有效门槛 −6 dB",
+            "color": "neutral",
+            "lineStyle": "dashed"
+          }
+        ],
+        "yAxisTitle": "目标带最小 S11（dB）",
+        "valueFormat": "number",
+        "unit": "dB",
+        "layout": "full",
+        "surface": {
+          "surface": "card",
+          "viewMode": "both",
+          "interactiveLegend": true
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "rotation_gate_table",
+        "title": "r12 旋转不变性已知答案",
+        "subtitle": "同一 2.45 GHz 直偶极子三种姿态；openEMS 与 NEC2 均为真实 subprocess。",
+        "dataset": "rotation_gate",
+        "sourceId": "rotation_gate_derived",
+        "defaultSort": {
+          "field": "orientation",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "orientation",
+            "label": "姿态",
+            "type": "text"
+          },
+          {
+            "field": "openems_f_ghz",
+            "label": "openEMS f_res (GHz)",
+            "format": "number"
+          },
+          {
+            "field": "openems_s11_db",
+            "label": "openEMS S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "nec2_f_ghz",
+            "label": "NEC2 f_res (GHz)",
+            "format": "number"
+          },
+          {
+            "field": "nec2_s11_db",
+            "label": "NEC2 S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "openems_time_s",
+            "label": "openEMS 耗时 (s)",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "convergence_table",
+        "title": "候选 A 的 openEMS 网格序列",
+        "subtitle": "目标带最小值均未达到 −6 dB；overall 列展示目标带外是否存在真实凹谷。",
+        "dataset": "convergence_wide",
+        "sourceId": "convergence_wide_derived",
+        "defaultSort": {
+          "field": "refinement",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "refinement",
+            "label": "网格档",
+            "type": "text"
+          },
+          {
+            "field": "low_f_ghz",
+            "label": "2.4G 最小值频率 (GHz)",
+            "format": "number"
+          },
+          {
+            "field": "low_min_s11_db",
+            "label": "2.4G min S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "high_f_ghz",
+            "label": "5.8G 最小值频率 (GHz)",
+            "format": "number"
+          },
+          {
+            "field": "high_min_s11_db",
+            "label": "5.8G min S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "overall_f_ghz",
+            "label": "全扫最深点 (GHz)",
+            "format": "number"
+          },
+          {
+            "field": "overall_s11_db",
+            "label": "全扫 min S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "simulation_time_s",
+            "label": "耗时 (s)",
+            "format": "number"
+          },
+          {
+            "field": "run_id",
+            "label": "source run_id",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "candidate_status_table",
+        "title": "冻结候选 A/B 的重判状态",
+        "subtitle": "A 已完成；B 在 6× openEMS 求解时超时，未生成新重判 run。旧 NEC2 数字用于说明两个冻结候选本来就不满足双频前置条件。",
+        "dataset": "candidate_status",
+        "sourceId": "candidate_status_derived",
+        "defaultSort": {
+          "field": "candidate",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "candidate",
+            "label": "候选",
+            "type": "text"
+          },
+          {
+            "field": "source_run_id",
+            "label": "探索 run_id",
+            "type": "text"
+          },
+          {
+            "field": "step",
+            "label": "step",
+            "format": "number"
+          },
+          {
+            "field": "source_score",
+            "label": "NEC2 探索分数",
+            "format": "number"
+          },
+          {
+            "field": "ocfd_improvement_pct",
+            "label": "相对 OCFD (%)",
+            "format": "number"
+          },
+          {
+            "field": "nec2_low_s11_db",
+            "label": "旧 NEC2 2.4G S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "nec2_high_s11_db",
+            "label": "旧 NEC2 5.8G S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "new_openems_low_s11_db",
+            "label": "修复后 openEMS 2.4G S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "new_openems_high_s11_db",
+            "label": "修复后 openEMS 5.8G S11 (dB)",
+            "format": "number"
+          },
+          {
+            "field": "status",
+            "label": "当前状态",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "stage_status_table",
+        "title": "后台接力器停止时的阶段状态",
+        "subtitle": "非零步骤触发立即停止；没有自动降网格、改判据或继续试候选。",
+        "dataset": "stage_status",
+        "sourceId": "stage_status_derived",
+        "defaultSort": {
+          "field": "stage_order",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "layout": "full",
+        "columns": [
+          {
+            "field": "stage_order",
+            "label": "顺序",
+            "format": "number"
+          },
+          {
+            "field": "stage",
+            "label": "阶段",
+            "type": "text"
+          },
+          {
+            "field": "status",
+            "label": "状态",
+            "type": "text"
+          },
+          {
+            "field": "evidence",
+            "label": "证据/原因",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "rotation_r12",
+        "label": "r12 旋转不变性归档",
+        "path": "artifacts/runs/day65-freeform-rotation-invariance-r12/summary.json"
+      },
+      {
+        "id": "candidate_a_convergence",
+        "label": "候选 A openEMS 1×/2×/4×/6× 归档曲线",
+        "path": "artifacts/runs/manifest.json"
+      },
+      {
+        "id": "candidate_a_reverdict",
+        "label": "候选 A 修复后重判归档",
+        "path": "artifacts/runs/day65-repair-crosscheck-top1/summary.json"
+      },
+      {
+        "id": "candidate_a_b_audit",
+        "label": "冻结候选 A/B 选择与重判证据",
+        "path": "artifacts/runs/manifest.json"
+      },
+      {
+        "id": "manifest_verify",
+        "label": "归档 SHA-256 校验",
+        "path": "artifacts/runs/manifest.json"
+      },
+      {
+        "id": "pipeline_failure",
+        "label": "Day 6.5 后台接力器日志",
+        "path": "runs/day65-pipeline.stderr.log"
+      },
+      {
+        "id": "preregistration",
+        "label": "Day 6.5 预注册规则",
+        "path": "docs/day65-freeform-repair-preregistration.md"
+      },
+      {
+        "id": "rotation_gate_derived",
+        "label": "r12 旋转闸门审计表",
+        "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+        "query": {
+          "engine": "duckdb",
+          "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'rotation_gate'",
+          "description": "Reviewed rotation_gate rows packaged from archived Day 6.5 evidence.",
+          "executed_at": "2026-08-13T08:44:44.8635398Z",
+          "language": "SQL",
+          "tables_used": [
+            "artifacts/analysis/day65-long-run-audit/report-data.json"
+          ],
+          "filters": [
+            "dataset = rotation_gate"
+          ]
+        }
+      },
+      {
+        "id": "convergence_long_derived",
+        "label": "候选 A 网格档 × 目标频段审计表",
+        "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+        "query": {
+          "engine": "duckdb",
+          "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'convergence_long'",
+          "description": "Reviewed convergence_long rows packaged from archived Day 6.5 evidence.",
+          "executed_at": "2026-08-13T08:44:44.8635398Z",
+          "language": "SQL",
+          "tables_used": [
+            "artifacts/analysis/day65-long-run-audit/report-data.json"
+          ],
+          "filters": [
+            "dataset = convergence_long"
+          ]
+        }
+      },
+      {
+        "id": "convergence_wide_derived",
+        "label": "候选 A 网格序列宽表",
+        "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+        "query": {
+          "engine": "duckdb",
+          "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'convergence_wide'",
+          "description": "Reviewed convergence_wide rows packaged from archived Day 6.5 evidence.",
+          "executed_at": "2026-08-13T08:44:44.8635398Z",
+          "language": "SQL",
+          "tables_used": [
+            "artifacts/analysis/day65-long-run-audit/report-data.json"
+          ],
+          "filters": [
+            "dataset = convergence_wide"
+          ]
+        }
+      },
+      {
+        "id": "candidate_status_derived",
+        "label": "冻结候选 A/B 状态审计表",
+        "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+        "query": {
+          "engine": "duckdb",
+          "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'candidate_status'",
+          "description": "Reviewed candidate_status rows packaged from archived Day 6.5 evidence.",
+          "executed_at": "2026-08-13T08:44:44.8635398Z",
+          "language": "SQL",
+          "tables_used": [
+            "artifacts/analysis/day65-long-run-audit/report-data.json"
+          ],
+          "filters": [
+            "dataset = candidate_status"
+          ]
+        }
+      },
+      {
+        "id": "stage_status_derived",
+        "label": "后台接力器阶段状态表",
+        "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+        "query": {
+          "engine": "duckdb",
+          "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'stage_status'",
+          "description": "Reviewed stage_status rows packaged from archived Day 6.5 evidence.",
+          "executed_at": "2026-08-13T08:44:44.8635398Z",
+          "language": "SQL",
+          "tables_used": [
+            "artifacts/analysis/day65-long-run-audit/report-data.json"
+          ],
+          "filters": [
+            "dataset = stage_status"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# Day 6.5 长时计算阶段审计报告"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "body": "## 结论：仪器修复闸门通过，但 Day 6.5 尚未完成验收\n\n这段长时间计算得到的是一个**有效的否定性阶段结论**，不是双频新天线的最终确认。r12 旋转不变性已知答案证明修复后的自由形 openEMS 渲染器不再把斜线导线光栅化丢失；随后候选 A 的 1×→6× 网格序列产生了非平坦、带外有真实凹谷的曲线。可是，在冻结的两个目标频段内，候选 A 的 openEMS 最深 S11 只有 **−1.120 dB（2.4 GHz 段）**和 **−2.050 dB（5.8 GHz 段）**，均未达到 **−6 dB** 有效谐振门槛，因此低频、高频和双频结论均为 `NO_RESONANCE_IN_BAND`。候选 B 的 6× 求解在 **21600 秒**处超时，接力器按预注册纪律停止；ES/random v2 新批次与其 top-2 互证均未启动。\n\n当前本机证据 `archive_run.py --verify` 为 **193/193 OK**，但最新的 6× 和候选 A 归档仍未提交到 git，也尚未执行本轮最终 git 往返。因此本报告状态是**阶段性、未完成验收**。"
+      },
+      {
+        "id": "rotation_result",
+        "type": "markdown",
+        "sourceId": "rotation_r12",
+        "body": "## 修复后的渲染器通过了唯一放行闸门\n\nr12 对同一半波直偶极子测试轴对齐、面内/出面 45° 三种姿态。openEMS 三者的 f_res 都是 **2.210 GHz**，最大谷深差 **0.137 dB**，三组 Pearson 为 **0.999852、0.999877、0.999728**；全部优于预注册的 2%、1.5 dB 和 0.95 门槛。NEC2 对照三者均为 **2.330 GHz、约 −15.324 dB**。这证明自由形斜线渲染链路已能稳定表现同一物理结构的旋转等价性，但它不保证任意候选都在目标带匹配。"
+      },
+      {
+        "id": "rotation_table_block",
+        "type": "table",
+        "tableId": "rotation_gate_table",
+        "layout": "full"
+      },
+      {
+        "id": "candidate_a_result",
+        "type": "markdown",
+        "sourceId": "candidate_a_reverdict",
+        "body": "## 候选 A 经 6× 网格重判后，两段都没有有效谐振\n\n冻结候选 A 来自 `day6-freeform-dual-gp-s202` 的 step 193。NEC2 在低频段给出 **2.480 GHz / −10.422 dB**，低频有效；高频段为 **5.860 GHz / −5.147 dB**，差 0.853 dB 未过门槛。修复后的 openEMS 6× 曲线在低频段为 **2.400 GHz / −1.120 dB**、高频段为 **5.740 GHz / −2.050 dB**，两者都不是有效局部谐振。按 v2.1，前置条件失败后不允许用频差或 Pearson 进入 CONFIRMED/DIVERGENT 判定；记录到的全扫 Pearson **−0.1905**只作诊断。最终是低频、高频、双频全为 `NO_RESONANCE_IN_BAND`，discovery verdict 为 `insufficient_evidence`。"
+      },
+      {
+        "id": "convergence_chart_block",
+        "type": "chart",
+        "chartId": "candidate_a_target_band_depth",
+        "layout": "full"
+      },
+      {
+        "id": "convergence_table_block",
+        "type": "table",
+        "tableId": "convergence_table",
+        "layout": "full"
+      },
+      {
+        "id": "time_bought",
+        "type": "markdown",
+        "body": "## 这 11 小时以上的计算买到了什么\n\n候选 A 的 1×、2×、4×、6× openEMS 求解器耗时合计约 **5 小时 20 分 45 秒**；候选 B 又运行 **6 小时**后超时。加密序列没有把候选 A 的目标带 S11 推过 −6 dB，但 6× 曲线在 **2.200 GHz / −10.201 dB**出现明确的带外谐振，说明修复后的仪器确实看到了天线，而不是 Day 6 那条端口后无天线的平线。换句话说，这段计算排除了“候选 A 只是因为 openEMS 斜线渲染器坏了才没通过”的解释；它没有证明自由形双频天线不可能。"
+      },
+      {
+        "id": "candidate_status_block",
+        "type": "table",
+        "tableId": "candidate_status_table",
+        "layout": "full"
+      },
+      {
+        "id": "pipeline_stop",
+        "type": "markdown",
+        "sourceId": "pipeline_failure",
+        "body": "## 候选 B 超时后，接力器按规则停止\n\n候选 B 来自同一 GP run 的 step 172。旧 NEC2 曲线本身在 2.4 GHz 与 5.8 GHz 段分别只有 **−4.506 dB**和 **−5.866 dB**，因此它也不可能满足冻结的双频有效谐振前置条件；重跑它的价值是补齐审计链，不是期待翻盘。openEMS 6× 在 **21600 秒**处抛出 `TimeoutExpired`，没有生成新的候选 B run 目录。接力器随即以非零退出，未静默降网格、减扫宽、改阈值或追加候选。"
+      },
+      {
+        "id": "stage_status_block",
+        "type": "table",
+        "tableId": "stage_status_table",
+        "layout": "full"
+      },
+      {
+        "id": "scope_definitions",
+        "type": "markdown",
+        "sourceId": "preregistration",
+        "body": "## 范围、指标与判定口径\n\n本阶段只处理 Day 6 已冻结的 A/B 两个候选。openEMS 宽扫固定为 **1.5–6.5 GHz / 251 点**；目标带是 2.40–2.50 GHz 与 5.725–5.875 GHz。单段有效谐振必须同时满足：宽扫内部局部极小、S11 深度 ≤−6 dB。只有双方都满足有效性，才计算 Δf≤5% 与整体 Pearson≥0.8 的确认判据。候选集、阈值、扫频和 top 规则在运行前冻结；本阶段所有成功 run 的 solver mode 均为 `subprocess`，没有 fallback。"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## 限制、未完成项与证据状态\n\n1. 候选 B 没有修复后曲线，A/B 重判报告不完整。\n2. 6× 对 A 的目标带自收敛仍不能成立：目标带没有有效谐振，所以相邻档的 f_res 移动量按冻结规则不可定义。\n3. ES/random v2 批次没有启动，因此不能回答“修好仪器后能否重新搜索到双频有效设计”。\n4. 193/193 只证明当前工作区字节匹配 manifest；最新两项尚未提交，git clone/checkout 往返验收未做。\n5. 本报告没有重新跑完整 pytest/ruff/mypy；它审计的是已有仿真与归档证据，不是最终软件验收报告。"
+      },
+      {
+        "id": "recommendation",
+        "type": "markdown",
+        "body": "## 建议：先封存阶段证据，再解决 6× 可计算性，不要盲目重跑\n\n第一步应提交并做 git 往返验证，封存候选 A 6×、A 重判和候选 B 超时记录。第二步只处理候选 B 的计算可行性：记录网格规模、内存峰值和 FDTD 进度，确认是单纯超时还是资源瓶颈；在不改扫频、判据和候选的前提下，要么得到 B 的一次正式结果，要么将其归类为 `infeasible_at_current_compute`。完成 A/B 审计后，才进入已预注册的 ES/random v2 新批次。不要再次原样投入 6 小时去期待候选 B 改变已知的 NEC2 前置条件结论。"
+      },
+      {
+        "id": "further_questions",
+        "type": "markdown",
+        "body": "## 后续真正要回答的问题\n\n- 6× openEMS 对自由形几何的耗时为何从候选 A 的 4.38 小时增长到候选 B 超过 6 小时：网格单元数、收敛速度还是内存交换主导？\n- 新一轮 ES 是否能在同一 21 维空间中同时把两个 NEC2 频段推过 −6 dB，而不是只提高整形分数？\n- 若新候选在 NEC2 双频有效，修复后的 openEMS 能否在两段同时满足有效性、≤5% 频差和 Pearson≥0.8？"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-13T08:44:44.8635398Z",
+    "status": "partial",
+    "datasets": {
+      "headline": [
+        {
+          "verified_runs": 193,
+          "a_6x_hours": 4.38,
+          "b_timeout_hours": 6,
+          "completed_candidates": 1,
+          "total_candidates": 2
+        }
+      ],
+      "rotation_gate": [
+        {
+          "orientation_order": 1,
+          "orientation": "y_axis",
+          "nec2_f_ghz": 2.33,
+          "nec2_s11_db": -15.324434,
+          "openems_f_ghz": 2.21,
+          "openems_s11_db": -16.810216,
+          "nec2_time_s": 0.734,
+          "openems_time_s": 186.172,
+          "run_id": "day65-freeform-rotation-invariance-r12"
+        },
+        {
+          "orientation_order": 2,
+          "orientation": "yz45",
+          "nec2_f_ghz": 2.33,
+          "nec2_s11_db": -15.324235,
+          "openems_f_ghz": 2.21,
+          "openems_s11_db": -16.825296,
+          "nec2_time_s": 0.719,
+          "openems_time_s": 1231.984,
+          "run_id": "day65-freeform-rotation-invariance-r12"
+        },
+        {
+          "orientation_order": 3,
+          "orientation": "z_axis",
+          "nec2_f_ghz": 2.33,
+          "nec2_s11_db": -15.324434,
+          "openems_f_ghz": 2.21,
+          "openems_s11_db": -16.947447,
+          "nec2_time_s": 0.718,
+          "openems_time_s": 147.625,
+          "run_id": "day65-freeform-rotation-invariance-r12"
+        }
+      ],
+      "convergence_wide": [
+        {
+          "refinement_numeric": 1,
+          "refinement": "1×",
+          "low_f_ghz": 2.4,
+          "low_min_s11_db": 0.002622,
+          "high_f_ghz": 5.74,
+          "high_min_s11_db": 0.012423,
+          "overall_f_ghz": 1.5,
+          "overall_s11_db": 0.001007,
+          "simulation_time_s": 13.407,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-1x"
+        },
+        {
+          "refinement_numeric": 2,
+          "refinement": "2×",
+          "low_f_ghz": 2.5,
+          "low_min_s11_db": -4.462202,
+          "high_f_ghz": 5.86,
+          "high_min_s11_db": -1.261415,
+          "overall_f_ghz": 6.24,
+          "overall_s11_db": -13.324526,
+          "simulation_time_s": 189.047,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-2x"
+        },
+        {
+          "refinement_numeric": 4,
+          "refinement": "4×",
+          "low_f_ghz": 2.4,
+          "low_min_s11_db": -0.642697,
+          "high_f_ghz": 5.86,
+          "high_min_s11_db": -1.793091,
+          "overall_f_ghz": 2.18,
+          "overall_s11_db": -10.029119,
+          "simulation_time_s": 3272.906,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-4x"
+        },
+        {
+          "refinement_numeric": 6,
+          "refinement": "6×",
+          "low_f_ghz": 2.4,
+          "low_min_s11_db": -1.120211,
+          "high_f_ghz": 5.74,
+          "high_min_s11_db": -2.050204,
+          "overall_f_ghz": 2.2,
+          "overall_s11_db": -10.201489,
+          "simulation_time_s": 15769.422,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-6x"
+        }
+      ],
+      "convergence_long": [
+        {
+          "refinement_numeric": 1,
+          "refinement": "1×",
+          "band": "2.4 GHz",
+          "min_s11_db": 0.002622,
+          "band_min_frequency_ghz": 2.4,
+          "simulation_time_s": 13.407,
+          "overall_f_ghz": 1.5,
+          "overall_s11_db": 0.001007,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-1x"
+        },
+        {
+          "refinement_numeric": 1,
+          "refinement": "1×",
+          "band": "5.8 GHz",
+          "min_s11_db": 0.012423,
+          "band_min_frequency_ghz": 5.74,
+          "simulation_time_s": 13.407,
+          "overall_f_ghz": 1.5,
+          "overall_s11_db": 0.001007,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-1x"
+        },
+        {
+          "refinement_numeric": 2,
+          "refinement": "2×",
+          "band": "2.4 GHz",
+          "min_s11_db": -4.462202,
+          "band_min_frequency_ghz": 2.5,
+          "simulation_time_s": 189.047,
+          "overall_f_ghz": 6.24,
+          "overall_s11_db": -13.324526,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-2x"
+        },
+        {
+          "refinement_numeric": 2,
+          "refinement": "2×",
+          "band": "5.8 GHz",
+          "min_s11_db": -1.261415,
+          "band_min_frequency_ghz": 5.86,
+          "simulation_time_s": 189.047,
+          "overall_f_ghz": 6.24,
+          "overall_s11_db": -13.324526,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-2x"
+        },
+        {
+          "refinement_numeric": 4,
+          "refinement": "4×",
+          "band": "2.4 GHz",
+          "min_s11_db": -0.642697,
+          "band_min_frequency_ghz": 2.4,
+          "simulation_time_s": 3272.906,
+          "overall_f_ghz": 2.18,
+          "overall_s11_db": -10.029119,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-4x"
+        },
+        {
+          "refinement_numeric": 4,
+          "refinement": "4×",
+          "band": "5.8 GHz",
+          "min_s11_db": -1.793091,
+          "band_min_frequency_ghz": 5.86,
+          "simulation_time_s": 3272.906,
+          "overall_f_ghz": 2.18,
+          "overall_s11_db": -10.029119,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-4x"
+        },
+        {
+          "refinement_numeric": 6,
+          "refinement": "6×",
+          "band": "2.4 GHz",
+          "min_s11_db": -1.120211,
+          "band_min_frequency_ghz": 2.4,
+          "simulation_time_s": 15769.422,
+          "overall_f_ghz": 2.2,
+          "overall_s11_db": -10.201489,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-6x"
+        },
+        {
+          "refinement_numeric": 6,
+          "refinement": "6×",
+          "band": "5.8 GHz",
+          "min_s11_db": -2.050204,
+          "band_min_frequency_ghz": 5.74,
+          "simulation_time_s": 15769.422,
+          "overall_f_ghz": 2.2,
+          "overall_s11_db": -10.201489,
+          "valid_depth": false,
+          "points": 251,
+          "solver_mode": "subprocess",
+          "run_id": "day65-repair-openems-convergence-top1-6x"
+        }
+      ],
+      "candidate_status": [
+        {
+          "candidate_order": 1,
+          "candidate": "A",
+          "rank": 1,
+          "source_run_id": "day6-freeform-dual-gp-s202",
+          "step": 193,
+          "source_score": 0.725916,
+          "ocfd_improvement_pct": 17.626,
+          "geometry_hash": "84fe11996e0ebd59ae36a4907a376f15c1038d99319e340225e116d3f317b4d2",
+          "nec2_low_f_ghz": 2.48,
+          "nec2_low_s11_db": -10.421882,
+          "nec2_high_f_ghz": 5.86,
+          "nec2_high_s11_db": -5.147263,
+          "new_openems_low_f_ghz": 2.4,
+          "new_openems_low_s11_db": -1.120211,
+          "new_openems_high_f_ghz": 5.74,
+          "new_openems_high_s11_db": -2.050204,
+          "whole_sweep_pearson": -0.190466,
+          "status": "已完成：双段 NO_RESONANCE_IN_BAND"
+        },
+        {
+          "candidate_order": 2,
+          "candidate": "B",
+          "rank": 2,
+          "source_run_id": "day6-freeform-dual-gp-s202",
+          "step": 172,
+          "source_score": 0.67187,
+          "ocfd_improvement_pct": 8.869,
+          "geometry_hash": "9d47e040d4144247c0030479f3b02959222c8b10b269d8366ab15269be93a2b3",
+          "nec2_low_f_ghz": 2.5,
+          "nec2_low_s11_db": -4.506006,
+          "nec2_high_f_ghz": 5.86,
+          "nec2_high_s11_db": -5.865571,
+          "new_openems_low_f_ghz": null,
+          "new_openems_low_s11_db": null,
+          "new_openems_high_f_ghz": null,
+          "new_openems_high_s11_db": null,
+          "whole_sweep_pearson": null,
+          "status": "未完成：openEMS 6× 运行 21600 s 超时"
+        }
+      ],
+      "stage_status": [
+        {
+          "stage_order": 1,
+          "stage": "自由形渲染器修复",
+          "status": "完成",
+          "evidence": "sphere-ended finite-radius wire + r12 旋转闸门通过"
+        },
+        {
+          "stage_order": 2,
+          "stage": "候选 A 1×/2×/4×/6× 收敛序列",
+          "status": "完成并归档",
+          "evidence": "4 个 run；6× 耗时 15769.422 s"
+        },
+        {
+          "stage_order": 3,
+          "stage": "候选 A 修复后重判",
+          "status": "完成并归档",
+          "evidence": "双段 NO_RESONANCE_IN_BAND"
+        },
+        {
+          "stage_order": 4,
+          "stage": "候选 B 修复后重判",
+          "status": "失败",
+          "evidence": "openEMS 在 21600 s 处 TimeoutExpired；无新 run"
+        },
+        {
+          "stage_order": 5,
+          "stage": "Day 6.5 ES/random v2 批次",
+          "status": "未启动",
+          "evidence": "接力器在候选 B 非零退出后停止"
+        },
+        {
+          "stage_order": 6,
+          "stage": "v2 top-2 双频互证与分析",
+          "status": "未启动",
+          "evidence": "依赖 v2 批次"
+        },
+        {
+          "stage_order": 7,
+          "stage": "全量 pytest/ruff/mypy + git 往返",
+          "status": "未执行",
+          "evidence": "任务未到最终验收阶段"
+        }
+      ]
+    },
+    "accessIssues": [
+      {
+        "id": "candidate_b_timeout",
+        "scope": "frozen candidate re-verdict",
+        "sourceId": "pipeline_failure",
+        "dataset": "candidate_status",
+        "message": "候选 B 的 openEMS 6× 求解在 21600 秒超时，未生成修复后曲线或正式归档；报告因此为 partial。"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "rotation_r12",
+      "label": "r12 旋转不变性归档",
+      "path": "artifacts/runs/day65-freeform-rotation-invariance-r12/summary.json"
+    },
+    {
+      "id": "candidate_a_convergence",
+      "label": "候选 A openEMS 1×/2×/4×/6× 归档曲线",
+      "path": "artifacts/runs/manifest.json"
+    },
+    {
+      "id": "candidate_a_reverdict",
+      "label": "候选 A 修复后重判归档",
+      "path": "artifacts/runs/day65-repair-crosscheck-top1/summary.json"
+    },
+    {
+      "id": "candidate_a_b_audit",
+      "label": "冻结候选 A/B 选择与重判证据",
+      "path": "artifacts/runs/manifest.json"
+    },
+    {
+      "id": "manifest_verify",
+      "label": "归档 SHA-256 校验",
+      "path": "artifacts/runs/manifest.json"
+    },
+    {
+      "id": "pipeline_failure",
+      "label": "Day 6.5 后台接力器日志",
+      "path": "runs/day65-pipeline.stderr.log"
+    },
+    {
+      "id": "preregistration",
+      "label": "Day 6.5 预注册规则",
+      "path": "docs/day65-freeform-repair-preregistration.md"
+    },
+    {
+      "id": "rotation_gate_derived",
+      "label": "r12 旋转闸门审计表",
+      "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+      "query": {
+        "engine": "duckdb",
+        "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'rotation_gate'",
+        "description": "Reviewed rotation_gate rows packaged from archived Day 6.5 evidence.",
+        "executed_at": "2026-08-13T08:44:44.8635398Z",
+        "language": "SQL",
+        "tables_used": [
+          "artifacts/analysis/day65-long-run-audit/report-data.json"
+        ],
+        "filters": [
+          "dataset = rotation_gate"
+        ]
+      }
+    },
+    {
+      "id": "convergence_long_derived",
+      "label": "候选 A 网格档 × 目标频段审计表",
+      "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+      "query": {
+        "engine": "duckdb",
+        "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'convergence_long'",
+        "description": "Reviewed convergence_long rows packaged from archived Day 6.5 evidence.",
+        "executed_at": "2026-08-13T08:44:44.8635398Z",
+        "language": "SQL",
+        "tables_used": [
+          "artifacts/analysis/day65-long-run-audit/report-data.json"
+        ],
+        "filters": [
+          "dataset = convergence_long"
+        ]
+      }
+    },
+    {
+      "id": "convergence_wide_derived",
+      "label": "候选 A 网格序列宽表",
+      "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+      "query": {
+        "engine": "duckdb",
+        "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'convergence_wide'",
+        "description": "Reviewed convergence_wide rows packaged from archived Day 6.5 evidence.",
+        "executed_at": "2026-08-13T08:44:44.8635398Z",
+        "language": "SQL",
+        "tables_used": [
+          "artifacts/analysis/day65-long-run-audit/report-data.json"
+        ],
+        "filters": [
+          "dataset = convergence_wide"
+        ]
+      }
+    },
+    {
+      "id": "candidate_status_derived",
+      "label": "冻结候选 A/B 状态审计表",
+      "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+      "query": {
+        "engine": "duckdb",
+        "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'candidate_status'",
+        "description": "Reviewed candidate_status rows packaged from archived Day 6.5 evidence.",
+        "executed_at": "2026-08-13T08:44:44.8635398Z",
+        "language": "SQL",
+        "tables_used": [
+          "artifacts/analysis/day65-long-run-audit/report-data.json"
+        ],
+        "filters": [
+          "dataset = candidate_status"
+        ]
+      }
+    },
+    {
+      "id": "stage_status_derived",
+      "label": "后台接力器阶段状态表",
+      "path": "artifacts/analysis/day65-long-run-audit/report-data.json",
+      "query": {
+        "engine": "duckdb",
+        "sql": "SELECT * EXCLUDE (dataset) FROM read_json_auto('artifacts/analysis/day65-long-run-audit/report-data.json') WHERE dataset = 'stage_status'",
+        "description": "Reviewed stage_status rows packaged from archived Day 6.5 evidence.",
+        "executed_at": "2026-08-13T08:44:44.8635398Z",
+        "language": "SQL",
+        "tables_used": [
+          "artifacts/analysis/day65-long-run-audit/report-data.json"
+        ],
+        "filters": [
+          "dataset = stage_status"
+        ]
+      }
+    }
+  ]
+}

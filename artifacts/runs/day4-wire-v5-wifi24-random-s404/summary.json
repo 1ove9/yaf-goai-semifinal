@@ -1,0 +1,191 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 40,
+    "explorable_problem_definition": "The agent may explore the shared five-dimensional symmetric planar meander-dipole centerline space.",
+    "fixed_problem_definition": "The wifi24 band, 30x30 mm box, wire radius, minimum pitch, NEC2 oracle, adaptive lambda/20 segmentation, wire-realized-gain-v2 score with zero lossless-efficiency weight, budget, and discovery policy are fixed.",
+    "proposal_space_version": "meander-dipole-v1-5d",
+    "require_real_solver": true,
+    "seed": 404,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": 0.04,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        2400000000.0,
+        2500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {},
+      "name": "wifi24_wire_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.015,
+        "x_min": -0.015,
+        "y_max": 0.015,
+        "y_min": -0.015,
+        "z_max": 0.001,
+        "z_min": -0.001
+      },
+      "target_gain_dbi": 2.15,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+  "evaluation_budget": 40,
+  "failure": null,
+  "finished_at": "2026-08-09T15:44:38.604620Z",
+  "rejected_proposals": 5,
+  "run_id": "day4-wire-v5-wifi24-random-s404",
+  "schema_version": 1,
+  "seed": 404,
+  "solver_mode_counts": {
+    "subprocess": 40
+  },
+  "started_at": "2026-08-09T15:44:28.359244Z",
+  "status": "completed",
+  "steps_completed": 40,
+  "top_designs": [
+    {
+      "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+      "event_type": "evaluation",
+      "geometry_hash": "90168d3c9ec8fc65cc6f0c2475cb6c2730126195cd95a55b32ec390fedf31a85",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.028108833809565442,
+          0.005267665110558418,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 27,
+        "num_vertices": 28,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.6046080836552669,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 2.32,
+        "min_s11_db": -4.375646407276795,
+        "mismatch_efficiency": 0.6348802215008659,
+        "realized_gain_dbi": 0.3469179765738759,
+        "vswr": 4.053713647425396
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.03220899616101275,
+        "height_ratio": 0.17558883701861394,
+        "span_ratio": 0.9395883429303662,
+        "terminal_ratio": 0.9797322788099189,
+        "turns": 5.937114865788189
+      },
+      "proposer": "random",
+      "run_id": "day4-wire-v5-wifi24-random-s404",
+      "schema_version": 1,
+      "score": 0.6046080836552669,
+      "seed": 404,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 4,
+      "timestamp": "2026-08-09T15:44:29.589194Z",
+      "topology": null
+    },
+    {
+      "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+      "event_type": "evaluation",
+      "geometry_hash": "ca959d63b202acdf5b516620eaaa1ef63c6c7330f4f65e3eae06ca0087300eaa",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.025950724699278505,
+          0.009199278043267235,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 15,
+        "num_vertices": 16,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.490706037889504,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 2.43,
+        "min_s11_db": -3.1874077292220155,
+        "mismatch_efficiency": 0.5199801166345236,
+        "realized_gain_dbi": -0.41013262905597125,
+        "vswr": 5.511151554865317
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.042314400605860954,
+        "height_ratio": 0.3066426014422412,
+        "span_ratio": 0.9168978944725346,
+        "terminal_ratio": 0.7627499801050409,
+        "turns": 2.5852099125657344
+      },
+      "proposer": "random",
+      "run_id": "day4-wire-v5-wifi24-random-s404",
+      "schema_version": 1,
+      "score": 0.490706037889504,
+      "seed": 404,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 17,
+      "timestamp": "2026-08-09T15:44:32.823885Z",
+      "topology": null
+    },
+    {
+      "config_hash": "e2fcf86f3fde63ee7965ead9987874d3024d2fd124b942934747b9ae08c840b5",
+      "event_type": "evaluation",
+      "geometry_hash": "ccb543b48211b5602d24d06fa4e3d6cf80f32b061804d46da9d336abfc9992ce",
+      "geometry_summary": {
+        "antenna_class": "meander_dipole",
+        "dimensions_m": [
+          0.02274312666300825,
+          0.008081565349769235,
+          0.0
+        ],
+        "name": "random_meander_dipole",
+        "num_faces": 19,
+        "num_vertices": 20,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.4543262700742976,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "gain_dbi": 2.45,
+        "min_s11_db": -2.867801312510841,
+        "mismatch_efficiency": 0.4833221202268022,
+        "realized_gain_dbi": -0.7076332802975118,
+        "vswr": 6.112453646896369
+      },
+      "proposal_parameters": {
+        "feed_gap_ratio": 0.03557837848450163,
+        "height_ratio": 0.2693855116589745,
+        "span_ratio": 0.8526579845371229,
+        "terminal_ratio": 0.4213919810479364,
+        "turns": 3.756340360635272
+      },
+      "proposer": "random",
+      "run_id": "day4-wire-v5-wifi24-random-s404",
+      "schema_version": 1,
+      "score": 0.4543262700742976,
+      "seed": 404,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 2,
+      "timestamp": "2026-08-09T15:44:29.086919Z",
+      "topology": null
+    }
+  ]
+}

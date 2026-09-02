@@ -1,0 +1,1418 @@
+{
+  "boundary_witnesses": [
+    {
+      "label": "all-zero",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 20000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 760000,
+          "state": "A",
+          "total_wire_length_um": 50000
+        },
+        "state_b": {
+          "span_ratio_ppm": 760000,
+          "state": "B",
+          "total_wire_length_um": 25000
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0"
+      ]
+    },
+    {
+      "label": "all-one",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 100000
+        },
+        "state_b": {
+          "span_ratio_ppm": 1000000,
+          "state": "B",
+          "total_wire_length_um": 45000
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0"
+      ]
+    },
+    {
+      "label": "interior-half",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 492064,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 38967
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-zero-upper-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 36900
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.fffffffffffffp-5",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-positive-lower-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 47620,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 37101
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-4",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "state-b-narrow-domain",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 3,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 942400,
+          "state": "B",
+          "total_wire_length_um": 39696
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 3,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p+0",
+        "0x0.0p+0",
+        "0x1.851eb851eb852p-1"
+      ]
+    },
+    {
+      "label": "all-zero",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 20000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 760000,
+          "state": "A",
+          "total_wire_length_um": 50000
+        },
+        "state_b": {
+          "span_ratio_ppm": 760000,
+          "state": "B",
+          "total_wire_length_um": 27280
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0"
+      ]
+    },
+    {
+      "label": "all-one",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 100000
+        },
+        "state_b": {
+          "span_ratio_ppm": 1000000,
+          "state": "B",
+          "total_wire_length_um": 45000
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0"
+      ]
+    },
+    {
+      "label": "interior-half",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 498413,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 39815
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-zero-upper-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 38140
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.fffffffffffffp-5",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-positive-lower-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 59524,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 38341
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-4",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "state-b-narrow-domain",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 4,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 942400,
+          "state": "B",
+          "total_wire_length_um": 40496
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 4,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p+0",
+        "0x0.0p+0",
+        "0x1.851eb851eb852p-1"
+      ]
+    },
+    {
+      "label": "all-zero",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 20000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 760000,
+          "state": "A",
+          "total_wire_length_um": 50000
+        },
+        "state_b": {
+          "span_ratio_ppm": 760000,
+          "state": "B",
+          "total_wire_length_um": 29067
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0"
+      ]
+    },
+    {
+      "label": "all-one",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 100000
+        },
+        "state_b": {
+          "span_ratio_ppm": 1000000,
+          "state": "B",
+          "total_wire_length_um": 45000
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0"
+      ]
+    },
+    {
+      "label": "interior-half",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 504762,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 40514
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-zero-upper-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 39100
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.fffffffffffffp-5",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-positive-lower-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 71429,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 39301
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-4",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "state-b-narrow-domain",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 5,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 942400,
+          "state": "B",
+          "total_wire_length_um": 41296
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 5,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p+0",
+        "0x0.0p+0",
+        "0x1.851eb851eb852p-1"
+      ]
+    },
+    {
+      "label": "all-zero",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 20000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 760000,
+          "state": "A",
+          "total_wire_length_um": 50000
+        },
+        "state_b": {
+          "span_ratio_ppm": 760000,
+          "state": "B",
+          "total_wire_length_um": 30572
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0"
+      ]
+    },
+    {
+      "label": "all-one",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 100000
+        },
+        "state_b": {
+          "span_ratio_ppm": 1000000,
+          "state": "B",
+          "total_wire_length_um": 45000
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0"
+      ]
+    },
+    {
+      "label": "interior-half",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 511111,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 41127
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-zero-upper-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 0,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 39900
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.fffffffffffffp-5",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "terminal-positive-lower-edge",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 40000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 83334,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 880000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 880000,
+          "state": "B",
+          "total_wire_length_um": 40101
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-4",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p-1"
+      ]
+    },
+    {
+      "label": "state-b-narrow-domain",
+      "proposal": {
+        "hardware": {
+          "box_size_um": 40000,
+          "feed_gap_ratio_ppm": 60000,
+          "max_total_wire_length_um": 100000,
+          "mechanism_version": "ideal-symmetric-telescopic-PEC-meander-v1",
+          "quantization_version": "integer-um-ppm-v1",
+          "schema_version": 1,
+          "terminal_ratio_ppm": 1000000,
+          "turn_count": 6,
+          "wire_radius_um": 50
+        },
+        "proposer": "conditional-exact-feasible-turn-v2",
+        "state_a": {
+          "span_ratio_ppm": 1000000,
+          "state": "A",
+          "total_wire_length_um": 75000
+        },
+        "state_b": {
+          "span_ratio_ppm": 942400,
+          "state": "B",
+          "total_wire_length_um": 42096
+        }
+      },
+      "trajectory_valid": true,
+      "turn": 6,
+      "z": [
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p+0",
+        "0x1.0000000000000p-1",
+        "0x1.0000000000000p+0",
+        "0x0.0p+0",
+        "0x1.851eb851eb852p-1"
+      ]
+    }
+  ],
+  "cell_count": 20,
+  "cells": [
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4844,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "719deaaabca4e85d64e2fe907a52b6769e4d4cd821cdc965f10e1a0034119662",
+        "trajectory_infeasible": 5156,
+        "valid": 4844
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "c583e3c7289906c88334438c631d17c91ccfa6bdb40f4341ae72a6c1cbd41049",
+      "seed": 101,
+      "turn": 3
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4818,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "87a97a56e317c338cf4f905738399f92f780e0effa58875a9a10cae866172a2c",
+        "trajectory_infeasible": 5182,
+        "valid": 4818
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "b936d376e8bcb3e16fa069a2f342cac54418d0dc4089569253f6026230d2f75b",
+      "seed": 202,
+      "turn": 3
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4798,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "396b411c1bcbd97c3cf3277cdc429d33e7b3115668fa4f96357c40c350c56ecd",
+        "trajectory_infeasible": 5202,
+        "valid": 4798
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "d52c3b33d62dbab4e4d11a3eb35579b001dca6110c3f1ccded42dec419d39743",
+      "seed": 303,
+      "turn": 3
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.487,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "7d12fe0c7988234115be68d4b29c0a23d67b795e371bd9c27852f114692d6685",
+        "trajectory_infeasible": 5130,
+        "valid": 4870
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "754f691266bc4262a59357be94df0a8be85a298ec07cfb4767ab1ec6bafbac1a",
+      "seed": 404,
+      "turn": 3
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4895,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "d444bb7e5243aff90e00037e5067981762f2d8d3ca08485135a98a135a478787",
+        "trajectory_infeasible": 5105,
+        "valid": 4895
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "bbd60d4b6986c9ebc4ec9464b8b98f447ec521328ba699243e67e1cb13e0dcf1",
+      "seed": 505,
+      "turn": 3
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.414,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "c5156af2ef9a78df36925342fb230d6160fc8f46df9f69fecddc248108c02d3e",
+        "trajectory_infeasible": 5860,
+        "valid": 4140
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "86a32bb4dbed9fc5136cf4c1d2c3a692945e9845e92da1b35d6033429d374d3d",
+      "seed": 101,
+      "turn": 4
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4129,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "6530893a52a3fc7e174226850595aa5fb140d76895181b1d692bac87471da8c2",
+        "trajectory_infeasible": 5871,
+        "valid": 4129
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "7b036396460cb6a0d8f1ee99b76822c3b4616646ae9a3507f6c3eed087ff880a",
+      "seed": 202,
+      "turn": 4
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4071,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "11a1cb2bfd8c4fa14799d00627f391da9ef8569ce645c9879f9445eb1f9ca432",
+        "trajectory_infeasible": 5929,
+        "valid": 4071
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "a4910b1fa1707018f60570e8e263b3082b4870c7f00682e38b13e4ec7b63d224",
+      "seed": 303,
+      "turn": 4
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4163,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "da2d63139cf97238d4128f2275111694f17d53f91298f3584268a7bc2f179bc9",
+        "trajectory_infeasible": 5837,
+        "valid": 4163
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "8b72b3bd09c05c2563f5fbc4fc6a74f79615465aa1069d41b98d53d65b0c72e8",
+      "seed": 404,
+      "turn": 4
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.4115,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "64464f889bd3ad2392e3a7fbcbb22af3ad3da5c9a704dd1e4fe62846d3d3e533",
+        "trajectory_infeasible": 5885,
+        "valid": 4115
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "184ad28513bd57818556327ec86cb1f33b355cd0594fe4d8b59e9adcf9bba8e4",
+      "seed": 505,
+      "turn": 4
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3611,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "f77322ced99e1bb1408ff926a181d96f7e248f82ddec4880e138e9c7690a1cf7",
+        "trajectory_infeasible": 6389,
+        "valid": 3611
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "22478a037302543d10ab25abdad2397f1953b4a0ce9ac1b68ddeb775882d4a48",
+      "seed": 101,
+      "turn": 5
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3535,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "8c962731be1b030014248388416447819994d1b34017443b54b5ba6877478ebd",
+        "trajectory_infeasible": 6465,
+        "valid": 3535
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "2026f1bec93c3ab14fd9043ab6884382fbbb7ffe8f683a7e4cfb46026507a5a2",
+      "seed": 202,
+      "turn": 5
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3514,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "90e45753ac9c29670c4a9b4f8bc7e14254b11b4dace1ff5a99f389f117f15617",
+        "trajectory_infeasible": 6486,
+        "valid": 3514
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "3c02c2919dc803397baf1f11b53344cd03c6120f2663cb397d78be0259b01ff9",
+      "seed": 303,
+      "turn": 5
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.359,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "b9e1ef4242086cf3c056d528a803832ce698ceb4cc75da06f1773d37c98cc4dc",
+        "trajectory_infeasible": 6410,
+        "valid": 3590
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "19456b034b193fdcef43dddaa722878b6196ecf83f720a8b797f9d17ff865774",
+      "seed": 404,
+      "turn": 5
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3594,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "9d4fe09ebace8ad2ff56041436fb62633a2af49f49938b3de1b0142424c60d01",
+        "trajectory_infeasible": 6406,
+        "valid": 3594
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "41a1d5f41178676938e1af59e1adae5345ac88c8073a13539134ab3bde827ee9",
+      "seed": 505,
+      "turn": 5
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3017,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "8224f2b2d950dcdd7630f99707be0241492c4ce13f3346a5b82a16e688470abe",
+        "trajectory_infeasible": 6983,
+        "valid": 3017
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "d20ce2890693b3e10c563a43c8b5f6dfc7d1b5f981102ab549b4addb441555d6",
+      "seed": 101,
+      "turn": 6
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3061,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "37e2da1217e9d0b6787ec0c6787b6960456c01b262bae7043f566bdb060a7589",
+        "trajectory_infeasible": 6939,
+        "valid": 3061
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "a7a5371e6c7ab390951c9e965352393f80bd8e0ef75f0443d2fc5ec2f70bf164",
+      "seed": 202,
+      "turn": 6
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.3082,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "bf143dbf61b0c0aa025113ab37533e8d9fc46ee63538a7d837fcd0a5055cdcf7",
+        "trajectory_infeasible": 6918,
+        "valid": 3082
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "04603b02a4df50924e3a099f83958a4c3afdc88b15847d22b4cdcf561cbfe32f",
+      "seed": 303,
+      "turn": 6
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.2956,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "0872d9275d575f49014c1daaab4c6704bddd457173154af3709e20f58838314c",
+        "trajectory_infeasible": 7044,
+        "valid": 2956
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "95eacc333e1de3f4cd438b7bd1f3d956f4591458cb03bbdaf864c9319d69f665",
+      "seed": 404,
+      "turn": 6
+    },
+    {
+      "conditional": {
+        "feasible_rate": 1.0,
+        "representation": "conditional-exact-feasible-turn-v2",
+        "status_sha256": "52225d93654ffbae458340378d8b38bd3dd03bf540464e7581bf13487a7aea36",
+        "trajectory_infeasible": 0,
+        "valid": 10000
+      },
+      "coverage_pass": true,
+      "legacy": {
+        "feasible_rate": 0.2844,
+        "representation": "legacy-exact-fixed-turn-v2",
+        "status_sha256": "6c583a555b268a0b0aeaed729529e79f55ea675f7b13831d6f79c0f29f6d5d74",
+        "trajectory_infeasible": 7156,
+        "valid": 2844
+      },
+      "raw_draws": 10000,
+      "raw_stream_sha256": "c264297ee80ed7645721917944e93c380241e43e347ed716006ceecbe4ffa411",
+      "seed": 505,
+      "turn": 6
+    }
+  ],
+  "mapping_version": "conditional-exact-feasible-turn-v2",
+  "provenance": {
+    "budget_config_hash": "d618134588d0db607e21638fdffed4ebff3627a669d281b3dfef456bafc43f92",
+    "budget_source_commit": "253090b80df23184cb8521cbbe77af1e38a9b734",
+    "budget_summary_sha256": "b0a7f612e98064a3cf415731d89a917872fbc3931ee6d1f0116d8de8aaff6138",
+    "clean_code_tree": true,
+    "frozen_science_blobs": {
+      "yaf_ai/exploration/day65_batch.py": "5944f5c2f9c892aa0a6860b2ef443f914f6baecc",
+      "yaf_ai/exploration/paired_agents.py": "0b8b8046611bca0fd2e0c0649277e5594f439f99",
+      "yaf_ai/exploration/paired_meander.py": "98fd67154d5f6a512fdf46b99da1fc273ba8eced",
+      "yaf_ai/exploration/paired_runner.py": "d2ece9096be6daa86de6b281bb64a8b1150c782e",
+      "yaf_ai/exploration/paired_solver.py": "96efa9fe3e755fbca9b31315d96a330bef7291b9"
+    },
+    "implementation_commit": "513b62471e78d22ee49eeb393526d1f945912e42",
+    "mapping_version": "conditional-exact-feasible-turn-v2",
+    "r2_appendix_sha256": "42ff2d13b5dbb09680a47dd90dfcca83a093811a1a1db950c24557c1a7f4156d",
+    "r2_report_sha256": "d9abefb0dd4c0e5e709552bd22a36d0bf8f15daf7093e33a38dccbe4ad85bdc0",
+    "source_commit": "66a4325d9bc07ca97a8ec4e6ddf86b2854663a45",
+    "source_manifest_entry_count": 224,
+    "source_manifest_sha256": "f747e908ffadbdb7eb3a6eb8ed4809dc21ffcaec63bb97a533f526c5a6913674",
+    "spec_revision": "2.0-exact-nominal-support",
+    "study_id": "semifinal-paired-feasibility-stratified-exact-v2",
+    "superseded_v1_preregistration_commit": "dcf9b28797ec0a97ba9b05ed9f8b1710d447b28c",
+    "superseded_v1_preregistration_document_sha256": "d5e5c02f9ad86cd09015d1a400af7f0b8aae31a9b7cba2ed3ff35438d6dd47f9",
+    "v2_preregistration_commit": "e5fab578288f9660a80fa7211b130b5c2fdd63bb",
+    "v2_preregistration_document_sha256": "b56890d5272a37afc805ef627d6dd37ab1aa47ac46d99e3812bdf190da735a27"
+  },
+  "raw_draws_per_cell": 10000,
+  "representation_endpoint": "coverage_improved_all_turns",
+  "representations": [
+    "legacy-exact-fixed-turn-v2",
+    "conditional-exact-feasible-turn-v2"
+  ],
+  "reproducibly_improved_turn_count": 4,
+  "schema_version": 1,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "solver_calls": 0,
+  "spec_revision": "2.0-exact-nominal-support",
+  "status": "completed",
+  "stream_format_version": "canonical-json-float-hex-lf-v1",
+  "study_id": "semifinal-paired-feasibility-stratified-exact-v2",
+  "turn_coverage": [
+    {
+      "pass_count": 5,
+      "passing_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "reproducibly_improved": true,
+      "turn": 3
+    },
+    {
+      "pass_count": 5,
+      "passing_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "reproducibly_improved": true,
+      "turn": 4
+    },
+    {
+      "pass_count": 5,
+      "passing_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "reproducibly_improved": true,
+      "turn": 5
+    },
+    {
+      "pass_count": 5,
+      "passing_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "reproducibly_improved": true,
+      "turn": 6
+    }
+  ],
+  "turns": [
+    3,
+    4,
+    5,
+    6
+  ]
+}

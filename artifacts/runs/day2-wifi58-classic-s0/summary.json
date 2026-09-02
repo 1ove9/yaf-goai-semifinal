@@ -1,0 +1,95 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 1,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 0,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.02586206896551724,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        5725000000.0,
+        5875000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "wifi58_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.025344827586206896,
+        "x_min": -0.025344827586206896,
+        "y_max": 0.025344827586206896,
+        "y_min": -0.025344827586206896,
+        "z_max": 0.004224137931034483,
+        "z_min": -0.004224137931034483
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "246a105f0affb5cc91e0b33aa603074329610e4c75ec5200b6973cc84f63c2a9",
+  "evaluation_budget": 1,
+  "finished_at": "2026-08-09T09:15:31.912259Z",
+  "run_id": "day2-wifi58-classic-s0",
+  "schema_version": 1,
+  "seed": 0,
+  "solver_mode_counts": {
+    "subprocess": 1
+  },
+  "started_at": "2026-08-09T09:15:26.364326Z",
+  "steps_completed": 1,
+  "top_designs": [
+    {
+      "config_hash": "246a105f0affb5cc91e0b33aa603074329610e4c75ec5200b6973cc84f63c2a9",
+      "geometry_hash": "b1a7345a1324df78dd701e87a0222371d9b6057fa7b30f2c287695cbaf4c588e",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.01174031334916662,
+          0.015728265499666678,
+          0.0032
+        ],
+        "name": "classic_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.7075040872514199,
+        "efficiency": 0.6754483097356294,
+        "gain_dbi": 4.714220039681128,
+        "min_s11_db": -3.542258668115661,
+        "vswr": 6.810052031924665
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0,
+        "f_ratio": 1.0,
+        "feed_ratio": 0.1875,
+        "substrate_scale": 1.5
+      },
+      "proposer": "classic",
+      "run_id": "day2-wifi58-classic-s0",
+      "schema_version": 1,
+      "score": 0.7075040872514199,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 0,
+      "timestamp": "2026-08-09T09:15:31.861748Z"
+    }
+  ]
+}

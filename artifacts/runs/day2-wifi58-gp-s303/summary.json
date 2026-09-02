@@ -1,0 +1,171 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 20,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 303,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.02586206896551724,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        5725000000.0,
+        5875000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "wifi58_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.025344827586206896,
+        "x_min": -0.025344827586206896,
+        "y_max": 0.025344827586206896,
+        "y_min": -0.025344827586206896,
+        "z_max": 0.004224137931034483,
+        "z_min": -0.004224137931034483
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+  "evaluation_budget": 20,
+  "finished_at": "2026-08-09T09:59:26.444953Z",
+  "run_id": "day2-wifi58-gp-s303",
+  "schema_version": 1,
+  "seed": 303,
+  "solver_mode_counts": {
+    "subprocess": 20
+  },
+  "started_at": "2026-08-09T09:57:35.276827Z",
+  "steps_completed": 20,
+  "top_designs": [
+    {
+      "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+      "geometry_hash": "36c448b0d0a563b7f5dc7dbe3acff6e9cb3978beb6bb299699b5fef696d7c2d3",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011164158736892055,
+          0.01563591253978435,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9409650011003721,
+        "efficiency": 0.7241825050677319,
+        "gain_dbi": 5.291580013204466,
+        "min_s11_db": -30.1909424016283,
+        "vswr": 1.092242502250806
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0433332924752172,
+        "f_ratio": 1.027469956891482,
+        "feed_ratio": 0.2660840748336505,
+        "substrate_scale": 1.6679695240273362
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s303",
+      "schema_version": 1,
+      "score": 0.9409650011003721,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 15,
+      "timestamp": "2026-08-09T09:59:04.438648Z"
+    },
+    {
+      "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+      "geometry_hash": "76c5bbc2d28982a63f230cf0e6d555cabb59776dde8e5d65e3a49a7253171214",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.010952830983356652,
+          0.015551580708154137,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9385206598341314,
+        "efficiency": 0.7272663123619035,
+        "gain_dbi": 5.262247918009577,
+        "min_s11_db": -26.44546079615015,
+        "vswr": 1.5564639204836068
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0567766239211354,
+        "f_ratio": 1.0396756966679563,
+        "feed_ratio": 0.28099141768415825,
+        "substrate_scale": 1.6302649413903167
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s303",
+      "schema_version": 1,
+      "score": 0.9385206598341314,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 14,
+      "timestamp": "2026-08-09T09:58:59.228832Z"
+    },
+    {
+      "config_hash": "1a7d90037cf81a3b1af4bf8f2a4cb6da40f05cb1f08416f58e690b20bbc8f5d2",
+      "geometry_hash": "eb4139014317dbb487acb617a7479f2950432577c5579547587ee027ac8b07f9",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011108728872531153,
+          0.0158121743750941,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9368799085205541,
+        "efficiency": 0.722011670283174,
+        "gain_dbi": 5.24255890224665,
+        "min_s11_db": -43.79645223168916,
+        "vswr": 1.0753003256278248
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0605995195590705,
+        "f_ratio": 1.0243891020701779,
+        "feed_ratio": 0.2798403436910395,
+        "substrate_scale": 1.6254343463725662
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s303",
+      "schema_version": 1,
+      "score": 0.9368799085205541,
+      "seed": 303,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 8,
+      "timestamp": "2026-08-09T09:58:24.942516Z"
+    }
+  ]
+}

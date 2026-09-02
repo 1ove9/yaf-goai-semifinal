@@ -1,0 +1,9 @@
+CM YAF fixture: half-wave dipole L=0.5m a=0.1mm, free space
+CM 250-350 MHz sweep, 11 points; E-plane cut (phi=0)
+CE
+GW 1 21 0.0 0.0 -0.25 0.0 0.0 0.25 0.0001
+GE 0
+EX 0 1 11 0 1.0 0.0
+FR 0 11 0 0 250.0 10.0
+RP 0 37 1 1000 0.0 0.0 5.0 0.0
+EN

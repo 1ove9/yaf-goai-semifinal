@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "publication_mode": "sanitized-root-snapshot",
+  "source_science_commit": "18b1d20d35ec1cb0c401bd951c64f202c3dd67bd",
+  "source_cleanup_commit": "20b68b1eb2172efc410752e4a04d32d85056ed47",
+  "source_science_history_commit_count": 144,
+  "history_intentionally_omitted": true,
+  "omission_reason": "Remove excluded prompt/config blobs and the original commit/tree chronology from public Git history.",
+  "excluded_historical_paths": [
+    ".claude/",
+    ".deepseek/",
+    "frontend/.claude/",
+    "tmp/",
+    "BUILD_SPEC.md",
+    "YAF_PROJECT_CONTEXT.md"
+  ],
+  "limitations": [
+    "The original preregistration commit order cannot be replayed from this public Git history.",
+    "Original commit identifiers remain provenance labels in archived evidence and documents, not resolvable objects in this snapshot.",
+    "The public verifier checks archived bytes and frozen terminal analysis facts without rerunning a solver."
+  ],
+  "manifest": {
+    "path": "artifacts/runs/manifest.json",
+    "entry_count": 255,
+    "sha256": "7f0d7d7d9797a6f3c0f0cdabee2e752092e4f9bc7b0c7ef683e47f8cf16d7f05"
+  },
+  "frozen_files": {
+    "artifacts/analysis/semifinal-paired-b-completion-v1/report.md": "1d1900d1e1841930e7110dd16363cec470be56e764fb2f0d6f2740cacf9230da",
+    "artifacts/analysis/semifinal-paired-b-completion-v1/appendix.json": "9eb3786fd016e7e314e4c266b13e3d6a03513db5d5e00b202b8732fd3e93aa24",
+    "artifacts/analysis/semifinal-paired-b-completion-v1-certificate/report.md": "d16cb9561c213ac754c540eb6fe6958f58e6fcb17f034bc7b995dd827f696520",
+    "artifacts/analysis/semifinal-paired-b-completion-v1-certificate/summary.json": "2607091968a7ba8cb657bae6dde4e9229f6b798134deb6a0c7fa2757eca728f7",
+    "artifacts/analysis/semifinal-a-span-support-causal-probe-v1/report.md": "716e2319d3cc5ab86078a917a79ca0e9a98a311534ad4d5d27abc3cbdd4216af",
+    "artifacts/analysis/semifinal-a-span-support-causal-probe-v1/summary.json": "a2083cb3628687ecd59a12f1113f7cacf5751b557847f481edddb7fe34a682ab",
+    "docs/submission/SUBMISSION-README.md": "e27c5268e2277e08cded3b01d9d22878d35889a219ce767f61369b457b503494",
+    "docs/submission/EXPLORATION-NARRATIVE.md": "c09315a6fa190a91cc540b6e36ddd54ecfd949d2bee0c2838d7c2a7edd9c4c19",
+    "docs/submission/REFERENCE-FRAME.md": "954a9f638e3444fe754d092d80e3ec858a2e50395d1e859c9c8c5dc972b1660c",
+    "docs/submission/EVIDENCE-INDEX.md": "1c59979335dd738537cb08cab892c26bc149c83a9a38f8ddb56cc5fcbd7e627c",
+    "docs/submission/GAPS.md": "d0aa2dbab9fe63007dd95cd9f3e513e8ee8b893d56c2ed693547767168e72975"
+  },
+  "terminal_facts": {
+    "b_completion_study_status": "complete",
+    "b_completion_scientific_endpoint": "b_completion_pair_validity_without_effect_crossing",
+    "h1_count": 702,
+    "h2_count": 0,
+    "b_completion_run_count": 20,
+    "b_completion_accepted_count": 6000,
+    "support_certificate_checked_spans": 480002,
+    "support_certificate_failed_spans": 0,
+    "a_span_probe_study_status": "complete",
+    "a_span_probe_scientific_endpoint": "span_support_sufficient_in_frozen_counterfactuals",
+    "a_span_probe_solver_calls": 32,
+    "a_span_probe_monotonic_responses": 10,
+    "a_span_probe_p01_crossings": 5,
+    "a_span_probe_p02_crossings": 5,
+    "verdict_ceiling": "insufficient_evidence"
+  },
+  "source_qa_receipt": {
+    "pytest_passed": 795,
+    "ruff": "passed",
+    "mypy_strict_source_files": 165,
+    "mypy_errors": 0,
+    "bound_to_source_science_commit": "18b1d20d35ec1cb0c401bd951c64f202c3dd67bd"
+  }
+}

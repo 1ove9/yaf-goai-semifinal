@@ -1,0 +1,171 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 20,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 505,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.02586206896551724,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        5725000000.0,
+        5875000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "wifi58_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.025344827586206896,
+        "x_min": -0.025344827586206896,
+        "y_max": 0.025344827586206896,
+        "y_min": -0.025344827586206896,
+        "z_max": 0.004224137931034483,
+        "z_min": -0.004224137931034483
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+  "evaluation_budget": 20,
+  "finished_at": "2026-08-09T10:13:38.422371Z",
+  "run_id": "day2-wifi58-random-s505",
+  "schema_version": 1,
+  "seed": 505,
+  "solver_mode_counts": {
+    "subprocess": 20
+  },
+  "started_at": "2026-08-09T10:11:37.147251Z",
+  "steps_completed": 20,
+  "top_designs": [
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "aece7d1362f43f7f2c9a1654efc48602a8812630040bbe91c8b82adb3e42193b",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011478178774623626,
+          0.013559826087406504,
+          0.0032
+        ],
+        "name": "random_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9232397281528344,
+        "efficiency": 0.7280225050044465,
+        "gain_dbi": 5.078876737834014,
+        "min_s11_db": -25.0303491446423,
+        "vswr": 1.539460315755416
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 0.8762434835775771,
+        "f_ratio": 1.0857731873341623,
+        "feed_ratio": 0.2560454822194961,
+        "substrate_scale": 1.7026914517424954
+      },
+      "proposer": "random",
+      "run_id": "day2-wifi58-random-s505",
+      "schema_version": 1,
+      "score": 0.9232397281528344,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 7,
+      "timestamp": "2026-08-09T10:12:31.853092Z"
+    },
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "ca349d783330c97a22650bae76564baa800ae5166301036ba5abe4eafa3074f3",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.010956530071378626,
+          0.014755749325982934,
+          0.0032
+        ],
+        "name": "random_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.8973037580064712,
+        "efficiency": 0.7131764044565069,
+        "gain_dbi": 5.082710275439222,
+        "min_s11_db": -8.537572326113212,
+        "vswr": 2.2346911194564116
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0003933001398466,
+        "f_ratio": 1.0661172003254387,
+        "feed_ratio": 0.17340248859225071,
+        "substrate_scale": 1.6808376673015737
+      },
+      "proposer": "random",
+      "run_id": "day2-wifi58-random-s505",
+      "schema_version": 1,
+      "score": 0.8973037580064712,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 12,
+      "timestamp": "2026-08-09T10:12:59.592487Z"
+    },
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "8588e4ce35d8bd208bbee030cb75c6860b38c65a17e0c2121c7bf5e0166a46b6",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.010733434219528654,
+          0.015208287619896715,
+          0.0032
+        ],
+        "name": "random_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.8872596189044346,
+        "efficiency": 0.7321041098972657,
+        "gain_dbi": 5.372339313315092,
+        "min_s11_db": -10.191692815466233,
+        "vswr": 2.637622210067859
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0528916642735575,
+        "f_ratio": 1.0611880676487373,
+        "feed_ratio": 0.2605269732035627,
+        "substrate_scale": 1.7373864598698854
+      },
+      "proposer": "random",
+      "run_id": "day2-wifi58-random-s505",
+      "schema_version": 1,
+      "score": 0.8872596189044346,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 2,
+      "timestamp": "2026-08-09T10:12:05.071594Z"
+    }
+  ]
+}

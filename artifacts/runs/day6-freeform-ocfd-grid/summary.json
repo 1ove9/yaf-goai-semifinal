@@ -1,0 +1,215 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 400,
+    "explorable_problem_definition": "The agent may explore only day6-ocfd-grid-v1; invalid physical centerlines are rejected without consuming budget.",
+    "fixed_problem_definition": "The 40 mm cube, symmetric single-feed wire, 1.5--6.5 GHz/251-point sweep, lambda/20 real NEC2 exploration oracle, accepted-power worst-band score, reference, budget, top-2 rule, and v2.1 discovery gates are fixed.",
+    "nec2_segments_per_wavelength": 20,
+    "optimizer_window": null,
+    "proposal_space_version": "day6-ocfd-grid-v1",
+    "require_real_solver": true,
+    "seed": 0,
+    "solver": "nec2",
+    "spec": {
+      "bandwidth_target": null,
+      "efficiency_target": null,
+      "forbidden_regions": [],
+      "frequency_range": [
+        1500000000.0,
+        6500000000.0
+      ],
+      "material_palette": [
+        "copper"
+      ],
+      "metadata": {
+        "frequency_points": 251,
+        "score_version": "dual-band-accepted-power-min-v1",
+        "target_bands_hz": [
+          [
+            2400000000.0,
+            2500000000.0
+          ],
+          [
+            5725000000.0,
+            5875000000.0
+          ]
+        ]
+      },
+      "name": "day6_freeform_dual_band",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.02,
+        "x_min": -0.02,
+        "y_max": 0.02,
+        "y_min": -0.02,
+        "z_max": 0.02,
+        "z_min": -0.02
+      },
+      "target_gain_dbi": null,
+      "target_pattern": null,
+      "target_vswr": null
+    }
+  },
+  "config_hash": "6316e47df2d771a23a9116893e0ed969c7d8d93b6bc1bb8a8080897cfee735e7",
+  "evaluation_budget": 400,
+  "failure": null,
+  "finished_at": "2026-08-11T19:37:50.832121Z",
+  "rejected_proposals": 0,
+  "run_id": "day6-freeform-ocfd-grid",
+  "schema_version": 1,
+  "seed": 0,
+  "solver_mode_counts": {
+    "subprocess": 400
+  },
+  "started_at": "2026-08-11T19:35:52.133889Z",
+  "status": "completed",
+  "steps_completed": 400,
+  "top_designs": [
+    {
+      "config_hash": "6316e47df2d771a23a9116893e0ed969c7d8d93b6bc1bb8a8080897cfee735e7",
+      "event_type": "evaluation",
+      "geometry_hash": "3cbc20baee6a65a928de1c2944526eaa3390999d5479cee527ee1f899f6ffe09",
+      "geometry_summary": {
+        "antenna_class": "day6_ocfd",
+        "dimensions_m": [
+          0.031085753967420384,
+          0.031085753967420384,
+          0.031085753967420384
+        ],
+        "name": "classic_ocfd",
+        "num_faces": 14,
+        "num_vertices": 15,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2500000000.0,
+        "band_24_index": 50.0,
+        "band_24_min_s11_db": -4.315946346411636,
+        "band_24_mismatch_efficiency": 0.6298264657988868,
+        "band_58_frequency_hz": 5740000000.0,
+        "band_58_index": 212.0,
+        "band_58_min_s11_db": -4.1695707995125435,
+        "band_58_mismatch_efficiency": 0.6171374213680576,
+        "composite_score": 0.6171374213680576,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 0.2029999999795109
+      },
+      "proposal_parameters": {
+        "feed_offset_ratio": 0.22105263157894733,
+        "total_length_m": 0.0538421052631579
+      },
+      "proposer": "classic_ocfd",
+      "run_id": "day6-freeform-ocfd-grid",
+      "schema_version": 1,
+      "score": 0.6171374213680576,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 152,
+      "timestamp": "2026-08-11T19:36:32.922633Z",
+      "topology": null
+    },
+    {
+      "config_hash": "6316e47df2d771a23a9116893e0ed969c7d8d93b6bc1bb8a8080897cfee735e7",
+      "event_type": "evaluation",
+      "geometry_hash": "570b9154b89d9dab7bed390d36305ba6687096d813cf5f639ae1f19a4d60e6e5",
+      "geometry_summary": {
+        "antenna_class": "day6_ocfd",
+        "dimensions_m": [
+          0.031085753967420388,
+          0.031085753967420388,
+          0.031085753967420388
+        ],
+        "name": "classic_ocfd",
+        "num_faces": 13,
+        "num_vertices": 14,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2500000000.0,
+        "band_24_index": 50.0,
+        "band_24_min_s11_db": -4.05197786701103,
+        "band_24_mismatch_efficiency": 0.6066291145923044,
+        "band_58_frequency_hz": 5740000000.0,
+        "band_58_index": 212.0,
+        "band_58_min_s11_db": -4.38047697921246,
+        "band_58_mismatch_efficiency": 0.6352861112616268,
+        "composite_score": 0.6066291145923044,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 0.18799999996554106
+      },
+      "proposal_parameters": {
+        "feed_offset_ratio": 0.23947368421052628,
+        "total_length_m": 0.0538421052631579
+      },
+      "proposer": "classic_ocfd",
+      "run_id": "day6-freeform-ocfd-grid",
+      "schema_version": 1,
+      "score": 0.6066291145923044,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 153,
+      "timestamp": "2026-08-11T19:36:33.190507Z",
+      "topology": null
+    },
+    {
+      "config_hash": "6316e47df2d771a23a9116893e0ed969c7d8d93b6bc1bb8a8080897cfee735e7",
+      "event_type": "evaluation",
+      "geometry_hash": "19bde814562929cbf92fbaa9f71f68b4e0bb6d3fcdcdc862b4a1178c2f3f21f6",
+      "geometry_summary": {
+        "antenna_class": "day6_ocfd",
+        "dimensions_m": [
+          0.031085753967420388,
+          0.031085753967420388,
+          0.031085753967420388
+        ],
+        "name": "classic_ocfd",
+        "num_faces": 14,
+        "num_vertices": 15,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "band_24_frequency_hz": 2500000000.0,
+        "band_24_index": 50.0,
+        "band_24_min_s11_db": -4.628966216932039,
+        "band_24_mismatch_efficiency": 0.6555680913357869,
+        "band_58_frequency_hz": 5740000000.0,
+        "band_58_index": 212.0,
+        "band_58_min_s11_db": -3.9818403075554394,
+        "band_58_mismatch_efficiency": 0.6002246895143726,
+        "composite_score": 0.6002246895143726,
+        "efficiency": 1.0,
+        "efficiency_weight": 0.0,
+        "frequency_points": 251.0,
+        "gain_dbi": 0.0,
+        "simulation_time_seconds": 0.20300000003771856
+      },
+      "proposal_parameters": {
+        "feed_offset_ratio": 0.2026315789473684,
+        "total_length_m": 0.0538421052631579
+      },
+      "proposer": "classic_ocfd",
+      "run_id": "day6-freeform-ocfd-grid",
+      "schema_version": 1,
+      "score": 0.6002246895143726,
+      "seed": 0,
+      "solver_mode": "subprocess",
+      "solver_name": "nec2",
+      "step_index": 151,
+      "timestamp": "2026-08-11T19:36:32.640232Z",
+      "topology": null
+    }
+  ]
+}

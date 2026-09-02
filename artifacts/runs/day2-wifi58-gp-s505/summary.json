@@ -1,0 +1,171 @@
+{
+  "config": {
+    "discovery_policy": {
+      "classic_improvement_fraction": 0.1,
+      "max_cross_solver_s11_difference_db": 3.0,
+      "minimum_negative_samples": 3
+    },
+    "evaluation_budget": 20,
+    "explorable_problem_definition": "The agent may explore antenna geometry through bounded parametric templates and planar pixel topology proposals.",
+    "fixed_problem_definition": "The design spec, solver and mesh rules, score function, evaluation budget, discovery thresholds, and solver-mode honesty checks are fixed.",
+    "proposal_space_version": "patch-v2-4d",
+    "require_real_solver": true,
+    "seed": 505,
+    "solver": "openems",
+    "spec": {
+      "bandwidth_target": 0.02586206896551724,
+      "efficiency_target": 0.7,
+      "forbidden_regions": [],
+      "frequency_range": [
+        5725000000.0,
+        5875000000.0
+      ],
+      "material_palette": [
+        "copper",
+        "fr4"
+      ],
+      "metadata": {},
+      "name": "wifi58_exploration",
+      "novel_physics": [],
+      "polarization": "linear",
+      "size_constraint": {
+        "x_max": 0.025344827586206896,
+        "x_min": -0.025344827586206896,
+        "y_max": 0.025344827586206896,
+        "y_min": -0.025344827586206896,
+        "z_max": 0.004224137931034483,
+        "z_min": -0.004224137931034483
+      },
+      "target_gain_dbi": 6.0,
+      "target_pattern": null,
+      "target_vswr": 2.0
+    }
+  },
+  "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+  "evaluation_budget": 20,
+  "finished_at": "2026-08-09T10:03:10.569625Z",
+  "run_id": "day2-wifi58-gp-s505",
+  "schema_version": 1,
+  "seed": 505,
+  "solver_mode_counts": {
+    "subprocess": 20
+  },
+  "started_at": "2026-08-09T10:01:18.236525Z",
+  "steps_completed": 20,
+  "top_designs": [
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "70de49359e5327efd06b6fe1ae0ddf660eb52f3cd74322b7eceab5f0baaba60b",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011117984831639838,
+          0.01556786721164172,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9291013915745867,
+        "efficiency": 0.717016016723695,
+        "gain_dbi": 5.1492166988950405,
+        "min_s11_db": -19.127517759743014,
+        "vswr": 1.2595834171838376
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0427831410151882,
+        "f_ratio": 1.0316887947240014,
+        "feed_ratio": 0.23821701206968152,
+        "substrate_scale": 1.6165121320302551
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s505",
+      "schema_version": 1,
+      "score": 0.9291013915745867,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 18,
+      "timestamp": "2026-08-09T10:03:04.773815Z"
+    },
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "51a3b784dfcc5481594cc6b76dc0c7943f40f344396373cee297315fd2726e4d",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011072267521714182,
+          0.015340467474575624,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9272073710098456,
+        "efficiency": 0.7193501178881706,
+        "gain_dbi": 5.1264884521181475,
+        "min_s11_db": -28.06851099709167,
+        "vswr": 1.1713971551542106
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0310784015208465,
+        "f_ratio": 1.0410895379504639,
+        "feed_ratio": 0.2558793293568956,
+        "substrate_scale": 1.5988599368173122
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s505",
+      "schema_version": 1,
+      "score": 0.9272073710098456,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 9,
+      "timestamp": "2026-08-09T10:02:14.201519Z"
+    },
+    {
+      "config_hash": "4e7441291d795de71d238270198123f950c042423c88cc58afadbb7495af5a54",
+      "geometry_hash": "456763c5cb0f5ea782ab7a12d276afd0bb4084c7a116394b93e9eb4d1b078214",
+      "geometry_summary": {
+        "antenna_class": null,
+        "dimensions_m": [
+          0.011121178538011279,
+          0.015615033264909728,
+          0.0032
+        ],
+        "name": "gp_patch",
+        "num_faces": 20,
+        "num_vertices": 12,
+        "representation": "mesh"
+      },
+      "metrics": {
+        "composite_score": 0.9249439321062336,
+        "efficiency": 0.7130471541970821,
+        "gain_dbi": 5.099327185274802,
+        "min_s11_db": -16.76019343612893,
+        "vswr": 1.3753217315203257
+      },
+      "proposal_parameters": {
+        "aspect_ratio": 1.0457687777776974,
+        "f_ratio": 1.0300439452693861,
+        "feed_ratio": 0.2281214555021477,
+        "substrate_scale": 1.6029739204477869
+      },
+      "proposer": "gp",
+      "run_id": "day2-wifi58-gp-s505",
+      "schema_version": 1,
+      "score": 0.9249439321062336,
+      "seed": 505,
+      "solver_mode": "subprocess",
+      "solver_name": "openems",
+      "step_index": 16,
+      "timestamp": "2026-08-09T10:02:54.006011Z"
+    }
+  ]
+}

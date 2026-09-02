@@ -1,0 +1,206 @@
+{
+  "diagnostic_xml": {
+    "diagnostic_xml_identical_except_probe_bounds": true,
+    "full_xml_identical_except_probe_bounds": true,
+    "legacy_derivation_changed_only_timesteps": true,
+    "legacy_diagnostic_xml_sha256": "967179fc1e62d51c4e3090885f22c3346b2476d0b2954435f5be9b9a5bec5853",
+    "legacy_full_xml_sha256": "bf6706ccfe2be6543f407fc0a15621bc4f14c826054b8c76d9e228cd5c2153bc",
+    "maximum_timesteps": 10,
+    "repaired_derivation_changed_only_timesteps": true,
+    "repaired_diagnostic_xml_sha256": "36d7e73684a3007f87aaf2a904112a1e46ea9e52980cfa3eb147435a9e39650d",
+    "repaired_full_xml_sha256": "32f4fe9ba7874429de0c96f0ce6768fba23590fffa4237a8b4458427b1dbb974"
+  },
+  "geometry_hash": "1c0e018ac1e65aacf30ac158ef2336f461b430036b0c6ad9eb2bfefb15ba0d5a",
+  "legacy_dt_proxy_seconds": 1.6729468554962257e-12,
+  "legacy_xml_sha256": "cfeb036bb550cf2a5847f4388b8ac2556a8752eff70180d555e6d1ce29aa94ad",
+  "official_add_lumped_port_source_sha256": "9384e5eb78dbb3998d3e9b75662b9be29e9c18b6681beacf973c102f89b4ced9",
+  "preregistration_commit": "905efdb",
+  "protocol_version": "semifinal-wifi58-rod-renderer-anchor-r2",
+  "refinements": [
+    {
+      "cell_timesteps": 137252625000,
+      "dt_proxy_seconds": 9.629166007732332e-14,
+      "maximum_timesteps": 694950,
+      "mesh": {
+        "refinement": 1.0,
+        "total_cells": 197500,
+        "x": {
+          "cell_count": 50,
+          "line_count": 51,
+          "maximum_cell_size_m": 0.005548544050700002,
+          "minimum_cell_size_m": 4.999999999999998e-05
+        },
+        "xml_sha256": "32f4fe9ba7874429de0c96f0ce6768fba23590fffa4237a8b4458427b1dbb974",
+        "y": {
+          "cell_count": 79,
+          "line_count": 80,
+          "maximum_cell_size_m": 0.005548544050799992,
+          "minimum_cell_size_m": 4.99999999999997e-05
+        },
+        "z": {
+          "cell_count": 50,
+          "line_count": 51,
+          "maximum_cell_size_m": 0.005548544050700002,
+          "minimum_cell_size_m": 4.999999999999998e-05
+        }
+      },
+      "per_axis_maximum_cell_size_m": [
+        0.005548544050700002,
+        0.005548544050799992,
+        0.005548544050700002
+      ],
+      "per_axis_minimum_cell_size_m": [
+        4.999999999999998e-05,
+        4.99999999999997e-05,
+        4.999999999999998e-05
+      ],
+      "refinement": 1.0
+    },
+    {
+      "cell_timesteps": 379209196800,
+      "dt_proxy_seconds": 4.8145830038661096e-14,
+      "maximum_timesteps": 1389900,
+      "mesh": {
+        "refinement": 2.0,
+        "total_cells": 272832,
+        "x": {
+          "cell_count": 56,
+          "line_count": 57,
+          "maximum_cell_size_m": 0.0057638442214,
+          "minimum_cell_size_m": 2.499999999999999e-05
+        },
+        "xml_sha256": "fe6528c10c80bfb05ec0be3a2e360a0abdf9c70de99487806f16abdb102b6b31",
+        "y": {
+          "cell_count": 87,
+          "line_count": 88,
+          "maximum_cell_size_m": 0.0057638442214,
+          "minimum_cell_size_m": 2.499999999999898e-05
+        },
+        "z": {
+          "cell_count": 56,
+          "line_count": 57,
+          "maximum_cell_size_m": 0.0057638442214,
+          "minimum_cell_size_m": 2.499999999999999e-05
+        }
+      },
+      "per_axis_maximum_cell_size_m": [
+        0.0057638442214,
+        0.0057638442214,
+        0.0057638442214
+      ],
+      "per_axis_minimum_cell_size_m": [
+        2.499999999999999e-05,
+        2.499999999999898e-05,
+        2.499999999999999e-05
+      ],
+      "refinement": 2.0
+    },
+    {
+      "cell_timesteps": 1081675776000,
+      "dt_proxy_seconds": 2.40729150193311e-14,
+      "maximum_timesteps": 2779800,
+      "mesh": {
+        "refinement": 4.0,
+        "total_cells": 389120,
+        "x": {
+          "cell_count": 64,
+          "line_count": 65,
+          "maximum_cell_size_m": 0.006004838388599998,
+          "minimum_cell_size_m": 1.2499999999999992e-05
+        },
+        "xml_sha256": "9c9489a2ef42925750dc7b5faba44f12fc754308fe01f46952c469e175787f61",
+        "y": {
+          "cell_count": 95,
+          "line_count": 96,
+          "maximum_cell_size_m": 0.006004838388599998,
+          "minimum_cell_size_m": 1.2500000000000358e-05
+        },
+        "z": {
+          "cell_count": 64,
+          "line_count": 65,
+          "maximum_cell_size_m": 0.006004838388599998,
+          "minimum_cell_size_m": 1.2499999999999992e-05
+        }
+      },
+      "per_axis_maximum_cell_size_m": [
+        0.006004838388599998,
+        0.006004838388599998,
+        0.006004838388599998
+      ],
+      "per_axis_minimum_cell_size_m": [
+        1.2499999999999992e-05,
+        1.2500000000000358e-05,
+        1.2499999999999992e-05
+      ],
+      "refinement": 4.0
+    },
+    {
+      "cell_timesteps": 3307561113872,
+      "dt_proxy_seconds": 1.2036457509664985e-14,
+      "maximum_timesteps": 5559599,
+      "mesh": {
+        "refinement": 8.0,
+        "total_cells": 594928,
+        "x": {
+          "cell_count": 76,
+          "line_count": 77,
+          "maximum_cell_size_m": 0.006256012672499998,
+          "minimum_cell_size_m": 6.249999999999989e-06
+        },
+        "xml_sha256": "9033129f1a5045d846dc33f6c85b45c9183648ed4478d467b89e0c6e590d3be9",
+        "y": {
+          "cell_count": 103,
+          "line_count": 104,
+          "maximum_cell_size_m": 0.006256012672499998,
+          "minimum_cell_size_m": 6.249999999999312e-06
+        },
+        "z": {
+          "cell_count": 76,
+          "line_count": 77,
+          "maximum_cell_size_m": 0.006256012672499998,
+          "minimum_cell_size_m": 6.249999999999989e-06
+        }
+      },
+      "per_axis_maximum_cell_size_m": [
+        0.006256012672499998,
+        0.006256012672499998,
+        0.006256012672499998
+      ],
+      "per_axis_minimum_cell_size_m": [
+        6.249999999999989e-06,
+        6.249999999999312e-06,
+        6.249999999999989e-06
+      ],
+      "refinement": 8.0
+    }
+  ],
+  "schema_version": 1,
+  "solver_invoked": false,
+  "target_physical_time_seconds": 6.691787421984903e-08,
+  "xml_identities": [
+    {
+      "identical_except_probe_bounds": true,
+      "legacy_xml_sha256": "bf6706ccfe2be6543f407fc0a15621bc4f14c826054b8c76d9e228cd5c2153bc",
+      "refinement": 1.0,
+      "repaired_xml_sha256": "32f4fe9ba7874429de0c96f0ce6768fba23590fffa4237a8b4458427b1dbb974"
+    },
+    {
+      "identical_except_probe_bounds": true,
+      "legacy_xml_sha256": "2436998a324e56d02ed8a62f39e12b38e2ea93a08b386831c307115c1eff0242",
+      "refinement": 2.0,
+      "repaired_xml_sha256": "fe6528c10c80bfb05ec0be3a2e360a0abdf9c70de99487806f16abdb102b6b31"
+    },
+    {
+      "identical_except_probe_bounds": true,
+      "legacy_xml_sha256": "55f0ad0d87cbdb00783311cdcf30361b6783e01b2c9ccfad34a83e5d2e4771a4",
+      "refinement": 4.0,
+      "repaired_xml_sha256": "9c9489a2ef42925750dc7b5faba44f12fc754308fe01f46952c469e175787f61"
+    },
+    {
+      "identical_except_probe_bounds": true,
+      "legacy_xml_sha256": "32c8748a4c5978d198c7865dd7f48e2f79096cb3bbb67040236343092ce88a34",
+      "refinement": 8.0,
+      "repaired_xml_sha256": "9033129f1a5045d846dc33f6c85b45c9183648ed4478d467b89e0c6e590d3be9"
+    }
+  ]
+}

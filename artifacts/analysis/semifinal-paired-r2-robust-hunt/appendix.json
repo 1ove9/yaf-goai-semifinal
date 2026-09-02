@@ -1,0 +1,565 @@
+{
+  "baseline_diagnostics": {
+    "accepted_count": 300,
+    "accepted_turns": {
+      "count_3": 297,
+      "count_4": 3,
+      "count_5": 0,
+      "count_6": 0,
+      "total": 300
+    },
+    "best_valid_l": 0.20541677746768625,
+    "best_valid_record": {
+      "base_score": 0.7945832225323137,
+      "hardware_hash": "b6f72349504b6994a10ff9d32ffb7059424073fb25bc2900860f7e1348b9340c",
+      "pair_hash": "8a4ad18c710ec185728fd5bff0e6f16461aea29362024893e1bb6ddd3dcc73ca",
+      "proposal_index": 658,
+      "run_id": "semifinal-paired-es-warm-s101",
+      "search_score": 1.0445832225323137,
+      "seed": 101,
+      "state_a_geometry_hash": "4d8c585c7e4112d1d8aad9d8c33b55642549008cec6649075a75ffa4a4b15b55",
+      "state_b_geometry_hash": "84566f8b6ab538d6ff1ae730b2ecd74f445fc127f877f8edb1a53530e509c33e",
+      "step_index": 213,
+      "valid_pair_search": true,
+      "worst_reflected_power_fraction": 0.20541677746768625
+    },
+    "boundary": {
+      "denominator": 48,
+      "feed_gap_ratio_ppm": {
+        "either_count": 0,
+        "fraction": 0.0,
+        "lower_count": 0,
+        "upper_count": 0
+      },
+      "pool": "valid",
+      "state_a_span_ratio_ppm": {
+        "either_count": 25,
+        "fraction": 0.5208333333333334,
+        "lower_count": 0,
+        "upper_count": 25
+      },
+      "state_a_total_wire_length_um": {
+        "either_count": 0,
+        "fraction": 0.0,
+        "lower_count": 0,
+        "upper_count": 0
+      },
+      "state_b_span_ratio_ppm": {
+        "either_count": 42,
+        "fraction": 0.875,
+        "lower_count": 42,
+        "upper_count": 0
+      },
+      "state_b_total_wire_length_um": {
+        "either_count": 0,
+        "fraction": 0.0,
+        "lower_count": 0,
+        "upper_count": 0
+      },
+      "terminal_ratio_ppm": {
+        "either_count": 0,
+        "fraction": 0.0,
+        "lower_count": 0,
+        "upper_count": 0
+      }
+    },
+    "effective_turns": {
+      "count_3": 48,
+      "count_4": 0,
+      "count_5": 0,
+      "count_6": 0,
+      "total": 48
+    },
+    "proposal_attempts": 836,
+    "rejected_count": 536,
+    "rejection_reasons": {
+      "paired geometry contains a short segment": 536
+    },
+    "source_log_sha256": "af5b158d487577d7a07f26186ff66222b34abe05e36bd58596849dc4e3ff6c65",
+    "source_run_id": "semifinal-paired-es-warm-s101",
+    "source_summary_sha256": "52cd3ad16c3db5b2f3d98ab2bf394e69d4f6af0381d595d88edd3de3f98e25b7",
+    "valid_count": 48
+  },
+  "cross_seed_gate_pass": false,
+  "matrix_exception_message": null,
+  "matrix_exception_type": null,
+  "pass_count": 0,
+  "rows": [
+    {
+      "accepted_count": 400,
+      "accepted_turns": {
+        "count_3": 385,
+        "count_4": 15,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 400
+      },
+      "best_gate_crossing_record": null,
+      "best_valid_l": 0.22361618548820708,
+      "best_valid_record": {
+        "base_score": 0.776383814511793,
+        "hardware_hash": "1219b67e0c2b47768557fadd01da63992b17319da618b0d5341c25d8dfba0a5d",
+        "pair_hash": "e017e7dfb7c2880f5b51b30c508b8afa74353841ec467db43c24d80888ca8fcb",
+        "proposal_index": 1616,
+        "run_id": "semifinal-paired-r2-es-warm-s101",
+        "search_score": 1.026383814511793,
+        "seed": 101,
+        "state_a_geometry_hash": "ffa0c3d755b6eeb0710876a3afe1295642a161063bc5f4a3ef79f894318786a1",
+        "state_b_geometry_hash": "15544deaf7fc250e7e0538dfe99467f0464390aee08e4528018033518f386274",
+        "step_index": 354,
+        "valid_pair_search": true,
+        "worst_reflected_power_fraction": 0.22361618548820708
+      },
+      "boundary": {
+        "denominator": 1,
+        "feed_gap_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "pool": "valid",
+        "state_a_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_a_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "terminal_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        }
+      },
+      "diagnostic_top": null,
+      "effective_turns": {
+        "count_3": 1,
+        "count_4": 0,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 1
+      },
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "7b18a9236293d000235df273c7040a9484e6318ab655435c07fbb13f4b3e05cc",
+      "pass_flag": false,
+      "proposal_attempts": 1755,
+      "rejected_count": 1355,
+      "rejection_reasons": {
+        "paired geometry contains a short segment": 1355
+      },
+      "restart_count": 5,
+      "run_id": "semifinal-paired-r2-es-warm-s101",
+      "seed": 101,
+      "solver_mode_counts": {
+        "subprocess": 800
+      },
+      "source_run_status": "completed",
+      "summary_sha256": "5f3189474c231cb5bf2faee74b0ea55e04febbfc3cb55a6ca792528b2126d656",
+      "terminal_consecutive_rejections": 0,
+      "valid_count": 1
+    },
+    {
+      "accepted_count": 400,
+      "accepted_turns": {
+        "count_3": 385,
+        "count_4": 15,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 400
+      },
+      "best_gate_crossing_record": null,
+      "best_valid_l": null,
+      "best_valid_record": null,
+      "boundary": {
+        "denominator": 400,
+        "feed_gap_ratio_ppm": {
+          "either_count": 29,
+          "fraction": 0.0725,
+          "lower_count": 0,
+          "upper_count": 29
+        },
+        "pool": "accepted",
+        "state_a_span_ratio_ppm": {
+          "either_count": 45,
+          "fraction": 0.1125,
+          "lower_count": 0,
+          "upper_count": 45
+        },
+        "state_a_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_span_ratio_ppm": {
+          "either_count": 46,
+          "fraction": 0.115,
+          "lower_count": 46,
+          "upper_count": 0
+        },
+        "state_b_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "terminal_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        }
+      },
+      "diagnostic_top": {
+        "base_score": 0.8060534976141874,
+        "hardware_hash": "9d07c912c389ad0b95192e97a4b908d665b5099380e468e50b7d98555e65ada3",
+        "pair_hash": "0a13777b3ae9429f6eaa87f6c0ccf814f6cecc82c9327c3c0d02016f411b2182",
+        "proposal_index": 1452,
+        "run_id": "semifinal-paired-r2-es-warm-s202",
+        "search_score": 0.8060534976141874,
+        "seed": 202,
+        "state_a_geometry_hash": "9c574952287b52734176253696930490de88d32c1ad08835137efd11c950403a",
+        "state_b_geometry_hash": "4287c8d0298d709f1769b5388356b36eda0b59309983d170861323425e785408",
+        "step_index": 352,
+        "valid_pair_search": false,
+        "worst_reflected_power_fraction": 0.19394650238581257
+      },
+      "effective_turns": {
+        "count_3": 385,
+        "count_4": 15,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 400
+      },
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "c819748e495a3f28c9dd499b4bbf4757e357b737e0d0be572c3b9349c715e909",
+      "pass_flag": false,
+      "proposal_attempts": 1631,
+      "rejected_count": 1231,
+      "rejection_reasons": {
+        "paired geometry contains a short segment": 1231
+      },
+      "restart_count": 5,
+      "run_id": "semifinal-paired-r2-es-warm-s202",
+      "seed": 202,
+      "solver_mode_counts": {
+        "subprocess": 800
+      },
+      "source_run_status": "completed",
+      "summary_sha256": "7f07539b49f897c39616f6ab5bc187b75d4dc5a2d68b8fe65736a2d8ac8afc56",
+      "terminal_consecutive_rejections": 0,
+      "valid_count": 0
+    },
+    {
+      "accepted_count": 400,
+      "accepted_turns": {
+        "count_3": 384,
+        "count_4": 15,
+        "count_5": 1,
+        "count_6": 0,
+        "total": 400
+      },
+      "best_gate_crossing_record": null,
+      "best_valid_l": 0.21934438501629624,
+      "best_valid_record": {
+        "base_score": 0.7806556149837037,
+        "hardware_hash": "459567c4c934f70b24721421a5804326b47a8734c4b3383732f420bf8f43d35c",
+        "pair_hash": "adec5a154a383687a121c2a5e671f48425451fdb32e5e511bc9adac7136473b4",
+        "proposal_index": 143,
+        "run_id": "semifinal-paired-r2-es-warm-s303",
+        "search_score": 1.0306556149837038,
+        "seed": 303,
+        "state_a_geometry_hash": "35543f0deba723fe2e801835246a70c02071290b5e91f215eb69fc90d3164383",
+        "state_b_geometry_hash": "53617208affe3f6f98bc231ee211ea54f8ac110f6b85b8b47577581782a8a4d8",
+        "step_index": 42,
+        "valid_pair_search": true,
+        "worst_reflected_power_fraction": 0.21934438501629624
+      },
+      "boundary": {
+        "denominator": 1,
+        "feed_gap_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "pool": "valid",
+        "state_a_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_a_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_span_ratio_ppm": {
+          "either_count": 1,
+          "fraction": 1.0,
+          "lower_count": 1,
+          "upper_count": 0
+        },
+        "state_b_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "terminal_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        }
+      },
+      "diagnostic_top": null,
+      "effective_turns": {
+        "count_3": 1,
+        "count_4": 0,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 1
+      },
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "814e3ee02e5db89512d6c6c3d7b74626f91c0f91e108b568c54937002b649c36",
+      "pass_flag": false,
+      "proposal_attempts": 1691,
+      "rejected_count": 1291,
+      "rejection_reasons": {
+        "paired geometry contains a short segment": 1291
+      },
+      "restart_count": 5,
+      "run_id": "semifinal-paired-r2-es-warm-s303",
+      "seed": 303,
+      "solver_mode_counts": {
+        "subprocess": 800
+      },
+      "source_run_status": "completed",
+      "summary_sha256": "62cdd1dea0785fc4f9bd72922680ea7e3658e99862cea42b52aa44fcb24249b8",
+      "terminal_consecutive_rejections": 0,
+      "valid_count": 1
+    },
+    {
+      "accepted_count": 400,
+      "accepted_turns": {
+        "count_3": 389,
+        "count_4": 11,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 400
+      },
+      "best_gate_crossing_record": null,
+      "best_valid_l": 0.22388971401747385,
+      "best_valid_record": {
+        "base_score": 0.7761102859825262,
+        "hardware_hash": "adccddea8d7732ebb0cd5d8cea3291fdfc99237c733d61bdaac0ca10229dae75",
+        "pair_hash": "8a7c9c6605fe9750f48e518292bbb4c2071602575e846259283292353d0c2e33",
+        "proposal_index": 1510,
+        "run_id": "semifinal-paired-r2-es-warm-s404",
+        "search_score": 1.0261102859825262,
+        "seed": 404,
+        "state_a_geometry_hash": "e804f9c1a9fc9f28c72c2fd0db7dc43f3c78e6f09cb2b68d608e30db995021d4",
+        "state_b_geometry_hash": "9b0825288a6edede515f36b62fd6baf9b8e7ca82a4b5a9c1e3e3e9e6b57c6c26",
+        "step_index": 371,
+        "valid_pair_search": true,
+        "worst_reflected_power_fraction": 0.22388971401747385
+      },
+      "boundary": {
+        "denominator": 1,
+        "feed_gap_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "pool": "valid",
+        "state_a_span_ratio_ppm": {
+          "either_count": 1,
+          "fraction": 1.0,
+          "lower_count": 0,
+          "upper_count": 1
+        },
+        "state_a_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "terminal_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        }
+      },
+      "diagnostic_top": null,
+      "effective_turns": {
+        "count_3": 1,
+        "count_4": 0,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 1
+      },
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "1779b154e477d282674f2e44f94203bdc4d7f27e34d2c64cdf59b349037a80db",
+      "pass_flag": false,
+      "proposal_attempts": 1617,
+      "rejected_count": 1217,
+      "rejection_reasons": {
+        "paired geometry contains a short segment": 1217
+      },
+      "restart_count": 5,
+      "run_id": "semifinal-paired-r2-es-warm-s404",
+      "seed": 404,
+      "solver_mode_counts": {
+        "subprocess": 800
+      },
+      "source_run_status": "completed",
+      "summary_sha256": "53d4fd0022be417bfc119bb5ab67d47ad0f260f009b2c5cee55b4447ba30e32f",
+      "terminal_consecutive_rejections": 0,
+      "valid_count": 1
+    },
+    {
+      "accepted_count": 400,
+      "accepted_turns": {
+        "count_3": 385,
+        "count_4": 15,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 400
+      },
+      "best_gate_crossing_record": null,
+      "best_valid_l": 0.2415793025450884,
+      "best_valid_record": {
+        "base_score": 0.7584206974549116,
+        "hardware_hash": "b4b1a9f5347d744abbf18722e74a8a2a61f1806da24ac0226b09a4658d327a45",
+        "pair_hash": "063f0b44e10751c2e6924b86076fc2b52f1fed45db5a337b8519259d5a63ce0e",
+        "proposal_index": 1508,
+        "run_id": "semifinal-paired-r2-es-warm-s505",
+        "search_score": 1.0084206974549117,
+        "seed": 505,
+        "state_a_geometry_hash": "b52ec7d2e991ab0186b9f9218e19ab48e6d4e8afa945739802719157afc8cf62",
+        "state_b_geometry_hash": "bb8e0f5c56a5a56ea1775d7ad973390c375bb762f5ce4d21f659d42f914b9e0c",
+        "step_index": 372,
+        "valid_pair_search": true,
+        "worst_reflected_power_fraction": 0.2415793025450884
+      },
+      "boundary": {
+        "denominator": 1,
+        "feed_gap_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "pool": "valid",
+        "state_a_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_a_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_span_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "state_b_total_wire_length_um": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        },
+        "terminal_ratio_ppm": {
+          "either_count": 0,
+          "fraction": 0.0,
+          "lower_count": 0,
+          "upper_count": 0
+        }
+      },
+      "diagnostic_top": null,
+      "effective_turns": {
+        "count_3": 1,
+        "count_4": 0,
+        "count_5": 0,
+        "count_6": 0,
+        "total": 1
+      },
+      "exception_message": null,
+      "exception_type": null,
+      "execution_status": "completed",
+      "log_sha256": "ca126577c41a5650fcb01c5ecaf38203f1b125aeb20da6324b7804bfc1c171fb",
+      "pass_flag": false,
+      "proposal_attempts": 1619,
+      "rejected_count": 1219,
+      "rejection_reasons": {
+        "paired geometry contains a short segment": 1219
+      },
+      "restart_count": 5,
+      "run_id": "semifinal-paired-r2-es-warm-s505",
+      "seed": 505,
+      "solver_mode_counts": {
+        "subprocess": 800
+      },
+      "source_run_status": "completed",
+      "summary_sha256": "68b6b2d903dcb5194befd6dd21d0318f036e17abea345cf42b525ef5b20f606f",
+      "terminal_consecutive_rejections": 0,
+      "valid_count": 1
+    }
+  ],
+  "schema_version": 1,
+  "scientific_endpoint": "no_gate_crossing_observed_under_frozen_r2",
+  "study": "robust-hunt-r2-parent-return-es",
+  "study_status": "complete",
+  "valid_pair_seed_count": 4,
+  "verdict_ceiling": "insufficient_evidence"
+}
