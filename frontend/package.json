@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-three/drei": "^9.114.0",
     "@react-three/fiber": "^8.17.0",
-    "plotly.js-dist-min": "^2.35.0",
+    "plotly.js-dist-min": "^4.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "three": "^0.170.0"
