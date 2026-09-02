@@ -27,7 +27,7 @@ jobs:
       - name: Verify sanitized-snapshot terminal facts
         run: python scripts/semifinal_public_snapshot_verify.py
       - name: Run the snapshot-verifier regression test
-        run: pytest tests/unit/test_semifinal_public_snapshot_verify.py -q
+        run: python -m pytest tests/unit/test_semifinal_public_snapshot_verify.py -q
       - name: Reject publication-only prompt and tool-state paths
         shell: bash
         run: |
