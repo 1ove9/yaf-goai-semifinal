@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ 源序天线锻造平台 (YuanXu Antenna Forge, YAF)
+# ⚡ 源序天线锻造平台 (Source Sequence Antenna Forge, YAF)
 
 **面向天线探索、优化与求解器证据的开放、可审计 AI 平台。**
 
@@ -217,6 +217,23 @@ mypy yaf_core yaf_ai yaf_solvers yaf_api yaf_db yaf_worker --strict
 - **Phase E** —— 发明：对标已发表设计的 benchmark、prior-art 新颖度评分
 
 ## 许可证
+
+### 前身、贡献边界与第三方披露
+
+| 组件 | 本项目中的作用与贡献边界 | 使用或披露版本 | 许可证与分发边界 |
+|---|---|---|---|
+| [Antenna Forge](https://github.com/1ove9/antenna-forge) | 同一创作者维护的前身代码库。本项目继承 YAF 的基础领域模型、求解器适配器/API/Worker/前端脚手架、通用 AI 模块与工程结构。 | 仓库沿革；经过清理的公开快照不声称一个精确的上游 commit。 | MIT；前身与本仓库均采用 MIT，因此代码继承在许可证层面兼容。 |
+| 本 GOAI 复赛仓库 | 新增预注册与决策链、自由形/meander/双状态探索空间、冻结评分与搜索研究、仪器闸门、双求解器审计、SHA-256 证据总账、255 个归档 run、终局分析和公开快照验证器。 | [`goai-semifinal-2026-09-03`](https://github.com/1ove9/yaf-goai-semifinal/tree/goai-semifinal-2026-09-03) | 仓库自研源码采用 MIT。 |
+| DeepSeek API | 通用平台可选的对话/编排服务；零求解器评审路径不依赖它。它**没有**生成、替换、调参或编辑电磁曲线与归档科学数值。 | 外部 API；未把任何模型/API 版本冻结为科学证据。 | 受 DeepSeek 商业服务条款约束；本仓库不捆绑其模型或服务代码。 |
+| [nec2c](https://github.com/KJ7LNW/nec2c) | NEC2 线天线计算所用的本地 subprocess 搜索/参照仪器。 | 归档记录了 `subprocess` 模式，但没有保存可执行文件 build id；这是已披露的复现限制。 | 上游 GPL-3.0-only；本仓库不捆绑或再分发，用户另行安装。 |
+| [openEMS](https://github.com/thliebig/openEMS) | 独立 FDTD 仪器，仅在预注册仪器闸门授权的路径上使用。 | 归档输出记录为 0.0.36。 | 上游 GPL-3.0-or-later；本 MIT 仓库不捆绑、不重新许可。 |
+| [CSXCAD](https://github.com/thliebig/CSXCAD) | openEMS 路径使用的几何/材料库。 | 归档输出记录为 0.6.3。 | 上游 LGPL-3.0-or-later；本仓库不捆绑、不重新许可。 |
+| 最小 Python 评审依赖 | 用于零求解器的 255 项证据与终局事实检查。 | 已验收环境：Pydantic 2.13.4、NumPy 2.4.6、SciPy 1.17.1、structlog 26.1.0、Matplotlib 3.11.1、Pillow 12.3.0；安装范围见 [`requirements-semifinal.txt`](requirements-semifinal.txt)。 | Pydantic：MIT；NumPy/SciPy 核心：BSD-3-Clause（wheel 可能含独立许可组件）；structlog：MIT OR Apache-2.0；Matplotlib：Matplotlib License（基于 PSF）；Pillow：HPND。各依赖保留其上游许可证。 |
+
+本仓库的 MIT 许可证只覆盖 MIT 前身代码与本仓库自研源码，不会把另行安装的
+GPL/LGPL 求解器或第三方依赖重新许可。下游分发者须分别遵守各上游条款；本说明不构成
+法律意见。完整科学边界与 AI 分工见
+[`docs/semifinal-compliance.md`](docs/semifinal-compliance.md)。
 
 唯一创作者：[1ove9](https://github.com/1ove9) · GOAI 队伍：`source sequence` ·
 [MIT](LICENSE) © 2026 1ove9

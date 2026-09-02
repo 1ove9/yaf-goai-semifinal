@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ YAF — YuanXu Antenna Forge
+# ⚡ YAF — Source Sequence Antenna Forge
 
 **An open, auditable platform for AI-guided antenna exploration, optimization, and solver-backed evidence.**
 
@@ -280,6 +280,24 @@ frontend. Start with [CONTRIBUTING.md](CONTRIBUTING.md) and the
 If YAF is useful in your research, please cite it (see [CITATION.cff](CITATION.cff)).
 
 ## License
+
+### Origin, contribution, and third-party disclosure
+
+| Component | Role and contribution boundary | Version used or disclosed | License and distribution boundary |
+|---|---|---|---|
+| [Antenna Forge](https://github.com/1ove9/antenna-forge) | Predecessor codebase by the same creator. This submission inherits the basic YAF domain models, solver-adapter/API/worker/frontend scaffolding, general AI modules, and project structure. | Repository lineage; the sanitized public snapshot does not claim an exact upstream commit. | MIT. Reusing the predecessor in this MIT repository is license-compatible. |
+| This GOAI semifinal repository | Adds the preregistration and decision chain, freeform/meander and paired-state exploration spaces, frozen scoring/search studies, instrument gates, dual-solver audit work, SHA-256 evidence manifest, 255 archived runs, terminal analyses, and public snapshot verifier. | [`goai-semifinal-2026-09-03`](https://github.com/1ove9/yaf-goai-semifinal/tree/goai-semifinal-2026-09-03) | MIT for repository-authored source. |
+| DeepSeek API | Optional chat/orchestration service for the general platform. It is not required for the solver-free review path and did **not** generate, replace, tune, or edit electromagnetic curves or archived scientific numbers. | External API; no model/API version is frozen as scientific evidence. | Commercial service under DeepSeek's terms; no DeepSeek model or service code is bundled. |
+| [nec2c](https://github.com/KJ7LNW/nec2c) | Local subprocess search/reference instrument for NEC2 wire calculations. | The archive records `subprocess` mode but not the executable build identifier; this is a disclosed reproducibility limitation. | GPL-3.0-only upstream. Not bundled or redistributed here; users install it separately. |
+| [openEMS](https://github.com/thliebig/openEMS) | Independent FDTD instrument, used only on paths authorized by their preregistered instrument gates. | 0.0.36 in archived output. | GPL-3.0-or-later upstream. Not bundled or relicensed by this MIT repository. |
+| [CSXCAD](https://github.com/thliebig/CSXCAD) | Geometry/material library used by the openEMS path. | 0.6.3 in archived output. | LGPL-3.0-or-later upstream. Not bundled or relicensed here. |
+| Minimal Python review stack | Runs the solver-free 255-entry evidence and terminal-fact checks. | Validated environment: Pydantic 2.13.4; NumPy 2.4.6; SciPy 1.17.1; structlog 26.1.0; Matplotlib 3.11.1; Pillow 12.3.0. Install ranges are frozen in [`requirements-semifinal.txt`](requirements-semifinal.txt). | Pydantic: MIT; NumPy/SciPy core: BSD-3-Clause (wheels may contain separately licensed components); structlog: MIT OR Apache-2.0; Matplotlib: Matplotlib License (PSF-based); Pillow: HPND. Each dependency retains its upstream license. |
+
+The repository's MIT license applies only to the MIT-licensed predecessor and repository-authored
+source; it does not relicense separately installed GPL/LGPL solvers or third-party packages.
+Downstream distributors must comply with each upstream license. This disclosure is not legal advice.
+The scientific and AI-role boundaries are detailed in
+[`docs/semifinal-compliance.md`](docs/semifinal-compliance.md).
 
 Created by [1ove9](https://github.com/1ove9) · GOAI team: `source sequence` ·
 [MIT](LICENSE) © 2026 1ove9
