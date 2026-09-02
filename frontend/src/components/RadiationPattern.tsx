@@ -11,9 +11,9 @@ export interface RadiationPatternProps {
   height?: number;
 }
 
-const PAPER = "#0a0d0e";
-const TEXT = "#77817e";
-const FONT = "'IBM Plex Mono', Consolas, monospace";
+const PAPER = "rgba(0,0,0,0)";
+const TEXT = "#8a8c94";
+const FONT = "'Geist Mono', 'IBM Plex Mono', Consolas, monospace";
 
 function magnitude(value: number | { re: number; im: number } | undefined): number {
   if (value === undefined) return 0;
@@ -67,7 +67,7 @@ const RadiationPattern: React.FC<RadiationPatternProps> = ({ theta, phi, eTheta,
 
     const surface = {
       type: "surface", x, y, z, surfacecolor: color, cmin: 0, cmax: 1, showscale: true,
-      colorscale: [[0, "#153a32"], [0.35, "#287b66"], [0.7, "#54e6b5"], [1, "#f4d06f"]],
+      colorscale: [[0, "#1a1c22"], [0.5, "#5c6f8c"], [1, "#d6e2f2"]],
       colorbar: { title: { text: "|E| / |E|max", font: { size: 9, color: TEXT } }, tickfont: { size: 9, color: TEXT }, thickness: 10, outlinewidth: 0 },
       lighting: { ambient: 0.5, diffuse: 0.72, specular: 0.3, roughness: 0.55 },
       hovertemplate: "Normalized gain %{surfacecolor:.2f}<extra></extra>",
@@ -85,9 +85,13 @@ const RadiationPattern: React.FC<RadiationPatternProps> = ({ theta, phi, eTheta,
   }, [eTheta, frequency, phi, theta]);
 
   if (!hasData) {
-    return <div style={{ height }} className="grid place-items-center rounded-xl border border-dashed border-white/[0.07] text-xs text-white/25">{t("noPatternData")}</div>;
+    return <div style={{ height }} className="well grid place-items-center text-xs text-white/40">{t("noPatternData")}</div>;
   }
-  return <div className="plot-frame"><div ref={containerRef} style={{ width: "100%", height }} /></div>;
+  return (
+    <div className="well overflow-hidden" role="img" aria-label={`${t("radPattern")}${frequency ? ` · ${frequency}` : ""}`}>
+      <div ref={containerRef} style={{ width: "100%", height }} />
+    </div>
+  );
 };
 
 export default RadiationPattern;

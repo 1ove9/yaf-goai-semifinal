@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 const en = {
   workspace: "Workspace",
@@ -28,10 +28,13 @@ const en = {
   geometry: "Geometry",
   analyticalPreview: "Analytical preview",
   fullWaveValidation: "Full-wave validation",
+  canonicalSolverAnchor: "Canonical reference run",
   activeDesign: "Active design",
   unsavedDraft: "Unsaved draft",
   viewport: "3D geometry",
   viewportHint: "Drag to orbit · Scroll to zoom",
+  targetFrequency: "Target f₀",
+  analyticalFieldCue: "Illustrative field cue · not solver far-field data",
   halfWave: "Half wavelength",
   resonance: "Estimated resonance",
   minS11: "Minimum S11",
@@ -44,6 +47,7 @@ const en = {
   nec2Description: "Method of Moments · fast",
   openemsDescription: "FDTD · high fidelity",
   runSimulation: "Run full-wave simulation",
+  runCanonicalAnchor: "Run canonical reference",
   submitting: "Submitting job…",
   running: "Simulation running…",
   statusTitle: "Run status",
@@ -53,12 +57,16 @@ const en = {
   simError: "Simulation failed",
   latestEvent: "Latest event",
   previewNote: "The live preview uses an analytical thin-wire model. Run a solver before using results for engineering decisions.",
+  previewAnchorNote: "The geometry preview is analytical. The current simulation endpoint runs a canonical dipole reference and does not receive the edited wire length.",
   results: "Response analysis",
   resultsHint: "Compare the fast model with solver-grade output",
+  resultsAnchorHint: "Analytical geometry preview and separately scoped solver anchor output",
   sParams: "S-parameters",
   radPattern: "Radiation pattern",
   previewBadge: "Analytical model",
   solverBadge: "Solver output",
+  solverAnchorBadge: "Canonical reference",
+  solverAnchorScope: "Reference curves come from the canonical endpoint and show the exact solver_mode; they do not validate the displayed geometry.",
   dbMagnitude: "dB magnitude",
   zPlane: "Z-plane",
   noSParamData: "S-parameter data will appear here.",
@@ -74,6 +82,7 @@ const en = {
   unreachable: "Unreachable",
   checking: "Checking…",
   live: "Live",
+  sessionChip: "This session",
   refresh: "Refresh",
   serviceOnline: "Service responding normally",
   serviceOffline: "Check the API process and proxy configuration",
@@ -98,6 +107,16 @@ const en = {
   suggestionOne: "Why is S11 not reaching −10 dB?",
   suggestionTwo: "Compare NEC2 and openEMS for this geometry",
   suggestionThree: "How should I interpret the radiation pattern?",
+  designContextTitle: "Current design context",
+  designContextNote: "Displayed from the design studio; it is not added to chat requests automatically.",
+  designContextEvidenceNote: "Geometry metrics are analytical. A canonical reference run is reported separately and is not bound to the edited wire length.",
+  latestSolverAnchor: "Latest reference run",
+  noDesignContext: "No design context yet — open the design studio first",
+  assistantToolsTitle: "Tools available to the assistant",
+  toolSimulatePatch: "Runs an openEMS FDTD patch simulation when available; evidence depends on solver_mode.",
+  toolSimulateDipole: "Runs a NEC2 / openEMS dipole simulation when available; evidence depends on solver_mode.",
+  toolInverseDesign: "Runs the inverse-design workflow when available; interpret results by oracle_mode.",
+  solverEvidenceMode: "Evidence mode",
   footerHonesty: "Every result is labeled with its solver_mode — no silent fake physics.",
 } as const;
 
@@ -129,10 +148,13 @@ const zh: Record<keyof typeof en, string> = {
   geometry: "几何设计",
   analyticalPreview: "解析预览",
   fullWaveValidation: "全波验证",
+  canonicalSolverAnchor: "标准参考运行",
   activeDesign: "当前设计",
   unsavedDraft: "未保存草稿",
   viewport: "三维几何",
   viewportHint: "拖动旋转 · 滚轮缩放",
+  targetFrequency: "目标 f₀",
+  analyticalFieldCue: "解析场示意 · 非求解器远场数据",
   halfWave: "半波长",
   resonance: "预估谐振",
   minS11: "最低 S11",
@@ -145,6 +167,7 @@ const zh: Record<keyof typeof en, string> = {
   nec2Description: "矩量法 · 速度快",
   openemsDescription: "时域有限差分 · 高保真",
   runSimulation: "启动全波仿真",
+  runCanonicalAnchor: "运行标准参考",
   submitting: "正在提交任务…",
   running: "仿真运行中…",
   statusTitle: "运行状态",
@@ -154,12 +177,16 @@ const zh: Record<keyof typeof en, string> = {
   simError: "仿真失败",
   latestEvent: "最新事件",
   previewNote: "实时预览采用细线解析模型。任何工程决策都应以求解器验证结果为准。",
+  previewAnchorNote: "几何预览采用解析模型；当前仿真接口运行标准偶极子参考，并不接收编辑器中的导线长度。",
   results: "响应分析",
   resultsHint: "对照快速模型与求解器输出",
+  resultsAnchorHint: "解析几何预览与独立标注的求解器锚点输出",
   sParams: "S 参数",
   radPattern: "辐射方向图",
   previewBadge: "解析模型",
   solverBadge: "求解器输出",
+  solverAnchorBadge: "标准参考",
+  solverAnchorScope: "参考曲线来自标准端点并显示精确 solver_mode；不构成当前显示几何的验证。",
   dbMagnitude: "dB 幅度",
   zPlane: "阻抗平面",
   noSParamData: "S 参数数据将在这里显示。",
@@ -175,6 +202,7 @@ const zh: Record<keyof typeof en, string> = {
   unreachable: "无法访问",
   checking: "检测中…",
   live: "实时",
+  sessionChip: "本会话",
   refresh: "刷新",
   serviceOnline: "服务响应正常",
   serviceOffline: "请检查 API 进程与代理配置",
@@ -199,6 +227,16 @@ const zh: Record<keyof typeof en, string> = {
   suggestionOne: "为什么 S11 没有达到 −10 dB？",
   suggestionTwo: "比较 NEC2 与 openEMS 对当前结构的适用性",
   suggestionThree: "应该如何解读辐射方向图？",
+  designContextTitle: "当前设计上下文",
+  designContextNote: "内容仅显示自设计工作台，不会自动加入聊天请求。",
+  designContextEvidenceNote: "几何指标均为解析值；标准参考运行单独报告，且不绑定编辑器中的导线长度。",
+  latestSolverAnchor: "最近参考运行",
+  noDesignContext: "尚无设计上下文，请先打开设计工作台",
+  assistantToolsTitle: "助手可调用的工具",
+  toolSimulatePatch: "可用时运行 openEMS FDTD 贴片仿真；证据属性以 solver_mode 为准。",
+  toolSimulateDipole: "可用时运行 NEC2 / openEMS 偶极子仿真；证据属性以 solver_mode 为准。",
+  toolInverseDesign: "可用时运行完整逆向设计流程；结果须按 oracle_mode 解读。",
+  solverEvidenceMode: "证据模式",
   footerHonesty: "每个结果都标注 solver_mode — 绝不静默伪造物理。",
 };
 
@@ -211,6 +249,7 @@ interface I18n {
   lang: Lang;
   setLang: (lang: Lang) => void;
   t: (key: MsgKey) => string;
+  tEn: (key: MsgKey) => string;
 }
 
 const I18nContext = createContext<I18n | null>(null);
@@ -219,8 +258,11 @@ export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [lang, setLang] = useState<Lang>(() =>
     typeof navigator !== "undefined" && navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en"
   );
+  useEffect(() => {
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  }, [lang]);
   const value = useMemo<I18n>(
-    () => ({ lang, setLang, t: (key) => dictionaries[lang][key] }),
+    () => ({ lang, setLang, t: (key) => dictionaries[lang][key], tEn: (key) => en[key] }),
     [lang],
   );
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;

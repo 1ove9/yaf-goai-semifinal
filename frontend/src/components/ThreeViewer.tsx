@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useMemo } from "react";
+import React, { Suspense, useEffect, useMemo, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Grid } from "@react-three/drei";
 import * as THREE from "three";
@@ -19,6 +19,22 @@ export interface ThreeViewerProps {
   height?: string;
   /** Called when the canvas finishes initializing. */
   onLoad?: () => void;
+  /** Fill the height supplied by the parent container. */
+  fill?: boolean;
+}
+
+function usePrefersReducedMotion(): boolean {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  return reduced;
 }
 
 /** Builds a THREE.BufferGeometry from MeshData. */
@@ -63,6 +79,7 @@ const SceneContent: React.FC<{ meshData?: MeshData | null; autoRotate: boolean }
   meshData,
   autoRotate,
 }) => {
+  const reducedMotion = usePrefersReducedMotion();
   const geometry = useMemo(
     () => (meshData ? buildGeometry(meshData) : null),
     [meshData]
@@ -74,17 +91,17 @@ const SceneContent: React.FC<{ meshData?: MeshData | null; autoRotate: boolean }
     <>
       <ambientLight intensity={0.35} />
       <directionalLight position={[5, 8, 5]} intensity={0.9} />
-      <pointLight position={[0, 0, 0]} intensity={0.7} color="#54e6b5" distance={0.15} />
+      <pointLight position={[0, 0, 0]} intensity={0.7} color="#a9c4e8" distance={0.15} />
 
       <Grid
         args={[20, 20]}
         position={[0, -0.045, 0]}
         cellSize={0.01}
         cellThickness={0.5}
-        cellColor="#1c2523"
+        cellColor="#26272c"
         sectionSize={0.05}
         sectionThickness={1}
-        sectionColor="#2b3835"
+        sectionColor="#34363c"
         fadeDistance={0.8}
         infiniteGrid
       />
@@ -92,7 +109,7 @@ const SceneContent: React.FC<{ meshData?: MeshData | null; autoRotate: boolean }
       {geometry ? (
         <mesh geometry={geometry}>
           <meshStandardMaterial
-            color="#cbd5e1"
+            color="#c8cbd2"
             metalness={0.92}
             roughness={0.25}
             side={THREE.DoubleSide}
@@ -102,17 +119,17 @@ const SceneContent: React.FC<{ meshData?: MeshData | null; autoRotate: boolean }
         <group>
           <mesh position={[0, 0.0165, 0]}>
             <cylinderGeometry args={[0.0011, 0.0011, 0.03, 24]} />
-            <meshStandardMaterial color="#cbd5e1" metalness={0.92} roughness={0.25} />
+            <meshStandardMaterial color="#c8cbd2" metalness={0.92} roughness={0.25} />
           </mesh>
           <mesh position={[0, -0.0165, 0]}>
             <cylinderGeometry args={[0.0011, 0.0011, 0.03, 24]} />
-            <meshStandardMaterial color="#cbd5e1" metalness={0.92} roughness={0.25} />
+            <meshStandardMaterial color="#c8cbd2" metalness={0.92} roughness={0.25} />
           </mesh>
           <mesh>
             <sphereGeometry args={[0.0016, 24, 24]} />
             <meshStandardMaterial
-              color="#54e6b5"
-              emissive="#54e6b5"
+              color="#d6e2f2"
+              emissive="#a9c4e8"
               emissiveIntensity={2}
             />
           </mesh>
@@ -120,7 +137,7 @@ const SceneContent: React.FC<{ meshData?: MeshData | null; autoRotate: boolean }
       )}
 
       <OrbitControls
-        autoRotate={autoRotate}
+        autoRotate={autoRotate && !reducedMotion}
         autoRotateSpeed={0.6}
         enableDamping
         dampingFactor={0.1}
@@ -138,12 +155,18 @@ const ThreeViewer: React.FC<ThreeViewerProps> = ({
   autoRotate = true,
   height = "500px",
   onLoad,
+  fill = false,
 }) => {
   return (
-    <div className="overflow-hidden rounded-2xl border border-white/[0.07]" style={{ width: "100%", height }}>
+    <div
+      className="well overflow-hidden"
+      style={{ width: "100%", height: fill ? "100%" : height, minHeight: fill ? 0 : undefined }}
+      role="img"
+      aria-label="Interactive 3D antenna geometry"
+    >
       <Canvas
         camera={{ position: [0.08, 0.05, 0.1], fov: 42 }}
-        style={{ background: "#0b0e0f" }}
+        style={{ background: "#0c0c0e", width: "100%", height: "100%" }}
         onCreated={() => onLoad?.()}
       >
         <Suspense fallback={null}>

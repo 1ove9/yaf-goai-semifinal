@@ -1,12 +1,28 @@
 import React, { Suspense, useEffect, useMemo, useRef, useState } from "react";
-import { Grid, OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Icon, IconName } from "../components/Icons";
+import { Grid, Line, OrbitControls } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import * as THREE from "three";
+import { Icon } from "../components/Icons";
 import RadiationPattern from "../components/RadiationPattern";
 import SParamPlot, { SParamData } from "../components/SParamPlot";
 import { useI18n } from "../i18n";
 import { C0, dipolePattern, dipoleResonanceHz, dipoleS11Sweep } from "../lib/dipole";
+import { useDesignContext } from "../lib/designContext";
 import { useSocket } from "../lib/socket";
+
+function usePrefersReducedMotion(): boolean {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+
+  return reduced;
+}
 
 const Dipole: React.FC<{ length: number }> = ({ length }) => {
   const arm = length / 2;
@@ -14,17 +30,53 @@ const Dipole: React.FC<{ length: number }> = ({ length }) => {
     <group>
       <mesh position={[0, arm / 2 + length * 0.01, 0]}>
         <cylinderGeometry args={[0.0011, 0.0011, arm, 28]} />
-        <meshStandardMaterial color="#dce3df" metalness={0.95} roughness={0.22} />
+        <meshStandardMaterial color="#c8cbd2" metalness={0.95} roughness={0.22} />
       </mesh>
       <mesh position={[0, -arm / 2 - length * 0.01, 0]}>
         <cylinderGeometry args={[0.0011, 0.0011, arm, 28]} />
-        <meshStandardMaterial color="#dce3df" metalness={0.95} roughness={0.22} />
+        <meshStandardMaterial color="#c8cbd2" metalness={0.95} roughness={0.22} />
       </mesh>
       <mesh>
         <sphereGeometry args={[0.0017, 24, 24]} />
-        <meshStandardMaterial color="#54e6b5" emissive="#54e6b5" emissiveIntensity={2.2} />
+        <meshStandardMaterial color="#d6e2f2" emissive="#a9c4e8" emissiveIntensity={2} />
       </mesh>
-      <pointLight position={[0, 0, 0]} intensity={0.8} color="#54e6b5" distance={0.12} />
+      <pointLight position={[0, 0, 0]} intensity={0.8} color="#a9c4e8" distance={0.12} />
+    </group>
+  );
+};
+
+const RadiationRings: React.FC<{ length: number }> = ({ length }) => {
+  const groupRef = useRef<THREE.Group>(null);
+  const reducedMotion = usePrefersReducedMotion();
+  const rings = useMemo(
+    () => [0.35, 0.65, 1].map((factor) => {
+      const radius = length * factor;
+      return new THREE.EllipseCurve(0, 0, radius, radius * 0.36, 0, Math.PI * 2, false, 0)
+        .getPoints(72)
+        .map((point) => new THREE.Vector3(point.x, 0, point.y));
+    }),
+    [length],
+  );
+
+  useFrame(({ clock }) => {
+    if (!groupRef.current) return;
+    const scale = reducedMotion ? 1 : 1 + Math.sin((clock.elapsedTime / 4.8) * Math.PI * 2) * 0.045;
+    groupRef.current.scale.setScalar(scale);
+  });
+
+  return (
+    <group ref={groupRef}>
+      {rings.map((points, index) => (
+        <Line
+          key={index}
+          points={points}
+          color="#bfb4e6"
+          lineWidth={1}
+          transparent
+          opacity={[0.4, 0.25, 0.12][index]}
+          depthWrite={false}
+        />
+      ))}
     </group>
   );
 };
@@ -41,38 +93,20 @@ interface StepProps {
   index: number;
   label: string;
   state: "done" | "active" | "pending";
-  last?: boolean;
 }
 
-const Step: React.FC<StepProps> = ({ index, label, state, last = false }) => (
-  <div className="flex min-w-0 flex-1 items-center">
-    <div className="flex min-w-0 items-center gap-2.5">
-      <span
-        className={`grid size-6 shrink-0 place-items-center rounded-full border font-mono text-[9px] ${
-          state === "done"
-            ? "border-signal-400/40 bg-signal-400/10 text-signal-300"
-            : state === "active"
-              ? "border-signal-300 bg-signal-400 text-ink-950 shadow-[0_0_18px_rgba(84,230,181,0.25)]"
-              : "border-white/10 bg-white/[0.025] text-white/28"
-        }`}
-      >
-        {state === "done" ? <Icon name="check" size={12} strokeWidth={2.4} /> : index}
-      </span>
-      <span className={`truncate text-[11px] font-medium sm:text-xs ${state === "pending" ? "text-white/28" : "text-white/70"}`}>{label}</span>
-    </div>
-    {!last ? <span className={`mx-3 h-px flex-1 ${state === "done" ? "bg-signal-400/25" : "bg-white/[0.07]"}`} /> : null}
+const Step: React.FC<StepProps> = ({ index, label, state }) => (
+  <div className={`step ${state} [&::before]:hidden`}>
+    <span className={`grid size-6 place-items-center rounded-full border font-mono text-[10px] ${state === "active" ? "border-transparent bg-gradient-to-br from-steel-300 to-heather-400 text-obsidian-950 shadow-[0_0_18px_rgba(169,196,232,.55)]" : state === "done" ? "border-steel-500/50 bg-steel-500/15 text-steel-300" : "border-white/15 bg-black/25 text-white/35"}`}>{state === "done" ? <Icon name="check" size={12} strokeWidth={2.4} /> : index}</span>
+    <span>{label}</span>
   </div>
 );
 
-const Metric: React.FC<{ icon: IconName; label: string; value: string }> = ({ icon, label, value }) => (
-  <div className="flex items-center gap-3 border-t border-white/[0.065] px-4 py-3.5 first:border-t-0 sm:border-l sm:border-t-0 sm:first:border-l-0">
-    <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-white/[0.035] text-white/35">
-      <Icon name={icon} size={15} />
-    </span>
-    <span className="min-w-0">
-      <span className="block text-[10px] uppercase tracking-[0.12em] text-white/28">{label}</span>
-      <span className="mt-0.5 block truncate font-mono text-xs text-white/82">{value}</span>
-    </span>
+const Metric: React.FC<{ label: string; value: string; unit: string }> = ({ label, value, unit }) => (
+  <div className="metric border-t border-white/10 first:border-t-0 sm:border-l sm:border-t-0 sm:first:border-l-0">
+    <span className="l">{label}</span>
+    <span className="v">{value}<small>{unit}</small></span>
+    <span className="chip gold self-start">Analytical</span>
   </div>
 );
 
@@ -82,6 +116,8 @@ const POLL_MAX = 90;
 const DesignEditor: React.FC = () => {
   const { t } = useI18n();
   const { lastEvent } = useSocket();
+  const { setDesignContext } = useDesignContext();
+  const reducedMotion = usePrefersReducedMotion();
   const [designName, setDesignName] = useState("half-wave-dipole");
   const [freqGhz, setFreqGhz] = useState("2.4");
   const [dipoleLength, setDipoleLength] = useState(0.0594);
@@ -91,6 +127,7 @@ const DesignEditor: React.FC = () => {
   const [solverData, setSolverData] = useState<SParamData | null>(null);
   const [solverMode, setSolverMode] = useState<string | null>(null);
   const [tab, setTab] = useState<"sparams" | "pattern">("sparams");
+  const [sParamMode, setSParamMode] = useState<"db" | "smith">("db");
   const pollRef = useRef<number | null>(null);
 
   const fc = (parseFloat(freqGhz) || 2.4) * 1e9;
@@ -111,6 +148,8 @@ const DesignEditor: React.FC = () => {
   const handleSimulate = async () => {
     setRunning(true);
     setStatusText(t("submitting"));
+    setSolverData(null);
+    setSolverMode(null);
     if (pollRef.current !== null) window.clearInterval(pollRef.current);
 
     try {
@@ -162,49 +201,54 @@ const DesignEditor: React.FC = () => {
   const resonanceGhz = dipoleResonanceHz(dipoleLength) / 1e9;
   const lengthPct = ((dipoleLength - 0.01) / 0.19) * 100;
   const usingSolverData = solverData !== null;
+  const chartData = usingSolverData ? solverData : previewData;
+  const sweepStart = chartData.frequency[0] / 1e9;
+  const sweepEnd = chartData.frequency[chartData.frequency.length - 1] / 1e9;
   const statusTone = statusText?.startsWith(t("simError"))
-    ? "text-red-300"
+    ? "text-coral-400"
     : running
-      ? "text-amber-200"
+      ? "text-sand-400"
       : statusText === t("simComplete")
-        ? "text-signal-300"
-        : "text-white/65";
+        ? "text-steel-300"
+        : "text-white/70";
+
+  useEffect(() => {
+    setDesignContext({
+      designName,
+      freqGhz: fc / 1e9,
+      dipoleLengthM: dipoleLength,
+      solver,
+      resonanceGhz,
+      minS11Db: preview.minS11Db,
+      solverMode: null,
+      solverAnchorMode: usingSolverData ? (solverMode ?? solver) : null,
+    });
+  }, [designName, dipoleLength, fc, preview.minS11Db, resonanceGhz, setDesignContext, solver, solverMode, usingSolverData]);
 
   return (
     <div className="space-y-5">
-      <section className="rounded-2xl border border-white/[0.065] bg-ink-850/70 px-4 py-3.5 shadow-panel sm:px-5">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex min-w-0 flex-1 items-center">
-            <Step index={1} label={t("geometry")} state="done" />
-            <Step index={2} label={t("analyticalPreview")} state={usingSolverData ? "done" : "active"} />
-            <Step index={3} label={t("fullWaveValidation")} state={usingSolverData ? "done" : running ? "active" : "pending"} last />
-          </div>
-          <span className="hidden rounded-full border border-white/[0.07] px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest text-white/30 md:inline">{t("unsavedDraft")}</span>
-        </div>
+      <section className="glass flex min-h-14 items-center gap-4 rounded-full px-5 py-3 sm:px-6" aria-label="Design workflow">
+        <Step index={1} label={t("geometry")} state="done" />
+        <span className="rule done" />
+        <Step index={2} label={t("analyticalPreview")} state={usingSolverData ? "done" : "active"} />
+        <span className={`rule ${usingSolverData ? "done" : ""}`} />
+        <Step index={3} label={t("canonicalSolverAnchor")} state={usingSolverData ? "done" : running ? "active" : "pending"} />
       </section>
 
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_380px]">
-        <section className="panel-highlight relative overflow-hidden rounded-2xl border border-white/[0.07] bg-ink-850 shadow-panel">
-          <div className="relative z-10 flex items-center justify-between border-b border-white/[0.06] px-4 py-3.5 sm:px-5">
-            <div className="flex items-center gap-3">
-              <span className="grid size-8 place-items-center rounded-lg border border-white/[0.07] bg-white/[0.03] text-signal-300">
-                <Icon name="cube" size={16} />
-              </span>
-              <div>
-                <h2 className="text-xs font-semibold text-white/85">{t("viewport")}</h2>
-                <p className="mt-0.5 text-[10px] text-white/30">{t("viewportHint")}</p>
-              </div>
+      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_360px] xl:items-start">
+        <section className="glass overflow-hidden">
+          <div className="phead">
+            <div>
+              <span className="eyebrow">01 · {t("viewport")}</span>
+              <p className="psub phead-subtitle">{t("viewportHint")}</p>
             </div>
-            <div className="flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest text-signal-300/70">
-              <span className="size-1.5 rounded-full bg-signal-400 shadow-[0_0_8px_#54e6b5]" />
-              {t("analyticalPreview")}
-            </div>
+            <span className="chip gold">Analytical</span>
           </div>
 
-          <div className="grid-surface relative h-[430px] overflow-hidden sm:h-[500px]">
+          <div className="well relative h-[540px] overflow-hidden" role="img" aria-label={`${t("viewport")}. ${t("analyticalFieldCue")}`}>
             <Canvas camera={{ position: [0.1, 0.06, 0.12], fov: 42 }}>
-              <color attach="background" args={["#0b0e0f"]} />
-              <fog attach="fog" args={["#0b0e0f", 0.22, 0.72]} />
+              <color attach="background" args={["#0c0c0e"]} />
+              <fog attach="fog" args={["#0c0c0e", 0.22, 0.72]} />
               <ambientLight intensity={0.42} />
               <directionalLight position={[5, 8, 5]} intensity={1.05} />
               <Grid
@@ -212,70 +256,80 @@ const DesignEditor: React.FC = () => {
                 position={[0, -0.055, 0]}
                 cellSize={0.01}
                 cellThickness={0.45}
-                cellColor="#1c2523"
+                cellColor="#26272c"
                 sectionSize={0.05}
                 sectionThickness={0.85}
-                sectionColor="#2b3835"
+                sectionColor="#34363c"
                 fadeDistance={0.85}
                 infiniteGrid
               />
-              <Suspense fallback={null}><Dipole length={dipoleLength} /></Suspense>
-              <OrbitControls autoRotate autoRotateSpeed={0.45} enableDamping dampingFactor={0.1} />
+              <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.054, 0]}>
+                <circleGeometry args={[0.065, 64]} />
+                <meshBasicMaterial color="#000000" transparent opacity={0.28} depthWrite={false} />
+              </mesh>
+              <Suspense fallback={null}>
+                <Dipole length={dipoleLength} />
+                <RadiationRings length={dipoleLength} />
+              </Suspense>
+              <OrbitControls autoRotate={!reducedMotion} autoRotateSpeed={0.45} enableDamping dampingFactor={0.1} />
             </Canvas>
-            <div className="pointer-events-none absolute left-4 top-4 rounded-lg border border-white/[0.07] bg-black/30 px-2.5 py-1.5 font-mono text-[9px] uppercase tracking-wider text-white/35 backdrop-blur-md">
-              Y axis · center feed
-            </div>
-            <div className="pointer-events-none absolute bottom-4 right-4 flex items-center gap-2 rounded-lg border border-white/[0.07] bg-black/30 px-2.5 py-1.5 text-[10px] text-white/35 backdrop-blur-md">
-              <Icon name="refresh" size={12} />
-              AUTO ORBIT
-            </div>
+            <span className="chip absolute left-4 top-4 [&::before]:hidden">Y axis · center feed</span>
+            <span className="chip absolute right-4 top-4 [&::before]:hidden">{t("targetFrequency")} · {(fc / 1e9).toFixed(2)} GHz</span>
+            <span className="chip gold absolute bottom-4 right-4 max-w-[55%] whitespace-normal text-right [&::before]:hidden">{t("analyticalFieldCue")}</span>
+            <span className="absolute bottom-5 left-4 flex items-center gap-2 font-mono text-[10px] tracking-widest text-tick">
+              <i className="h-px w-12 bg-tick" />10 mm
+            </span>
           </div>
 
           <div className="grid sm:grid-cols-3">
-            <Metric icon="radio" label={t("halfWave")} value={`${(lambdaHalf * 1000).toFixed(1)} mm`} />
-            <Metric icon="activity" label={t("resonance")} value={`${resonanceGhz.toFixed(2)} GHz`} />
-            <Metric icon="signal" label={t("minS11")} value={`${preview.minS11Db.toFixed(1)} dB`} />
+            <Metric label={t("halfWave")} value={(lambdaHalf * 1000).toFixed(1)} unit="mm" />
+            <Metric label={t("resonance")} value={resonanceGhz.toFixed(2)} unit="GHz" />
+            <Metric label={t("minS11")} value={preview.minS11Db.toFixed(1)} unit="dB" />
           </div>
         </section>
 
-        <aside className="self-start overflow-hidden rounded-2xl border border-white/[0.07] bg-ink-850 shadow-panel">
-          <div className="flex items-center gap-3 border-b border-white/[0.06] px-5 py-4">
-            <span className="grid size-8 place-items-center rounded-lg bg-signal-400/10 text-signal-300"><Icon name="settings" size={16} /></span>
+        <aside className="glass self-start overflow-hidden">
+          <div className="phead">
             <div>
-              <h2 className="text-xs font-semibold text-white/85">{t("parameters")}</h2>
-              <p className="mt-0.5 text-[10px] text-white/30">{t("parametersHint")}</p>
+              <span className="eyebrow">02 · {t("parameters")}</span>
+              <p className="psub phead-subtitle">{t("parametersHint")}</p>
             </div>
           </div>
 
-          <div className="space-y-5 p-5">
-            <label className="block">
-              <span className="mb-2 block text-[11px] font-medium text-white/48">{t("designName")}</span>
+          <div className="space-y-[18px] p-[22px]">
+            <label className="block space-y-2">
+              <span className="field-label">{t("designName")}</span>
               <input
                 type="text"
                 value={designName}
+                disabled={running}
                 onChange={(event) => setDesignName(event.target.value)}
-                className="w-full rounded-xl border border-white/[0.08] bg-black/20 px-3.5 py-2.5 text-xs text-white/85 placeholder:text-white/20 transition-colors hover:border-white/[0.14] focus:border-signal-400/50 focus:outline-none"
+                className="input w-full"
               />
             </label>
 
-            <label className="block">
-              <span className="mb-2 flex items-center justify-between text-[11px] font-medium text-white/48">
-                {t("centerFreq")}<span className="font-mono text-[10px] text-white/25">GHz</span>
+            <label className="block space-y-2">
+              <span className="field-label">{t("centerFreq")}</span>
+              <span className={`input flex items-center ${running ? "opacity-60" : ""}`}>
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0.1"
+                  max="100"
+                  value={freqGhz}
+                  disabled={running}
+                  onChange={(event) => { setFreqGhz(event.target.value); invalidateSolverResult(); }}
+                  className="min-w-0 flex-1 bg-transparent font-mono text-inherit outline-none"
+                  aria-label={t("centerFreq")}
+                />
+                <span className="ml-auto font-mono text-[10px] text-white/45">GHz</span>
               </span>
-              <input
-                type="number"
-                step="0.1"
-                min="0.1"
-                max="100"
-                value={freqGhz}
-                onChange={(event) => { setFreqGhz(event.target.value); invalidateSolverResult(); }}
-                className="w-full rounded-xl border border-white/[0.08] bg-black/20 px-3.5 py-2.5 font-mono text-xs text-white/85 transition-colors hover:border-white/[0.14] focus:border-signal-400/50 focus:outline-none"
-              />
             </label>
 
-            <label className="block">
-              <span className="mb-2 flex items-center justify-between text-[11px] font-medium text-white/48">
-                {t("dipoleLength")}<span className="font-mono text-[10px] text-signal-300">{(dipoleLength * 1000).toFixed(1)} mm</span>
+            <label className="block space-y-2.5">
+              <span className="flex items-baseline justify-between gap-4">
+                <span className="field-label">{t("dipoleLength")}</span>
+                <span className="font-mono text-xs font-medium text-steel-300">{(dipoleLength * 1000).toFixed(1)} mm</span>
               </span>
               <input
                 type="range"
@@ -283,84 +337,83 @@ const DesignEditor: React.FC = () => {
                 max="0.2"
                 step="0.0005"
                 value={dipoleLength}
+                disabled={running}
                 onChange={(event) => { setDipoleLength(parseFloat(event.target.value)); invalidateSolverResult(); }}
                 style={{ "--range-pct": `${lengthPct}%` } as React.CSSProperties}
-                className="range-control my-2"
+                className="range-control"
+                aria-label={t("dipoleLength")}
               />
-              <div className="flex justify-between font-mono text-[9px] text-white/20"><span>10 mm</span><span>200 mm</span></div>
+              <span className="flex justify-between font-mono text-[10px] text-white/30"><span>10 mm</span><span>200 mm</span></span>
             </label>
 
-            <label className="block">
-              <span className="mb-2 block text-[11px] font-medium text-white/48">{t("solver")}</span>
-              <div className="relative">
-                <select
-                  value={solver}
-                  onChange={(event) => { setSolver(event.target.value as "nec2" | "openems"); invalidateSolverResult(); }}
-                  className="w-full appearance-none rounded-xl border border-white/[0.08] bg-black/20 px-3.5 py-2.5 pr-9 text-xs text-white/85 transition-colors hover:border-white/[0.14] focus:border-signal-400/50 focus:outline-none"
-                >
-                  <option value="nec2">NEC2 — {t("nec2Description")}</option>
-                  <option value="openems">openEMS — {t("openemsDescription")}</option>
-                </select>
-                <Icon name="chevron-down" size={14} className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-white/30" />
+            <fieldset className="space-y-2">
+              <legend className="field-label">{t("solver")}</legend>
+              <div className="seg" role="group" aria-label={t("solver")}>
+                <button type="button" disabled={running} aria-pressed={solver === "nec2"} onClick={() => { setSolver("nec2"); invalidateSolverResult(); }} className={`flex-1 ${solver === "nec2" ? "active" : ""}`}>NEC2 · {t("nec2Description")}</button>
+                <button type="button" disabled={running} aria-pressed={solver === "openems"} onClick={() => { setSolver("openems"); invalidateSolverResult(); }} className={`flex-1 ${solver === "openems" ? "active" : ""}`}>openEMS · {t("openemsDescription")}</button>
               </div>
-            </label>
+            </fieldset>
 
             <button
+              type="button"
               onClick={() => void handleSimulate()}
               disabled={running}
-              className="group flex w-full items-center justify-center gap-2 rounded-xl bg-signal-400 px-4 py-3 text-xs font-semibold text-ink-950 shadow-[0_10px_30px_rgba(84,230,181,0.12)] transition-all hover:bg-signal-300 hover:shadow-[0_12px_36px_rgba(84,230,181,0.2)] active:translate-y-px disabled:cursor-not-allowed disabled:opacity-55"
+              className="btn-primary w-full"
             >
-              <Icon name={running ? "activity" : "play"} size={15} className={running ? "animate-pulse" : "transition-transform group-hover:translate-x-0.5"} />
-              {running ? t("running") : t("runSimulation")}
+              <Icon name={running ? "activity" : "play"} size={15} className={running ? "spin" : ""} />
+              {running ? t("running") : t("runCanonicalAnchor")}
             </button>
 
-            <div className="rounded-xl border border-white/[0.065] bg-black/15 p-3.5">
+            <div className="status">
               <div className="flex items-center justify-between gap-3">
-                <span className="text-[10px] uppercase tracking-[0.13em] text-white/28">{t("statusTitle")}</span>
-                <span className={`size-1.5 rounded-full ${running ? "animate-pulse bg-amber-300" : usingSolverData ? "bg-signal-400" : "bg-white/20"}`} />
+                <span className="eyebrow">{t("statusTitle")}</span>
+                <span className={`size-1.5 rounded-full ${running ? "breathe bg-sand-500" : usingSolverData ? "bg-steel-500 shadow-[0_0_8px_rgba(169,196,232,.9)]" : "bg-white/30"}`} />
               </div>
-              <p className={`mt-2 text-xs font-medium ${statusTone}`}>{statusText ?? t("statusIdle")}</p>
+              <p className={`text-[13px] font-medium ${statusTone}`}>{statusText ?? t("statusIdle")}</p>
               {lastEvent ? (
-                <div className="mt-3 border-t border-white/[0.055] pt-3">
-                  <span className="text-[9px] uppercase tracking-widest text-white/22">{t("latestEvent")}</span>
-                  <p className="mt-1.5 line-clamp-2 font-mono text-[10px] leading-4 text-white/38">[{lastEvent.time}] {lastEvent.message}</p>
+                <div className="border-t border-white/10 pt-2.5">
+                  <span className="eyebrow">{t("latestEvent")}</span>
+                  <p className="mt-1.5 line-clamp-2 font-mono text-[11px] leading-5 text-white/50">[{lastEvent.time}] {lastEvent.message}</p>
                 </div>
               ) : null}
             </div>
 
-            <p className="flex gap-2.5 text-[10px] leading-[1.6] text-white/28">
-              <Icon name="activity" size={13} className="mt-0.5 shrink-0 text-amber-300/55" />
-              {t("previewNote")}
-            </p>
+            <p className="text-[11px] leading-[1.65] text-white/45">{t("previewAnchorNote")}</p>
           </div>
         </aside>
       </div>
 
-      <section className="overflow-hidden rounded-2xl border border-white/[0.07] bg-ink-850 shadow-panel">
-        <div className="flex flex-col gap-4 border-b border-white/[0.06] px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-          <div className="flex items-center gap-3">
-            <span className="grid size-8 place-items-center rounded-lg bg-white/[0.035] text-white/45"><Icon name="signal" size={16} /></span>
-            <div>
-              <h2 className="text-xs font-semibold text-white/85">{t("results")}</h2>
-              <p className="mt-0.5 text-[10px] text-white/30">{t("resultsHint")}</p>
-            </div>
+      <section className="glass overflow-hidden">
+        <div className="phead h-auto min-h-14 flex-wrap py-3">
+          <div>
+            <span className="eyebrow">03 · {t("results")}</span>
+            <p className="psub phead-subtitle">{t("resultsAnchorHint")}</p>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="flex rounded-lg border border-white/[0.07] bg-black/15 p-0.5">
-              <button onClick={() => setTab("sparams")} className={`rounded-md px-3 py-1.5 text-[10px] font-medium transition-colors ${tab === "sparams" ? "bg-white/10 text-white/85" : "text-white/30 hover:text-white/60"}`}>{t("sParams")}</button>
-              <button onClick={() => setTab("pattern")} className={`rounded-md px-3 py-1.5 text-[10px] font-medium transition-colors ${tab === "pattern" ? "bg-white/10 text-white/85" : "text-white/30 hover:text-white/60"}`}>{t("radPattern")}</button>
+          <div className="flex flex-wrap items-center gap-2.5">
+            <div className="toggle" role="group" aria-label={t("results")}>
+              <button type="button" aria-pressed={tab === "sparams"} onClick={() => setTab("sparams")} className={tab === "sparams" ? "active" : ""}>{t("sParams")}</button>
+              <button type="button" aria-pressed={tab === "pattern"} onClick={() => setTab("pattern")} className={tab === "pattern" ? "active" : ""}>{t("radPattern")}</button>
             </div>
-            <span className={`rounded-full border px-2.5 py-1 font-mono text-[9px] uppercase tracking-wider ${usingSolverData && tab === "sparams" ? "border-signal-400/25 bg-signal-400/8 text-signal-300" : "border-amber-300/20 bg-amber-300/[0.06] text-amber-200/75"}`}>
-              {usingSolverData && tab === "sparams" ? `${t("solverBadge")}: ${solverMode}` : t("previewBadge")}
+            <div className="toggle" role="group" aria-label={t("sParams")}>
+              <button type="button" aria-pressed={sParamMode === "db"} onClick={() => setSParamMode("db")} className={sParamMode === "db" ? "active" : ""}>{t("dbMagnitude")}</button>
+              <button type="button" aria-pressed={sParamMode === "smith"} onClick={() => setSParamMode("smith")} className={sParamMode === "smith" ? "active" : ""}>{t("zPlane")}</button>
+            </div>
+            <span className={`chip ${usingSolverData && tab === "sparams" ? "ice" : "gold"}`}>
+              {usingSolverData && tab === "sparams" ? `${solverMode ?? solver} · ${t("solverAnchorBadge")}` : "Analytical"}
             </span>
           </div>
         </div>
-        <div className="p-3 sm:p-5">
+
+        <div className="p-3 sm:p-[18px] sm:px-[22px]">
           {tab === "sparams" ? (
-            <SParamPlot data={usingSolverData ? solverData : previewData} height={360} />
+            <SParamPlot data={chartData} mode={sParamMode} onModeChange={setSParamMode} height={380} />
           ) : (
-            <RadiationPattern theta={pattern.theta} phi={pattern.phi} eTheta={pattern.eTheta} frequency={`${(fc / 1e9).toFixed(2)} GHz`} height={420} />
+            <RadiationPattern theta={pattern.theta} phi={pattern.phi} eTheta={pattern.eTheta} frequency={`${(fc / 1e9).toFixed(2)} GHz`} height={440} />
           )}
+        </div>
+        <div className="flex flex-col gap-1 border-t border-white/10 px-[22px] py-3 text-[11px] text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <span>{chartData.frequency.length} · {sweepStart.toFixed(2)}–{sweepEnd.toFixed(2)} GHz · Z₀ = 50 Ω</span>
+          <span>{usingSolverData ? t("solverAnchorScope") : t("previewAnchorNote")}</span>
         </div>
       </section>
     </div>
